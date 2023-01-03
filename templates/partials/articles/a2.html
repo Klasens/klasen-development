@@ -1,0 +1,39 @@
+<!------- STORY CONTENT ------->
+<section class="article">
+  <!-- ------- -->
+  <!-- Landing -->
+  <!-- ------- -->
+  <div class="article-landing background background-a2">
+    <div class="article-header">
+      <h1 class="article-header--articleNumber">Article 2</h1>
+      <h1 class="article-header-title">Panagram.work</h1>
+      <span class="article-header--authorName">By Robert Klasen</span>
+      <button class="article-header--btn">Read Now</button>
+    </div>
+  </div>
+
+  <!-- ------- -->
+  <!-- Content -->
+  <!-- ------- -->
+  <div class="article-content">
+    <div id="scrollAdhoc"></div>
+    <div class="article-content--header">
+      <h2 class="article-content-chapterTitle">Panagram.work</h2>
+      <span class="article-content--authorName">By Robert Klasen</span>
+    </div>
+    <div class="article-text">
+      <!-- LOOP NJK-->
+      {% for text in whatIsAPanagram %}
+      <p class="text">{{text.paragraph}}</p>
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- ------ -->
+  <!-- Footer -->
+  <!-- ------ -->
+  <div class="article-footer justifyContent-even">
+    <a href="#" class="footer-link">&larr; Previous Article</a>
+    <a href="#" class="footer-link">Next Article &rarr;</a>
+  </div>
+</section>

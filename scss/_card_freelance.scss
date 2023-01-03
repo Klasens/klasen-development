@@ -1,0 +1,31 @@
+/**========================================================================
+ *                          CARD FREELANCE
+ *========================================================================**/
+
+.card_freelance {
+  position: relative;
+  background-color: $color-cream;
+  @include center_flex_column;
+}
+
+.card_freelance-tag {
+  background-color: $color-blue;
+}
+
+.card_freelance-contentContainer {
+  width: 85%;
+  @include center_flex_column;
+}
+
+.card-iconContainer {
+  @include center_flex_row;
+  height: 10rem;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card-icon {
+  width: 10rem;
+  height: auto;
+}

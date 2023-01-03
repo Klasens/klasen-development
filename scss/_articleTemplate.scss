@@ -1,0 +1,212 @@
+/**========================================================================
+ *                          ARTICLE TEMPLATE 
+ *========================================================================**/
+
+.article {
+  position: relative;
+}
+
+/* ====== Landing Container ====== */
+.article-landing {
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ====== Header Container ====== */
+.article-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  @include respond(break-1000) {
+    position: relative;
+    margin: 0 auto;
+    top: 1rem;
+    left: 50%;
+    align-items: center;
+    width: 90%;
+    overflow: hidden;
+    left: 0;
+  }
+
+  /* ====== Child Selectors ===== */
+  & > *:not(:first-child) {
+    margin-top: 1rem;
+    @include respond(break-1000) {
+      margin-top: 3px;
+      margin-left: 0rem;
+    }
+  }
+
+  & > h1 {
+    color: $color-white;
+    font-size: 9rem;
+    @include respond(break-1000) {
+      font-size: 3rem;
+      width: 95%;
+    }
+  }
+  & > span {
+    font-size: 3;
+    color: $color-white;
+  }
+}
+
+/* ====== Mini Container ===== */
+.article-header--articleNumber {
+  letter-spacing: 2px;
+  @include respond(break-1000) {
+    text-align: center;
+  }
+}
+
+/* ====== Mini Container ===== */
+.article-header--authorName {
+  font-size: 3rem;
+  margin-top: 3rem;
+  @include respond(break-1000) {
+    margin-top: 0rem;
+    font-size: 1.7rem;
+  }
+}
+
+/* --- Btn - Read Now --- */
+.article-header--btn {
+  font-size: 2rem;
+  padding: 1rem 0.5rem;
+  border-radius: 15px;
+  z-index: 100;
+  background-color: transparent;
+  border-color: $color-white;
+  color: $color-white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $color-red;
+  }
+}
+
+/* ====== Content Container ====== */
+.article-content {
+  margin: 0rem auto;
+  padding-bottom: 4rem;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  @include respond(break-1000) {
+    width: 90%;
+  }
+
+  /* --- After Image Static --- */
+  &::after {
+    z-index: -1;
+    background-image: url(../img/staticNoise.jpg);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.03;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* ====== Text Container ====== */
+.article-text {
+  & > * {
+    margin-top: 3rem;
+  }
+}
+
+/* --- Content Header --- */
+.article-content--header {
+  & > h2 {
+    font-size: 7rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $color-black;
+    text-align: center;
+    @include respond(break-greater-1600) {
+      font-size: 10rem;
+    }
+    @include respond(break-1000) {
+      font-size: 3.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+/* ====== Content Mini Container ===== */
+.article-content--authorName {
+  font-size: 1.8rem;
+  margin-top: 3rem;
+  @include respond(break-1000) {
+    margin-top: 0rem;
+    font-size: 1.7rem;
+  }
+}
+
+/* --- Text -- */
+.text {
+  line-height: 2.9rem;
+  font-size: 2rem;
+}
+
+/* ====== Footer Container ===== */
+.article-footer {
+  height: 10vh;
+  border-top: 1px solid $color-gray;
+  display: flex;
+  align-items: center;
+}
+
+/* --- Footer Link -- */
+.footer-link {
+  font-size: 2rem;
+  cursor: pointer;
+  color: $color-link;
+}
+
+/* --- Utility Classes -- */
+.justifyContent-center {
+  justify-content: center;
+}
+.justifyContent-even {
+  justify-content: space-evenly;
+}
+
+// BACKGROUNDS
+
+.background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @include respond(break-1000) {
+    background-size: contain;
+  }
+}
+
+.background {
+  &-a1 {
+    background-image: linear-gradient(
+        to right,
+        rgba(1, 0, 0, 0.55),
+        rgba(1, 0, 0, 0.55)
+      ),
+      url('../img/article1.jpg');
+    @include respond(break-1000) {
+      background-image: linear-gradient(
+          to top,
+          rgba(1, 0, 0, 0.55),
+          rgba(1, 0, 0, 0.55)
+        ),
+        url('../img/article1.jpg');
+    }
+  }
+}

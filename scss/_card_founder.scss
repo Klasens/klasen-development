@@ -1,0 +1,24 @@
+/**========================================================================
+ *                          CARD FOUNDER
+ *========================================================================**/
+
+.card_founder {
+  height: min-content;
+  position: relative;
+  background-color: $color-teal-opaque;
+  @include center_flex_column;
+}
+
+.card_founder-contentContainer {
+  width: 85%;
+  @include center_flex_column;
+}
+
+.card_founder-tag {
+  background-color: $color-orange;
+}
+.card_founder-icon {
+  width: 4rem;
+  cursor: pointer;
+  margin: 0 1rem;
+}

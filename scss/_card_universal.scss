@@ -1,0 +1,144 @@
+/**========================================================================
+ *                          CARD_STYLE1 
+ *========================================================================**/
+
+/**============================================
+   *     Universal Card Specs -- Chocolate & Cream 
+   *==============================================**/
+
+// -- tag --
+$fontSize--tag: 1.2rem;
+$fontWeight--tag: bold;
+$padding--tag: 1rem 1.5rem;
+$borderRadius--tag: 5px;
+// -- h2 --
+$fontSize--h2: 3rem;
+$fontWeight--h2: 300;
+// -- text --
+$fontSize--text: 1.8rem;
+// -- btn --
+$fontSize--btn: 1.5rem;
+$padding--btn: 0.8rem 1.6rem;
+$borderRadius--btn: 2rem;
+
+// ----- STYLES -----
+.gridCard-universal.show {
+  transform: translateY(0);
+}
+// ----- Outer Container
+.gridCard-universal {
+  border-radius: 15px;
+  overflow: hidden;
+  transform: translateY(50%);
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1);
+  }
+}
+
+// ----- Inner Container
+.contentCard-universal {
+  //All children of main content cards have margin-top 2rem (excludes header and footer cards)
+  & > * {
+    margin: 2rem 0;
+  }
+}
+
+// ----- UNIVERSAL CARD CHOCOLATE STYLES ----- //
+
+.cardChocolate {
+  &-tag {
+    font-size: $fontSize--tag;
+    font-weight: $fontWeight--tag;
+    padding: $padding--tag;
+    border-radius: $borderRadius--tag;
+  }
+
+  &-h2 {
+    font-size: $fontSize--h2;
+    font-weight: $fontWeight--h2;
+    color: $color-white;
+  }
+  &-text {
+    font-size: $fontSize--text;
+    color: $color-white;
+  }
+
+  &-btn {
+    font-size: $fontSize--btn;
+    color: $color-white;
+    padding: $padding--btn;
+    border-radius: $borderRadius--btn;
+    border: 2px solid $color-white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $color-gray-boxShadow;
+    }
+  }
+}
+
+// ----- UNIVERSAL CARD CREAM STYLES ----- //
+
+.cardCream {
+  &-wrapper {
+    @include center_flex_column;
+    & > * {
+      margin: 1rem 0;
+    }
+  }
+  &-tag {
+    font-size: $fontSize--tag;
+    font-weight: $fontWeight--tag;
+    padding: $padding--tag;
+    border-radius: $borderRadius--tag;
+  }
+
+  &-h2 {
+    font-size: $fontSize--h2;
+    font-weight: $fontWeight--h2;
+    text-align: center;
+  }
+  &-text {
+    font-size: $fontSize--text;
+  }
+
+  &-btn {
+    font-size: $fontSize--btn;
+    padding: $padding--btn;
+    border-radius: $borderRadius--btn;
+    border: 2px solid $color-black;
+    background-color: $color-cream;
+    cursor: pointer;
+  }
+}
+
+// ----- CARD DESIGN LINES ----- //
+.borderColorOrange {
+  border: 1px solid $color-orange-opaque;
+}
+.borderColorYellow {
+  border: 1px solid $color-yellow;
+}
+.borderColorGreen {
+  border: 1px solid $color-light-green;
+}
+.borderColorBlue {
+  border: 1px solid $color-blue;
+}
+.designLine {
+  &-top {
+    @include designLine-top;
+  }
+  &-bottom {
+    @include designLine-bottom;
+  }
+  &-right {
+    @include designLine-right;
+  }
+  &-left {
+    @include designLine-left;
+  }
+}

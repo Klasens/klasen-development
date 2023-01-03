@@ -1,0 +1,95 @@
+/**========================================================================
+ *                          MAIN GRID 
+ *========================================================================**/
+
+.flipGrid {
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  display: grid;
+  grid-column: 1 / 4;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4rem;
+  row-gap: 4rem;
+  transition: all 1s;
+  @include respond(break-1400) {
+    grid-template-columns: 1fr;
+  }
+  @include respond(break-1000) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card_article {
+  background-color: $color-chocolate;
+  @include center_flex_column;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 1s;
+}
+.card_article-tag {
+  background-color: $color-orange;
+  font-size: $fontSize--tag;
+  font-weight: $fontWeight--tag;
+  padding: $padding--tag;
+  border-radius: $borderRadius--tag;
+}
+.cardArticle-h2 {
+  font-size: $fontSize--h2;
+  font-weight: $fontWeight--h2;
+  color: $color-white;
+  text-align: center;
+}
+.card_article-contentContainer {
+  width: 85%;
+  @include center_flex_column;
+  & > * {
+    margin: 2rem 0;
+  }
+}
+
+.translate-1 {
+  transform: translate(-40%, -40%);
+}
+.rotate-1 {
+  transform: rotateZ(360deg);
+}
+.translate-2 {
+  transform: translate(40%, -40%);
+}
+.opacity-0 {
+  opacity: 0;
+}
+.height-0 {
+  height: 0;
+}
+.pointerEvents-none {
+  pointer-events: none;
+
+  & > * {
+    pointer-events: none;
+  }
+}
+
+#flipFooter {
+  padding: 2rem 0;
+  background-color: $color-chocolate;
+  color: $color-off-white-2;
+}
+
+.background-off-white-2 {
+  background-color: $color-off-white-2;
+}
+.color-off-white-2 {
+  color: $color-off-white-2;
+}
+
+.background-chocolate {
+  background-color: $color-chocolate;
+}
+.color-chocolate {
+  color: $color-chocolate;
+}
+.border-left-off-white-2 {
+  border-left: 1px solid $color-off-white-2;
+}

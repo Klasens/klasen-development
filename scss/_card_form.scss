@@ -1,0 +1,51 @@
+/**========================================================================
+ *                          CARD FORM
+ *========================================================================**/
+
+.card_form {
+  height: min-content;
+  background-color: $color-cream;
+  @include center_flex_column;
+}
+
+.card_form-tag {
+  background-color: $color-light-purple;
+}
+
+.card_form-contentContainer {
+  width: 85%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-form {
+  width: 100%;
+
+  > input {
+    margin-bottom: 1rem;
+  }
+
+  &--label {
+    display: block;
+    font-size: $fontSize--text;
+  }
+
+  &--inputName {
+    border: 1px solid $color-chocolate;
+    height: 2.5rem;
+    width: 90%;
+  }
+
+  &--email {
+    border: 1px solid $color-chocolate;
+    height: 2.5rem;
+    width: 90%;
+  }
+
+  &--inputMessage {
+    border: 1px solid $color-chocolate;
+    height: 7rem;
+    width: 90%;
+  }
+}

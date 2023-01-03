@@ -1,0 +1,40 @@
+<!-- layout.nunjucks -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block title %} {% endblock %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--====== FONT AWESOME ======-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
+    />
+
+    <!--====== GOOGLE FONTS ======-->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <!-- BASE FONTS ======-->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- PAGE FONTS ======-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--====== STYLE SHEETS ======-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="pageContainer">
+    {% block content %} {% endblock %}
+    <!------- JAVASCRIPT ------->
+    <script src="smoothScroll.js"></script>
+  </body>
+</html>

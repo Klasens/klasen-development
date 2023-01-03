@@ -1,0 +1,83 @@
+/**========================================================================
+ *                          CARD MILESTONE
+ *========================================================================**/
+
+.card_milestone {
+  cursor: pointer;
+  background-color: $color-cream;
+  @include center_flex_column;
+}
+.card_milestone-contentContainer {
+  width: 85%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card_milestone-tag {
+  background-color: $color-light-red;
+}
+
+/* ---------- SHAPE CONTAINER --------- */
+.card-shapeContainer {
+  @include center_flex_row;
+  position: relative;
+  height: 20rem;
+  width: 100%;
+  border-radius: 15px;
+  background-color: $color-chocolate;
+}
+
+.card-square-left {
+  position: absolute;
+  left: 30%;
+  width: 3rem;
+  height: 3rem;
+  background-color: $color-cream;
+  margin: 1rem;
+}
+
+.card-square-right {
+  position: absolute;
+  right: 30%;
+  width: 3rem;
+  height: 3rem;
+  background-color: $color-cream;
+  margin: 1rem;
+}
+
+.card-circle {
+  position: absolute;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: $color-cream;
+  margin: 2rem;
+}
+
+.square-one {
+  animation: square-one 6s ease-in-out infinite;
+}
+.square-two {
+  animation: square-two 6s ease-in-out infinite;
+}
+.square-three {
+  animation: square-three 6s ease-in-out infinite;
+}
+.square-four {
+  animation: square-four 6s ease-in-out infinite;
+}
+
+.circle-one {
+  animation: circle-one 6s ease-in-out infinite;
+}
+.circle-two {
+  animation: circle-two 6s ease-in-out infinite;
+}
+.circle-three {
+  animation: circle-three 6s ease-in-out infinite;
+}
+.circle-four {
+  animation: circle-four 6s ease-in-out infinite;
+}

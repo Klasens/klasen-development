@@ -1,0 +1,52 @@
+/**========================================================================
+ *                           Mixins
+ *========================================================================**/
+/**======================
+   *     LAYOUT 
+   *========================**/
+@mixin center_flex_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin center_flex_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/**======================
+   *     UNIVERSAL DESIGN 
+   *========================**/
+@mixin designLine-top {
+  height: 100%;
+  width: 100%;
+  border-radius: 10%;
+  position: absolute;
+  bottom: 96%;
+}
+
+@mixin designLine-bottom {
+  height: 100%;
+  width: 100%;
+  border-radius: 10%;
+  position: absolute;
+  top: 96%;
+}
+@mixin designLine-right {
+  height: 100%;
+  width: 100%;
+  border-radius: 10%;
+  position: absolute;
+  left: 95%;
+}
+@mixin designLine-left {
+  height: 100%;
+  width: 100%;
+  border-radius: 10%;
+  position: absolute;
+  right: 95%;
+}

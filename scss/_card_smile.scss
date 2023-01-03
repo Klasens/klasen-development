@@ -1,0 +1,45 @@
+/**========================================================================
+ *                          CARD SMILE
+ *========================================================================**/
+// VARIABLES
+$fontSize-smile: 3rem;
+
+// STYLES
+.card_smile {
+  position: relative;
+  height: 50rem;
+  background-color: $color-cream;
+  background-image: url(../img/bob_smile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include center_flex_column;
+  cursor: pointer;
+}
+
+.card_smile-contentContainer {
+  height: 100%;
+}
+
+.card-heart {
+  display: inline;
+  color: $color-red;
+  font-size: $fontSize-smile;
+
+  &-h2 {
+    font-size: $fontSize-smile;
+    font-weight: $fontWeight--h2;
+    user-select: none;
+  }
+
+  &LikeCount {
+    color: $color-black;
+    font-size: $fontSize-smile;
+  }
+
+  &-pop {
+    font-size: $fontSize-smile;
+    position: absolute;
+    animation: heartPop 2s;
+    scale: 0;
+  }
+}

@@ -1,0 +1,112 @@
+/**========================================================================
+ *                          ARTICLE BACKGROUNDS 
+ *========================================================================**/
+
+// BACKGROUNDS
+
+.background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @include respond(break-1000) {
+    background-size: contain;
+  }
+}
+
+.background-a1 {
+  background-image: linear-gradient(
+      to right,
+      rgba(1, 0, 0, 0.55),
+      rgba(1, 0, 0, 0.55)
+    ),
+    url('../img/article1.jpg');
+  @include respond(break-1000) {
+    background-image: linear-gradient(
+        to top,
+        rgba(1, 0, 0, 0.55),
+        rgba(1, 0, 0, 0.55)
+      ),
+      url('../img/article1.jpg');
+  }
+}
+
+.background-a2 {
+  background-image: linear-gradient(
+      to right,
+      rgba(1, 0, 0, 0.55),
+      rgba(1, 0, 0, 0.55)
+    ),
+    url('../img/article2.jpg');
+  @include respond(break-1000) {
+    background-image: linear-gradient(
+        to top,
+        rgba(1, 0, 0, 0.55),
+        rgba(1, 0, 0, 0.55)
+      ),
+      url('../img/article2.jpg');
+  }
+}
+.background-a3 {
+  background-image: linear-gradient(
+      to right,
+      rgba(1, 0, 0, 0.55),
+      rgba(1, 0, 0, 0.55)
+    ),
+    url('../img/article3.jpg');
+  @include respond(break-1000) {
+    background-image: linear-gradient(
+        to top,
+        rgba(1, 0, 0, 0.55),
+        rgba(1, 0, 0, 0.55)
+      ),
+      url('../img/article3.jpg');
+  }
+}
+.background-a4 {
+  background-image: linear-gradient(
+      to right,
+      rgba(1, 0, 0, 0.55),
+      rgba(1, 0, 0, 0.55)
+    ),
+    url('../img/article4.jpg');
+  @include respond(break-1000) {
+    background-image: linear-gradient(
+        to top,
+        rgba(1, 0, 0, 0.55),
+        rgba(1, 0, 0, 0.55)
+      ),
+      url('../img/article4.jpg');
+  }
+}
+.background-a5 {
+  background-image: linear-gradient(
+      to right,
+      rgba(1, 0, 0, 0.55),
+      rgba(1, 0, 0, 0.55)
+    ),
+    url('../img/article5.jpg');
+  @include respond(break-1000) {
+    background-image: linear-gradient(
+        to top,
+        rgba(1, 0, 0, 0.55),
+        rgba(1, 0, 0, 0.55)
+      ),
+      url('../img/article5.jpg');
+  }
+}
+.background-a6 {
+  background-image: linear-gradient(
+      to right,
+      rgba(1, 0, 0, 0.55),
+      rgba(1, 0, 0, 0.55)
+    ),
+    url('../img/article6.jpg');
+  @include respond(break-1000) {
+    background-image: linear-gradient(
+        to top,
+        rgba(1, 0, 0, 0.55),
+        rgba(1, 0, 0, 0.55)
+      ),
+      url('../img/article6.jpg');
+  }
+}

@@ -1,0 +1,15 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/s28sheoe5xht/public_html/maxamillennial.org
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp chapterPrologue.html $DEPLOYPATH
+    - /bin/cp chapter1.html $DEPLOYPATH
+    - /bin/cp chapter2.html $DEPLOYPATH
+    - /bin/cp chapter3.html $DEPLOYPATH
+    - /bin/cp cards.js $DEPLOYPATH
+    - /bin/cp script.js $DEPLOYPATH
+    - /bin/cp topNav.js $DEPLOYPATH
+    - /bin/cp smoothScroll.js $DEPLOYPATH
+    - /bin/cp -R img $DEPLOYPATH
+    - /bin/cp -R css $DEPLOYPATH

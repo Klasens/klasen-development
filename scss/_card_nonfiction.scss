@@ -1,0 +1,25 @@
+/**========================================================================
+ *                          CARD NONFICTION
+ *========================================================================**/
+
+.card_nonfiction {
+  position: relative;
+  height: min-content;
+  background-color: $color-light-chocolate;
+  @include center_flex_column;
+  //Animated Line -- Change the percentages to adjust the line thickness
+  animation: accentLine 6s infinite reverse;
+  mask: linear-gradient(90deg, #fff 50%, rgba(0, 0, 0, 0.8), #fff 55%)
+    right/300% 100%;
+  -webkit-mask: linear-gradient(90deg, #fff 50%, rgba(0, 0, 0, 0.8), #fff 55%)
+    right/300% 100%;
+}
+
+.card_nonfiction-contentContainer {
+  width: 85%;
+  @include center_flex_column;
+}
+
+.card_nonfiction-tag {
+  background-color: $color-yellow;
+}

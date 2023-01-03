@@ -1,0 +1,17 @@
+<!-- Imports -->
+{% import 'macros/title-macro.html' as head %}
+
+<!-- Meta Blocks -->
+{% extends "layout.html" %}
+
+<!-- Block Title -->
+{% block title %} {{head.title('article2')}} {% endblock %}
+
+<!-- Block Content -->
+{% block content %}
+
+<!-- Partial NJK-->
+{% include "partials/articles/a2.html" %}
+
+<!-- Endblock -->
+{% endblock %}
