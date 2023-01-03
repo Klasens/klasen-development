@@ -522,13 +522,15 @@ h2 {
   justify-content: space-between; }
 
 .card_header-tag {
-  background-color: #ff9100; }
+  background-color: #ff9100;
+  cursor: pointer; }
 
 .card_header-mainHead {
-  font-family: "Space Mono", monospace;
-  font-size: 17rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 12rem;
   font-weight: 300;
-  letter-spacing: 3px;
   /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -739,11 +741,13 @@ h2 {
       width: 80%; } }
 
 .card_header-btn--wrapper {
-  background-color: #646464;
+  background-color: #333333;
   border-radius: 40px;
   border: none;
   overflow: hidden;
-  box-shadow: 2px 2px 10px #494949;
+  box-shadow: 2px 2px 10px #333333;
+  cursor: pointer;
+  padding: 1rem 2.2rem;
   transition: transform 0.1s;
   transform: translateY(0); }
   .card_header-btn--wrapper:hover {
@@ -755,9 +759,7 @@ h2 {
   border: none;
   overflow: hidden;
   color: #ffd1aa;
-  padding: 1rem 2.2rem;
   cursor: pointer;
-  animation: accentLine 3s infinite reverse;
   mask: linear-gradient(150deg, #fff 50%, rgba(0, 0, 0, 0.5), #fff 55%) right/300% 100%;
   -webkit-mask: linear-gradient(150deg, #fff 50%, rgba(0, 0, 0, 0.5), #fff 55%) right/300% 100%; }
 
@@ -776,6 +778,9 @@ h2 {
 .card_footer-contentContainer {
   width: 85%;
   font-size: 1.9rem; }
+
+.card_footer-contact {
+  color: #0000ee; }
 
 /**========================================================================
  *                          CARD FOUNDER

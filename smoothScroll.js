@@ -1,9 +1,10 @@
 'use strict';
 
-const scrollBtn = document.querySelector('.article-header--btn');
-const scrollContent = document.querySelector('.article-content--header');
+const scrollBtn = document.querySelector('.card_header-tag');
+const scrollContent = document.querySelector('.col');
 
 scrollBtn.addEventListener('click', function (e) {
   e.preventDefault();
-  scrollContent.scrollIntoView({ behavior: 'smooth' });
+  console.log('test');
+  scrollContent.scrollIntoView({ block: 'start', behavior: 'smooth' });
 });

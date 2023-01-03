@@ -294,7 +294,7 @@ const loadAllCards = function (array) {
 };
 
 //!DISPLAY CARDS RANDOMLY ON PAGE
-loadAllCards(cardsArrayOfObjects);
+// loadAllCards(cardsArrayOfObjects);
 
 //!DELETE ALL CARDS ON PAGE
 // headerBtn.addEventListener('click', function () {
