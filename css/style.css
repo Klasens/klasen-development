@@ -163,6 +163,7 @@ h2 {
  *                          MAIN GRID 
  *========================================================================**/
 .grid_container {
+  position: relative;
   display: flex;
   justify-content: center;
   background-color: #2a4e6e;
@@ -1222,8 +1223,92 @@ h2 {
   position: fixed;
   top: 2rem;
   height: 95vh;
-  width: 55vw;
-  background-color: white; }
+  width: 70vw;
+  background-color: white;
+  z-index: 5;
+  opacity: 0; }
+
+.modal-cover {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(67, 62, 60, 0.8);
+  z-index: 5;
+  opacity: 0; }
+
+.modal-close {
+  z-index: 10;
+  height: 5rem;
+  width: 5rem;
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+  cursor: pointer;
+  animation: scaleUp 2s infinite linear;
+  opacity: 0;
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+  @media (max-width: 53.125em) {
+    .modal-close {
+      top: 0.5rem;
+      right: 3rem; } }
+
+.line-1,
+.line-2 {
+  width: 4rem;
+  margin: 1rem;
+  height: 2px;
+  background-color: #fc3b3b; }
+
+.line-1 {
+  position: absolute;
+  top: 25%;
+  transform-origin: bottom;
+  transform: rotate(45deg); }
+
+.line-2 {
+  position: absolute;
+  top: 25%;
+  transform-origin: initial;
+  transform: rotate(-45deg); }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.fadeIn {
+  animation: fadeIn 0.5s forwards; }
+
+.pointerEvents-none {
+  pointer-events: none; }
 
 /**========================================================================
  *                          ARTICLE TEMPLATE 
