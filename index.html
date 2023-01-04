@@ -35,7 +35,7 @@
   <!-------------------------------- HTML ------------------------------>
 
   <body class="grid_container">
-    <!-- <div class="resume-modal"></div> -->
+    <div class="resume-modal" id="adobe-dc-view"></div>
     <section class="grid">
       <!--====== HEADER ======-->
       <div class="card_header">
@@ -179,6 +179,26 @@
     <script src="script.js"></script>
     <script src="cards.js"></script>
     <script src="smoothScroll.js"></script>
+    <script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
+    <script type="text/javascript">
+      document.addEventListener('adobe_dc_view_sdk.ready', function () {
+        var adobeDCView = new AdobeDC.View({
+          clientId: '7511145e062e480da1ab41fa3b92fb9c',
+          divId: 'adobe-dc-view',
+        });
+        adobeDCView.previewFile(
+          {
+            content: {
+              location: {
+                url: 'https://documentservices.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf',
+              },
+            },
+            metaData: { fileName: 'Bodea Brochure.pdf' },
+          },
+          {}
+        );
+      });
+    </script>
     <!-- Default Statcounter code for Panagram
 https://panagram.work -->
     <script type="text/javascript">
