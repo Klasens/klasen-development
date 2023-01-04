@@ -13,6 +13,7 @@ $padding--tag: 1rem 1.5rem;
 $borderRadius--tag: 5px;
 // -- h2 --
 $fontSize--h2: 3rem;
+$fontSize--h4: 2rem;
 $fontWeight--h2: 300;
 // -- text --
 $fontSize--text: 1.8rem;
@@ -42,6 +43,20 @@ $borderRadius--btn: 2rem;
 
 // ----- UNIVERSAL CARD CHOCOLATE STYLES ----- //
 
+.resume-btn {
+  font-size: $fontSize--btn;
+  color: $color-black;
+  padding: $padding--btn;
+  border-radius: $borderRadius--btn;
+  border: 2px solid $color-black;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
 .cardChocolate {
   &-tag {
     font-size: $fontSize--tag;
@@ -57,6 +72,11 @@ $borderRadius--btn: 2rem;
   }
   &-h3 {
     font-size: $fontSize--h2;
+    font-weight: $fontWeight--h2;
+    color: $color-white;
+  }
+  &-h4 {
+    font-size: $fontSize--h4;
     font-weight: $fontWeight--h2;
     color: $color-white;
   }

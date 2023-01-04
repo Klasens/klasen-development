@@ -12,6 +12,11 @@
 .card_founder-contentContainer {
   width: 85%;
   @include center_flex_column;
+
+  //All children of main content cards have margin-top 2rem (excludes header and footer cards)
+  & > * {
+    margin: 2rem 0;
+  }
 }
 
 .card_founder-tag {
