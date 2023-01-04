@@ -473,7 +473,8 @@ h2 {
   border-radius: 2rem;
   border: 2px solid #333333;
   background-color: #ffd1aa;
-  cursor: pointer; }
+  cursor: pointer;
+  margin: 0 auto; }
 
 .borderColorOrange {
   border: 1px solid rgba(255, 145, 0, 0.5); }
@@ -888,7 +889,9 @@ h2 {
   align-items: center; }
 
 .card-form {
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
   .card-form > input {
     margin-bottom: 1rem; }
   .card-form--label {
@@ -906,6 +909,8 @@ h2 {
     border: 1px solid #433e3c;
     height: 7rem;
     width: 90%; }
+  .card-form > button {
+    margin-top: 1rem; }
 
 /**========================================================================
  *                          CARD MILESTONE
