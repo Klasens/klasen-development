@@ -13,6 +13,10 @@
   @include respond(break-1600) {
     width: 90%;
   }
+  @include respond(break-1000) {
+    height: 80vh;
+    top: 10rem;
+  }
 }
 .modal-cover {
   position: fixed;

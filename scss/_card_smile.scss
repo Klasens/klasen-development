@@ -18,6 +18,10 @@ $fontSize-smile: 3rem;
     background-size: contain;
     background-position: center;
   }
+  @include respond(break-600) {
+    height: 45rem;
+    width: 95%;
+  }
 }
 
 .card_smile-contentContainer {
@@ -52,6 +56,9 @@ $fontSize-smile: 3rem;
 
 .displayNone-mobile {
   @include respond(break-1000-greater) {
+    display: none;
+  }
+  @include respond(break-600) {
     display: none;
   }
 }
