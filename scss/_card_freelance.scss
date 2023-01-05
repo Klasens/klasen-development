@@ -19,13 +19,20 @@
 
 .card-iconContainer {
   @include center_flex_row;
-  height: 10rem;
-  width: 100%;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: min-content;
   border-radius: 15px;
   overflow: hidden;
+  margin: 0;
+  @include respond(break-600) {
+  }
 }
 
 .card-icon {
-  width: 10rem;
+  width: 5rem;
   height: auto;
+  @include respond(break-600) {
+  }
 }
