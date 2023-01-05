@@ -2,6 +2,7 @@
  *                          CARD APP
  *========================================================================**/
 .card_app {
+  position: relative;
   background-color: $color-cream;
   @include center_flex_column;
 }

@@ -1331,6 +1331,7 @@ h2 {
  *                          CARD APP
  *========================================================================**/
 .card_app {
+  position: relative;
   background-color: #ffd1aa;
   display: flex;
   flex-direction: column;
