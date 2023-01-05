@@ -243,7 +243,7 @@ h2 {
    *=============================================**/ }
   @media (max-width: 100em) {
     .grid {
-      width: 90%; } }
+      width: 75%; } }
   @media (max-width: 62.5em) {
     .grid {
       width: 90%;
