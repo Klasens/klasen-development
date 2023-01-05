@@ -13,10 +13,16 @@ $padding--tag: 1rem 1.5rem;
 $borderRadius--tag: 5px;
 // -- h2 --
 $fontSize--h2: 3rem;
+$fontSize--h3: 2rem;
+
 $fontSize--h4: 2rem;
 $fontWeight--h2: 300;
+$fontWeight--h3: bold;
+
 // -- text --
 $fontSize--text: 1.8rem;
+// -- li --
+$fontSize--li: 1.8rem;
 // -- btn --
 $fontSize--btn: 1.5rem;
 $padding--btn: 0.8rem 1.6rem;
@@ -37,7 +43,7 @@ $borderRadius--btn: 2rem;
 .contentCard-universal {
   //All children of main content cards have margin-top 2rem (excludes header and footer cards)
   & > * {
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
 }
 
@@ -121,10 +127,23 @@ $borderRadius--btn: 2rem;
     font-weight: $fontWeight--h2;
     text-align: center;
   }
+  &-h3 {
+    font-size: $fontSize--h3;
+    font-weight: $fontWeight--h3;
+    margin-right: auto;
+  }
   &-text {
     font-size: $fontSize--text;
   }
-
+  &-ul {
+    margin-right: auto;
+  }
+  &-link {
+    color: $color-link;
+  }
+  &-li {
+    font-size: $fontSize--li;
+  }
   &-btn {
     font-size: $fontSize--btn;
     padding: $padding--btn;
@@ -132,6 +151,11 @@ $borderRadius--btn: 2rem;
     border: 2px solid $color-black;
     background-color: $color-cream;
     cursor: pointer;
+  }
+  &-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 

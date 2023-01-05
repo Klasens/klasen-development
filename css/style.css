@@ -263,7 +263,7 @@ h2 {
     transform: scale(1); }
 
 .contentCard-universal > * {
-  margin: 2rem 0; }
+  margin: 1rem 0; }
 
 .resume-btn {
   font-size: 1.5rem;
@@ -331,7 +331,21 @@ h2 {
   font-weight: 300;
   text-align: center; }
 
+.cardCream-h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: auto; }
+
 .cardCream-text {
+  font-size: 1.8rem; }
+
+.cardCream-ul {
+  margin-right: auto; }
+
+.cardCream-link {
+  color: #0000ee; }
+
+.cardCream-li {
   font-size: 1.8rem; }
 
 .cardCream-btn {
@@ -341,6 +355,11 @@ h2 {
   border: 2px solid #333333;
   background-color: #ffd1aa;
   cursor: pointer; }
+
+.cardCream-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .borderColorOrange {
   border: 1px solid rgba(255, 145, 0, 0.5); }
@@ -1068,6 +1087,8 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .card_form-contentContainer > * {
+    margin: 2rem 0; }
 
 .card-form {
   width: 100%;
