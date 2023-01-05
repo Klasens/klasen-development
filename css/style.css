@@ -951,7 +951,8 @@ h2 {
   @media (max-width: 37.5em) {
     .card_smile {
       height: 45rem;
-      width: 95%; } }
+      width: 95%;
+      background-color: #2a4e6e; } }
 
 .card_smile-contentContainer {
   height: 100%;

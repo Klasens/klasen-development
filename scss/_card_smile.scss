@@ -21,6 +21,7 @@ $fontSize-smile: 3rem;
   @include respond(break-600) {
     height: 45rem;
     width: 95%;
+    background-color: $color-aqua;
   }
 }
 
