@@ -9,6 +9,10 @@
   border-radius: 15px;
   overflow: hidden;
   transition: all 1s;
+  @include respond(break-1000) {
+    grid-column: auto;
+    grid-row: auto;
+  }
 }
 
 .card_header-contentContainer {
@@ -17,6 +21,12 @@
   //Overwriting justify content from mixin
   @include center_flex_column;
   justify-content: space-between;
+  @include respond(break-1000) {
+    padding: 1rem 0;
+    height: 100%;
+    grid-column: auto;
+    grid-row: auto;
+  }
 }
 
 .card_header-tag {

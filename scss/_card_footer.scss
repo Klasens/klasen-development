@@ -7,6 +7,10 @@
   background-color: $color-cream;
   @include center_flex_column;
   border-radius: 15px;
+  @include respond(break-1000) {
+    grid-column: auto;
+    grid-row: auto;
+  }
 }
 
 .card_footer-contentContainer {

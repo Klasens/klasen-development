@@ -8,16 +8,21 @@ $fontSize-smile: 3rem;
 .card_smile {
   position: relative;
   height: 50rem;
-  background-color: $color-cream;
+  background-color: $color-teal-opaque;
   background-image: url(../img/bob_smile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   @include center_flex_column;
   cursor: pointer;
+  @include respond(break-1000) {
+    background-size: contain;
+    background-position: center;
+  }
 }
 
 .card_smile-contentContainer {
   height: 100%;
+  border-radius: 15px;
   margin-top: 1rem;
 }
 
@@ -42,5 +47,11 @@ $fontSize-smile: 3rem;
     position: absolute;
     animation: heartPop 2s;
     scale: 0;
+  }
+}
+
+.displayNone-mobile {
+  @include respond(break-1000-greater) {
+    display: none;
   }
 }
