@@ -473,8 +473,7 @@ h2 {
   border-radius: 2rem;
   border: 2px solid #333333;
   background-color: #ffd1aa;
-  cursor: pointer;
-  margin: 0 auto; }
+  cursor: pointer; }
 
 .borderColorOrange {
   border: 1px solid rgba(255, 145, 0, 0.5); }
@@ -910,7 +909,7 @@ h2 {
     height: 7rem;
     width: 90%; }
   .card-form > button {
-    margin-top: 1rem; }
+    margin: 2rem auto 1rem; }
 
 /**========================================================================
  *                          CARD MILESTONE
