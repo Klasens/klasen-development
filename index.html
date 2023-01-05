@@ -206,9 +206,17 @@
                 url: '/img/robert-klasen-resume.pdf',
               },
             },
-            metaData: { fileName: 'Robert Klasen Resume' },
+            metaData: {
+              fileName: 'Robert Klasen Resume',
+              hasReadOnlyAccess: true,
+            },
           },
-          { embedMode: 'FULL_WINDOW', enableFormFilling: false }
+          {
+            embedMode: 'FULL_WINDOW',
+            showZoomControl: true,
+            defaultViewMode: 'FIT_PAGE',
+            enableLinerization: true,
+          }
         );
       });
     </script>
