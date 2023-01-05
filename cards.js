@@ -31,15 +31,12 @@ function checkBoxes() {
 
 // Selectors
 const heartCard = document.querySelector('#cardHeart');
-const heartCount = document.querySelector('#heartCount');
 
 // Variables
 let i = 0;
 
 // Event Listeners
 heartCard.addEventListener('click', function (e) {
-  i++;
-  heartCount.innerText = i;
   let heartCoordinatesX = e.offsetX;
   let heartCoordinatesY = e.offsetY;
   let heartPop = document.createElement('div');
