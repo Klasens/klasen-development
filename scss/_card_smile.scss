@@ -22,6 +22,7 @@ $fontSize-smile: 3rem;
     height: 45rem;
     width: 95%;
     background-color: $color-aqua;
+    display: none;
   }
 }
 
@@ -52,6 +53,22 @@ $fontSize-smile: 3rem;
     position: absolute;
     animation: heartPop 2s;
     scale: 0;
+  }
+}
+.resume-btn {
+  font-size: $fontSize--btn;
+  color: $color-black;
+  padding: $padding--btn;
+  border-radius: $borderRadius--btn;
+  border: 2px solid $color-black;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: transparent;
+  }
+  @include respond(break-600) {
+    display: none;
   }
 }
 

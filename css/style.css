@@ -265,17 +265,6 @@ h2 {
 .contentCard-universal > * {
   margin: 1rem 0; }
 
-.resume-btn {
-  font-size: 1.5rem;
-  color: #333333;
-  padding: 0.8rem 1.6rem;
-  border-radius: 2rem;
-  border: 2px solid #333333;
-  cursor: pointer;
-  transition: background-color 0.3s; }
-  .resume-btn:hover {
-    background-color: transparent; }
-
 .cardChocolate-tag {
   font-size: 1.2rem;
   font-weight: bold;
@@ -332,15 +321,12 @@ h2 {
   text-align: center; }
 
 .cardCream-h3 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
-  margin-right: auto; }
+  font-family: 'Chakra Petch', sans-serif; }
 
 .cardCream-text {
   font-size: 1.8rem; }
-
-.cardCream-ul {
-  margin-right: auto; }
 
 .cardCream-link {
   color: #0000ee; }
@@ -360,6 +346,21 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center; }
+
+.li-image--JS {
+  list-style-image: url("../img/javascript.png"); }
+
+.li-image--CSS {
+  list-style-image: url("../img/css-logo.png"); }
+
+.li-image--NODE {
+  list-style-image: url("../img/nodejs.png"); }
+
+.li-image--GULP {
+  list-style-image: url("../img/cup.png"); }
+
+.li-image--GNEWS {
+  list-style-image: url("../img/g.png"); }
 
 .borderColorOrange {
   border: 1px solid rgba(255, 145, 0, 0.5); }
@@ -971,7 +972,8 @@ h2 {
     .card_smile {
       height: 45rem;
       width: 95%;
-      background-color: #2a4e6e; } }
+      background-color: #2a4e6e;
+      display: none; } }
 
 .card_smile-contentContainer {
   height: 100%;
@@ -994,6 +996,52 @@ h2 {
     position: absolute;
     animation: heartPop 2s;
     scale: 0; }
+
+.resume-btn {
+  font-size: 1.5rem;
+  color: #333333;
+  padding: 0.8rem 1.6rem;
+  border-radius: 2rem;
+  border: 2px solid #333333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+  .resume-btn:hover {
+    background-color: transparent; }
+  @media (max-width: 37.5em) {
+    .resume-btn {
+      display: none; } }
 
 .displayNone-mobile {
   /**============================================
@@ -1254,7 +1302,6 @@ h2 {
   background-color: #ffd1aa;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center; }
 
 .card_freelance-tag {

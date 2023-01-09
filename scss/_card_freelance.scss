@@ -5,7 +5,9 @@
 .card_freelance {
   position: relative;
   background-color: $color-cream;
-  @include center_flex_column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card_freelance-tag {

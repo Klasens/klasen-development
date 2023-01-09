@@ -13,7 +13,7 @@ $padding--tag: 1rem 1.5rem;
 $borderRadius--tag: 5px;
 // -- h2 --
 $fontSize--h2: 3rem;
-$fontSize--h3: 2rem;
+$fontSize--h3: 3rem;
 
 $fontSize--h4: 2rem;
 $fontWeight--h2: 300;
@@ -48,20 +48,6 @@ $borderRadius--btn: 2rem;
 }
 
 // ----- UNIVERSAL CARD CHOCOLATE STYLES ----- //
-
-.resume-btn {
-  font-size: $fontSize--btn;
-  color: $color-black;
-  padding: $padding--btn;
-  border-radius: $borderRadius--btn;
-  border: 2px solid $color-black;
-  cursor: pointer;
-  transition: background-color 0.3s;
-
-  &:hover {
-    background-color: transparent;
-  }
-}
 
 .cardChocolate {
   &-tag {
@@ -130,13 +116,12 @@ $borderRadius--btn: 2rem;
   &-h3 {
     font-size: $fontSize--h3;
     font-weight: $fontWeight--h3;
-    margin-right: auto;
+    font-family: 'Chakra Petch', sans-serif;
   }
   &-text {
     font-size: $fontSize--text;
   }
   &-ul {
-    margin-right: auto;
   }
   &-link {
     color: $color-link;
@@ -157,6 +142,22 @@ $borderRadius--btn: 2rem;
     flex-direction: column;
     align-items: center;
   }
+}
+
+.li-image--JS {
+  list-style-image: url('../img/javascript.png');
+}
+.li-image--CSS {
+  list-style-image: url('../img/css-logo.png');
+}
+.li-image--NODE {
+  list-style-image: url('../img/nodejs.png');
+}
+.li-image--GULP {
+  list-style-image: url('../img/cup.png');
+}
+.li-image--GNEWS {
+  list-style-image: url('../img/g.png');
 }
 
 // ----- CARD DESIGN LINES ----- //
