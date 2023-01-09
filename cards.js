@@ -37,7 +37,6 @@ let i = 0;
 
 // Event Listeners
 heartCard.addEventListener('click', function (e) {
-  i++;
   let heartCoordinatesX = e.offsetX;
   let heartCoordinatesY = e.offsetY;
   let heartPop = document.createElement('div');
