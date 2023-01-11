@@ -52,6 +52,7 @@
   }
   @include respond(break-600) {
     font-size: 4rem;
+    margin: 2rem 0;
   }
 }
 
@@ -61,7 +62,7 @@
   @include respond(break-1000) {
     @include center_flex_column;
     > * {
-      margin: 2rem 0;
+      margin: 1rem 0;
     }
   }
 }
@@ -71,7 +72,7 @@
   font-weight: 300;
   padding-right: 1rem;
   @include respond(break-1000) {
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 }
 
@@ -82,6 +83,7 @@
   border-left: 1px solid $color-black;
   @include respond(break-1000) {
     width: 80%;
+    font-size: 1.5rem;
   }
 }
 
@@ -97,6 +99,9 @@
   //Hover Effect
   transition: transform 0.1s;
   transform: translateY(0);
+  @include respond(break-1000) {
+    margin: 2rem 0 1rem;
+  }
   &:hover {
     transform: translateY(-2px);
   }
@@ -110,7 +115,6 @@
   overflow: hidden;
   color: $color-cream;
   cursor: pointer;
-
   //Animated Line -- Change the percentages to adjust the line thickness
   // animation: accentLine 3s infinite reverse;
   mask: linear-gradient(150deg, #fff 50%, rgba(0, 0, 0, 0.5), #fff 55%)

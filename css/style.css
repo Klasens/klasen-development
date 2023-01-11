@@ -262,8 +262,44 @@ h2 {
   .gridCard-universal:hover {
     transform: scale(1); }
 
-.contentCard-universal > * {
-  margin: 1rem 0; }
+.contentCard-universal {
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+  .contentCard-universal > * {
+    margin: 1rem 0; }
+  @media (max-width: 53.125em) {
+    .contentCard-universal {
+      padding: 1rem; } }
 
 .cardChocolate-tag {
   font-size: 1.2rem;
@@ -287,7 +323,7 @@ h2 {
   color: white; }
 
 .cardChocolate-text {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: white; }
 
 .cardChocolate-btn {
@@ -322,11 +358,14 @@ h2 {
 
 .cardCream-h3 {
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 300;
   font-family: 'Chakra Petch', sans-serif; }
 
 .cardCream-text {
-  font-size: 1.8rem; }
+  font-size: 1.6rem; }
+
+.cardCream-ul > li:not(:first-child) {
+  margin-top: 0.25rem; }
 
 .cardCream-link {
   color: #0000ee; }
@@ -649,7 +688,8 @@ h2 {
       font-size: 5rem; } }
   @media (max-width: 37.5em) {
     .card_header-mainHead {
-      font-size: 4rem; } }
+      font-size: 4rem;
+      margin: 2rem 0; } }
 
 .card_header-wrapper {
   display: flex;
@@ -695,7 +735,7 @@ h2 {
       justify-content: center;
       align-items: center; }
       .card_header-wrapper > * {
-        margin: 2rem 0; } }
+        margin: 1rem 0; } }
 
 .card_header-subHead {
   font-size: 4rem;
@@ -735,7 +775,7 @@ h2 {
    *=============================================**/ }
   @media (max-width: 62.5em) {
     .card_header-subHead {
-      font-size: 3rem; } }
+      font-size: 2.75rem; } }
 
 .card_header-text {
   font-size: 1.7rem;
@@ -776,7 +816,8 @@ h2 {
    *=============================================**/ }
   @media (max-width: 62.5em) {
     .card_header-text {
-      width: 80%; } }
+      width: 80%;
+      font-size: 1.5rem; } }
 
 .card_header-btn--wrapper {
   background-color: #333333;
@@ -787,7 +828,42 @@ h2 {
   cursor: pointer;
   padding: 1rem 2.2rem;
   transition: transform 0.1s;
-  transform: translateY(0); }
+  transform: translateY(0);
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+  @media (max-width: 62.5em) {
+    .card_header-btn--wrapper {
+      margin: 2rem 0 1rem; } }
   .card_header-btn--wrapper:hover {
     transform: translateY(-2px); }
 
@@ -1146,7 +1222,7 @@ h2 {
     margin-bottom: 1rem; }
   .card-form--label {
     display: block;
-    font-size: 1.8rem; }
+    font-size: 1.6rem; }
   .card-form--inputName {
     border: 1px solid #433e3c;
     height: 2.5rem;

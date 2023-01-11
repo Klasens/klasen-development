@@ -17,10 +17,10 @@ $fontSize--h3: 3rem;
 
 $fontSize--h4: 2rem;
 $fontWeight--h2: 300;
-$fontWeight--h3: bold;
+$fontWeight--h3: 300;
 
 // -- text --
-$fontSize--text: 1.8rem;
+$fontSize--text: 1.6rem;
 // -- li --
 $fontSize--li: 1.8rem;
 // -- btn --
@@ -44,6 +44,9 @@ $borderRadius--btn: 2rem;
   //All children of main content cards have margin-top 2rem (excludes header and footer cards)
   & > * {
     margin: 1rem 0;
+  }
+  @include respond(break-850) {
+    padding: 1rem;
   }
 }
 
@@ -122,6 +125,9 @@ $borderRadius--btn: 2rem;
     font-size: $fontSize--text;
   }
   &-ul {
+    & > li:not(:first-child) {
+      margin-top: 0.25rem;
+    }
   }
   &-link {
     color: $color-link;
