@@ -45,9 +45,6 @@ $borderRadius--btn: 2rem;
   & > * {
     margin: 1rem 0;
   }
-  @include respond(break-850) {
-    padding: 1rem;
-  }
 }
 
 // ----- UNIVERSAL CARD CHOCOLATE STYLES ----- //
@@ -115,11 +112,17 @@ $borderRadius--btn: 2rem;
     font-size: $fontSize--h2;
     font-weight: $fontWeight--h2;
     text-align: center;
+    @include respond(break-850) {
+      font-size: 2.5rem;
+    }
   }
   &-h3 {
     font-size: $fontSize--h3;
     font-weight: $fontWeight--h3;
     font-family: 'Chakra Petch', sans-serif;
+    @include respond(break-850) {
+      font-size: 2.25rem;
+    }
   }
   &-text {
     font-size: $fontSize--text;
