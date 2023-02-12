@@ -583,3 +583,9 @@ span {
 
 .u--overflow--hidden {
   overflow: hidden; }
+
+.u--display--none {
+  display: none; }
+  @media (max-width: 37.5em) {
+    .u--display--none {
+      display: block; } }

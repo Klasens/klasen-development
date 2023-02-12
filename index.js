@@ -3,11 +3,12 @@
 const scrollTag = document.querySelector('.card__tag');
 const tagContent = document.querySelector('#founder');
 const scrollResume = document.querySelector('#resume');
-const resumeContent = document.querySelector('.modal');
+const resumeContent = document.querySelector('#resumeAdhoc');
 const overlay = document.querySelector('.overlay');
 const modal = document.querySelector('.modal');
 const modalClose = document.querySelector('.modal__close');
 const body = document.querySelector('.u--center');
+const primary = document.querySelector('#primary');
 
 modalClose.addEventListener('click', function (e) {
   e.preventDefault();
@@ -18,6 +19,7 @@ modalClose.addEventListener('click', function (e) {
   modal.classList.add('u--pointer-events--none');
   modalClose.classList.remove('u--opacity--1');
   modalClose.classList.add('u--pointer-events--none');
+  primary.scrollIntoView({ block: 'start', behavior: 'smooth' });
 });
 
 scrollResume.addEventListener('click', function (e) {

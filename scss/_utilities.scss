@@ -53,3 +53,10 @@
 .u--overflow--hidden {
   overflow: hidden;
 }
+
+.u--display--none {
+  display: none;
+  @include respond(break-600) {
+    display: block;
+  }
+}
