@@ -1,0 +1,123 @@
+/**=======================================================================================================================
+ **                                                   CARD 
+ *=======================================================================================================================**/
+
+// ------ BASE CARD ------ //
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 15px;
+  background-color: $color-primary;
+  border: 2px solid $color-white;
+  color: $color-black;
+
+  // -- TAG -- //
+  &__tag {
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    background-color: $color-orange;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+  }
+  // -- FIGMA -- //
+  &__figma {
+    color: $color-link;
+    position: absolute;
+    &--header {
+      bottom: 1rem;
+      right: 1rem;
+    }
+  }
+  // -- DESCRIPTION -- //
+  &__description {
+    &--secondary {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  // -- HEAD -- //
+  &__head {
+    &--picture {
+      position: absolute;
+      padding: 0 1rem;
+      border-radius: 10px;
+      background-color: $color-picture-header;
+      top: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  // -- ABOUT -- //
+  &__about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--separator {
+      height: 100%;
+      width: 2px;
+      background-color: $color-black;
+      margin: 0 1.5rem;
+    }
+  }
+
+  // -- SOCIALS -- //
+  &__socials {
+    display: flex;
+    & > a:not(:first-child) {
+      margin-left: 2rem;
+    }
+  }
+  // -- TEXT -- //
+  &__text {
+    &--founder {
+      width: 75%;
+    }
+    &--contact {
+      width: 95%;
+    }
+    &--header {
+      width: 45%;
+    }
+    &--primary {
+      width: 85%;
+      margin: 0 auto;
+    }
+  }
+
+  // -- DESIGN LINE -- //
+  &__design-line {
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background-color: $color-orange;
+    top: 50%;
+    transform: translateY(-50%);
+    &--left {
+      left: 1.5rem;
+    }
+    &--right {
+      right: 1.5rem;
+    }
+  }
+}
+
+// ------ PICTURE CARD ------ //
+.card--picture {
+  position: relative;
+  background-image: url('/img/rob.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $color-white;
+}
+// ------ FOUNDER CARD ------ //
+.card--founder {
+  background-color: $color-founder;
+  color: $color-white;
+}

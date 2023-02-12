@@ -58,212 +58,225 @@
 
   <!-------------------------------- HTML ------------------------------>
 
-  <body class="grid_container">
-    <div class="modal-cover pointerEvents-none"></div>
-    <span class="modal-close pointerEvents-none">
-      <div class="line-1"></div>
-      <div class="line-2"></div>
-    </span>
-    <div class="resume-modal pointerEvents-none" id="adobe-dc-view"></div>
-    <section class="grid">
-      <!--====== HEADER ======-->
-      <div class="card_header">
-        <div class="card_header-contentContainer">
-          <span class="cardCream-tag card_header-tag">2023</span>
-          <h1 class="card_header-mainHead">Klasen Development</h1>
-          <div class="card_header-wrapper">
-            <h3 class="card_header-subHead">About</h3>
-            <p class="card_header-text">
-              A portfolio of client websites and personal projects. To contact
-              me, click the button to visit my Linkedin Profile or scroll to the
-              contact card below.
-            </p>
-          </div>
-          <button class="card_header-btn--wrapper">
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/rob-klasen-956065a2/"
-              class="card_header-btn"
-            >
-              LinkedIn
-            </a>
-          </button>
-        </div>
-      </div>
-      <div class="card_founder gridCard-universal" id="cardFounder">
-        <div class="designLine-right borderColorOrange"></div>
-        <div class="designLine-left borderColorOrange"></div>
-        <div class="card_founder-contentContainer contentCard-universal">
-          <span class="cardChocolate-tag card_founder-tag">
-            Portfolio Founder
-          </span>
-          <h2 class="cardChocolate-h2">Robert Klasen</h2>
-          <h3 class="cardChocolate-h3">Frontend Developer</h3>
-          <h4 class="cardChocolate-h4">JavaScript, Node, CSS</h4>
-          <p class="cardChocolate-text">
-            Robert is the founder of Klasen Development &mdash; Rob is based out
-            of Green Bay, WI.
-          </p>
-          <div class="cardChocolate-socials">
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/rob-klasen-956065a2/"
-            >
-              <img src="./img/linkedin.png" alt="" class="card_founder-icon" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="card_smile gridCard-universal" id="cardHeart">
-        <div
-          class="designLine-right borderColorOrange displayNone-mobile"
-        ></div>
-        <div class="designLine-left borderColorOrange displayNone-mobile"></div>
-        <div class="card_smile-contentContainer">
-          <button class="resume-btn">View Resume</button>
-        </div>
-      </div>
+  <body class="u--background-color--secondary u--center">
+    <main class="grid grid--main main-font" id="gridMain">
+      <!-- Block Content -->
+      
+      <!-- HEADER CARD -->
+      <div class="card" id="header">
+  <span class="card__tag">2023</span>
+  <h1 class="head--main">Klasen Development</h1>
+  <div class="card__about">
+    <h5 class="head--about">About</h5>
+    <div class="card__about--separator"></div>
+    <p class="card__text--header text--header">
+      Code solves problems. Whether it's the author sidestepping the rigidity of
+      the publishing industry or the entrepreneur mining value from new ideas,
+      code opens up the possibilities.
+    </p>
+  </div>
+  <a
+    target="_blank"
+    href="https://www.figma.com/file/qudyUinSbAJFqFHJGodM8B/Klasen-Development-Architecture?node-id=176%3A2&t=3CnT6Mtpwqi32nQH-1"
+    class="card__figma card__figma--header"
+  >
+    Look at the Figma Design for this site...
+  </a>
+</div>
 
-      <div class="card_form gridCard-universal" id="cardForm">
-        <div class="card_form-contentContainer">
-          <span class="cardCream-tag card_form-tag">Form</span>
-          <h2 class="cardCream-h2">Contact Me</h2>
-          <form
-            action="https://formsubmit.co/ab03273a7ef34e2dfcb290903ffb6723"
-            method="POST"
-            class="card-form"
-          >
-            <label class="card-form--label" for="fullName">Name</label>
-            <input class="card-form--inputName" type="text" name="fullName" />
-            <label class="card-form--label" for="email">Email</label>
-            <input class="card-form--email" type="text" name="email" />
-            <label class="card-form--label" for="message">Message</label>
-            <textarea
-              class="card-form--inputMessage"
-              type="text"
-              name="message"
-            ></textarea>
-            <button class="cardCream-btn">Submit</button>
-          </form>
-        </div>
-      </div>
-      <div class="card_app gridCard-universal">
-        <div class="card_app-contentContainer contentCard-universal">
-          <span class="cardCream-tag card_app-tag">App</span>
-          <div class="card-iconContainer">
-            <img
-              class="card-icon"
-              src="./img/newspaper.png"
-              alt="newspaper-image https://iconscout.com/"
-            />
-          </div>
-          <h2 class="cardCream-h2">Newsify.work</h2>
-          <p class="cardCream-text">
-            A functional app that uses the GNews public API to aggregate and
-            display news articles by keyword search
-          </p>
-          <h3 class="cardCream-h3">Tech Stack:</h3>
-          <ul class="cardCream-ul">
-            <li class="cardCream-li li-image--JS">JavaScript</li>
-            <li class="cardCream-li li-image--CSS">CSS (Sass)</li>
-            <li class="cardCream-li li-image--NODE">Node.js (Express)</li>
-            <li class="cardCream-li li-image--GNEWS cardCream-link">
-              <a target="_blank" href="https://gnews.io/">
-                GNews API (Documentation)
-              </a>
-            </li>
-          </ul>
-          <div class="cardCream-mobile">
-            <p class="cardCream-text">Responsive Break Points:</p>
-            <p class="cardCream-text">600px / 1250px / >1600px</p>
-          </div>
+      <!-- FOUNDER CARD -->
+      <div class="card card--founder" id="founder">
+  <h4 class="head__founder--main">Robert Klasen</h4>
+  <h4 class="head__founder--secondary">Full Stack Developer</h4>
+  <div class="head--sub">Node, JavaScript, CSS</div>
+  <p class="card__text--founder text">
+    Robert is the founder of Klasen Development — Rob is based out of Green Bay,
+    WI.
+  </p>
+  <button class="btn btn--white" id="resume">View Resume</button>
+  <div class="card__socials">
+    <a href="https://www.linkedin.com/in/robertklasen/">
+      <img src="img/linkedIn.png" alt="" class="img--socials" />
+    </a>
+    <a href="https://github.com/Klasens">
+      <img src="img/github.png" alt="" class="img--socials" />
+    </a>
+  </div>
+  <div class="card__design-line card__design-line--left"></div>
+  <div class="card__design-line card__design-line--right"></div>
+</div>
 
-          <a target="_blank" href="https://newsify.work/" class="cardCream-btn">
-            Try It
-          </a>
-        </div>
+      <!-- PICTURE CARD -->
+      <div class="card card--picture" id="picture">
+  <h4 class="head--picture card__head--picture">Rob</h4>
+</div>
+
+      <!-- CONTACT CARD -->
+      <div class="card" id="contact">
+  <h4 class="head--main">Contact Me</h4>
+  <div class="head--sub">Questions Ideas, Projects?</div>
+  <p class="card__text--contact text">
+    I'm a creative thinker, and I'm here to help.
+  </p>
+  <form action="" class="form">
+    <div class="form__block">
+      <label for="Name" class="form__label">Name</label>
+      <input
+        type="text"
+        class="form__input form__input--standard"
+        name="Name"
+      />
+    </div>
+    <div class="form__block">
+      <label for="Email" class="form__label">Email</label>
+      <input
+        type="text"
+        class="form__input form__input--standard"
+        name="Email"
+      />
+    </div>
+    <div class="form__block">
+      <label for="Message" class="form__label">Message</label>
+      <textarea
+        type="text"
+        class="form__input form__input--message"
+        name="Message"
+      ></textarea>
+    </div>
+  </form>
+</div>
+
+      <!-- PRIMARY CARD -->
+      <div class="card card__primary" id="primary">
+  <h2 class="head--main">Newsify.work</h2>
+  <div class="grid grid--primary" id="gridPrimary">
+    <div class="u--flex-col--center" id="logoPrimary">
+      <img src="/img/newsifyLogo.png" alt="" class="img--logo" />
+      <a target="_blank" href="https://www.newsify.work">
+        <button class="btn btn--transparent u--margin-top">
+          Go To Site &rarr;
+        </button>
+      </a>
+    </div>
+    <img
+      src="/img/newsifyDemo.png"
+      alt=""
+      class="img--demo img--demo--primary"
+      id="imgPrimary"
+    />
+    <div
+      class="card__description card__description--primary u--flex-col"
+      id="descriptionPrimary"
+    >
+      <div class="u--flex-col">
+        <h5 class="head--mini u--margin-bottom">Description</h5>
+        <p class="card__text--primary text text--description">
+          Newsify is a full-stack news aggregation REST API that collects and
+          displays news articles from over 60,000 sources. Utilizing the GNews
+          API, users can search, bookmark, and query articles with a variety of
+          search parameters.
+        </p>
       </div>
-      <div class="card_freelance gridCard-universal">
-        <div class="card_freelance-contentContainer contentCard-universal">
-          <span class="cardCream-tag card_freelance-tag">Freelance</span>
-          <div class="card-iconContainer">
-            <img
-              class="card-icon"
-              src="./img/pencil.png"
-              alt="pencil-image https://iconscout.com/"
-            />
-          </div>
-          <h2 class="cardCream-h2">Maxamillennial.org</h2>
-          <p class="cardCream-text">
-            An author's portfolio of fiction and non-fiction work that merges
-            web-design and written content
-          </p>
-          <h3 class="cardCream-h3">Tech Stack:</h3>
-          <ul class="cardCream-ul">
-            <li class="cardCream-li li-image--JS">JavaScript</li>
-            <li class="cardCream-li li-image--CSS">CSS (Sass)</li>
-            <li class="cardCream-li li-image--GULP">Gulp.js (Nunjucks)</li>
-          </ul>
-          <div class="cardCream-mobile">
-            <p class="cardCream-text">Responsive Break Points:</p>
-            <p class="cardCream-text">850px / 1400px / >1600px</p>
-          </div>
-          <a
-            target="_blank"
-            href="https://maxamillennial.org"
-            class="cardCream-btn"
-          >
-            View
-          </a>
-        </div>
+      <div class="u--flex-col u--margin-top">
+        <h5 class="head--mini u--margin-bottom">Tech Stack</h5>
+        <ul class="list">
+          <li class="list-item">Node.js (Express)</li>
+          <li class="list-item">Javascript</li>
+          <li class="list-item">CSS (Sass)</li>
+          <li class="list-item">MongoDB</li>
+          <li class="list-item">GNews Api (Documentation)</li>
+          <li class="list-item">PUG (Server Side Rendering)</li>
+        </ul>
       </div>
-      <div class="card_freelance gridCard-universal">
-        <div class="card_freelance-contentContainer contentCard-universal">
-          <span class="cardCream-tag card_freelance-tag">Freelance</span>
-          <div class="card-iconContainer">
-            <img
-              class="card-icon"
-              src="./img/piano.png"
-              alt="piano-image https://iconscout.com/"
-            />
-          </div>
-          <h2 class="cardCream-h2">sambodhimusic.com</h2>
-          <p class="cardCream-text">
-            A musician's web-portfolio that presents tour dates, music samples,
-            and contact information
-          </p>
-          <h3 class="cardCream-h3">Tech Stack:</h3>
-          <ul class="cardCream-ul">
-            <li class="cardCream-li li-image--JS">JavaScript</li>
-            <li class="cardCream-li li-image--CSS">CSS (Sass)</li>
-          </ul>
-          <div class="cardCream-mobile">
-            <p class="cardCream-text">Responsive Break Points:</p>
-            <p class="cardCream-text">850px / >1600px</p>
-          </div>
-          <a
-            target="_blank"
-            href="https://sambodhimusic.com/"
-            class="cardCream-btn"
-          >
-            View
-          </a>
-        </div>
+    </div>
+  </div>
+</div>
+
+      <!-- SECONDARY CARD -->
+      <div class="card" id="secondary">
+  <h3 class="head--secondary">Maxamillennial.org</h3>
+  <div class="grid grid--secondary" id="gridSecondary">
+    <img
+      src="/img/maxamillennialDemo.png"
+      alt=""
+      class="img--demo img--demo--secondary"
+      id="imgSecondary"
+    />
+    <div
+      class="card__description card__description--secondary u--flex-col"
+      id="descriptionSecondary"
+    >
+      <img src="/img/pencil.png" alt="" class="img--card" />
+      <div class="u--flex-col">
+        <h5 class="head__description--secondary u--margin-bottom">
+          Description
+        </h5>
+        <p class="card__text--primary text text--description">
+          Maxamillennial.org is an author’s portfolio of written fiction and
+          non-fiction. The written work is paired with pictures from a local
+          Milwaukee photographer.
+        </p>
       </div>
-      <!--====== FOOTER ======-->
-      <div class="card_footer" id="mainFooter">
-        <div class="card_footer-contentContainer">
-          <p class="card_footer-location">Green Bay, WI</p>
-          <p class="card_footer-author">Rob Klasen</p>
-          <p class="card_footer-location">Klasen Development LLC</p>
-        </div>
+      <div class="u--flex-col u--margin-top">
+        <h5 class="head__description--secondary u--margin-bottom">
+          Tech Stack
+        </h5>
+        <ul class="list">
+          <li class="list-item">Javascript</li>
+          <li class="list-item">CSS (Sass)</li>
+          <li class="list-item">Gulp (HTML Templating)</li>
+        </ul>
       </div>
-    </section>
+      <a
+        target="_blank"
+        class="u--margin-auto"
+        href="https://maxamillennial.org"
+      >
+        <button class="btn btn--transparent u--margin-top">
+          Go To Site &rarr;
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
+
+      <!-- TERTIARY CARD -->
+      <div class="card" id="tertiary">
+  <h3 class="head--tertiary">Sambodhimusic.com</h3>
+  <div class="u--flex-col">
+    <img src="/img/music-note.png" alt="" class="img--card" />
+    <div class="u--flex-col">
+      <h5 class="head__description--secondary u--margin-bottom">Description</h5>
+      <p class="card__text--primary text text--description">
+        Sam Bodhi is the stage name of a local Green Bay jazz musician. This
+        website serves as a music portfolio and helps represent Bodhi’s music to
+        venues.
+      </p>
+    </div>
+    <div class="u--flex-col u--margin-top">
+      <h5 class="head__description--secondary u--margin-bottom">Tech Stack</h5>
+      <ul class="list">
+        <li class="list-item">Javascript</li>
+        <li class="list-item">CSS (Sass)</li>
+        <li class="list-item">Gulp (HTML Templating)</li>
+      </ul>
+    </div>
+    <a target="_blank" class="u--margin-auto" href="https://sambodhimusic.com">
+      <button class="btn btn--transparent u--margin-top">
+        Go To Site &rarr;
+      </button>
+    </a>
+  </div>
+</div>
+
+      <!-- FOOTER CARD -->
+      <div class="card" id="footer"></div>
+
+      <!-- Endblock -->
+      
+    </main>
     <!------- JAVASCRIPT ------->
 
-    <script src="script.js"></script>
-    <script src="cards.js"></script>
-    <script src="smoothScroll.js"></script>
     <script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
     <script type="text/javascript">
       document.addEventListener('adobe_dc_view_sdk.ready', function () {

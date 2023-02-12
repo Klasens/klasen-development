@@ -1,0 +1,91 @@
+/**=======================================================================================================================
+ **                                                   GRID 
+ *=======================================================================================================================**/
+
+.grid {
+  display: grid;
+
+  &--main {
+    margin: 5rem 0;
+    width: 80rem;
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 10rem;
+  }
+  &--primary {
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+  }
+  &--secondary {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+}
+
+#gridMain {
+  grid-template-areas:
+    'header header header'
+    'header header header'
+    'header header header'
+    'header header header'
+    'founder picture contact'
+    'founder picture contact'
+    'founder picture contact'
+    'primary primary primary'
+    'primary primary primary'
+    'primary primary primary'
+    'secondary secondary tertiary'
+    'secondary secondary tertiary'
+    'secondary secondary tertiary'
+    'footer footer footer';
+}
+
+#header {
+  grid-area: header;
+}
+#founder {
+  grid-area: founder;
+}
+#picture {
+  grid-area: picture;
+}
+#contact {
+  grid-area: contact;
+}
+#primary {
+  grid-area: primary;
+}
+#secondary {
+  grid-area: secondary;
+}
+#tertiary {
+  grid-area: tertiary;
+}
+#footer {
+  grid-area: footer;
+}
+
+#gridPrimary {
+  grid-template-areas: 'logo img description';
+}
+
+#logoPrimary {
+  grid-area: logo;
+}
+#imgPrimary {
+  grid-area: img;
+}
+#descriptionPrimary {
+  grid-area: description;
+}
+
+#gridSecondary {
+  grid-template-areas: 'img description';
+}
+
+#imgSecondary {
+  grid-area: img;
+}
+#descriptionSecondary {
+  grid-area: description;
+}

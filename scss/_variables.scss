@@ -1,62 +1,28 @@
 /**========================================================================
- *                           VARIABLES
+ **                           VARIABLES
  *========================================================================**/
 
 /**======================
    *      Brand Colors
    *========================**/
 
-$color-cream: rgb(255, 209, 170);
-$color-aqua: rgb(42, 78, 110);
-$color-chocolate: rgb(67, 62, 60);
+$color-primary: rgb(255, 209, 170); // #ffd1aa Cream
+$color-secondary: rgb(42, 78, 110); // #2a4e6e Aqua
 
 /**======================
    *      Primary
    *========================**/
+
 $color-white: rgb(255, 255, 255);
-$color-off-white: rgb(233, 233, 233);
-$color-off-white-2: rgb(240, 231, 228);
-$color-gray: rgb(150, 150, 150);
-$color-dark-gray: rgb(73, 73, 73);
-$color-gray-boxShadow: rgb(100, 100, 100);
-$color-gray-silver: rgb(146, 145, 151);
-$color-light-chocolate: rgb(84, 76, 73);
-$color-black: rgb(51, 51, 51);
+$color-black: rgb(0, 0, 0);
 $color-orange: rgb(255, 145, 0);
-$color-red: rgb(252, 59, 59);
-$color-dark-cream: rgb(199, 190, 186);
-$color-light-purple: rgb(216, 174, 253);
-$color-purple: rgb(233, 115, 251);
-$color-dark-purple: rgb(50, 43, 102);
-$color-light-green: rgb(86, 210, 112);
-$color-dark-green: rgb(17, 54, 25);
-$color-yellow: rgb(253, 228, 64);
-$color-brown: rgb(46, 41, 9);
-$color-light-red: rgb(248, 133, 133);
-$color-blue: rgb(115, 176, 251);
-$color-teal: rgb(95, 255, 234);
-
-$color-nav-gray: rgb(90, 90, 90);
-$color-nav-gray-light: rgb(125, 125, 125);
-$color-nav-gray-dark: rgb(70, 70, 70);
-/**======================
-   *     Opaques 
-   *========================**/
-
-$color-chocolate-opaque: rgba(67, 62, 60, 0.5);
-$color-chocolate-opaque-2: rgba(67, 62, 60, 0.8);
-$color-orange-opaque: rgba(255, 145, 0, 0.5);
-$color-teal-opaque: rgba(47, 193, 250, 0.2);
 
 /**======================
-   *      Links
+   *     Page Specific 
    *========================**/
 
-$color-link: rgb(0, 0, 238);
-$color-link-visited: rgb(85, 26, 139);
-
-/**======================
-   *     Font List 
-   *========================**/
-
-$fontFamily-spaceMono: 'Space Mono', monospace;
+$color-founder: rgb(62, 114, 160);
+$color-modal-overlay: rgb(52, 52, 52);
+$color-modal-border: rgb(255, 0, 0);
+$color-picture-header: rgba(42, 78, 110, 0.55);
+$color-link: rgb(0, 119, 255);

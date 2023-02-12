@@ -5,28 +5,13 @@
 //BASE
 @import 'variables';
 @import 'media-breakpoints';
-@import 'mixins';
-@import 'animations';
 @import 'base';
+@import 'typography';
+@import 'img';
 
-//GRID
-@import 'mainGrid';
+@import 'grid';
+@import 'components';
+@import 'form';
+@import 'cards';
 
-//CARDS
-@import 'card_universal';
-@import 'card_header';
-@import 'card_footer';
-@import 'card_founder';
-@import 'card_smile';
-@import 'card_form';
-@import 'card_milestone';
-@import 'card_nonfiction';
-@import 'card_fiction';
-@import 'card_freelance';
-@import 'card_app';
-@import 'card_clock';
-@import 'resume-modal';
-
-@import 'articleTemplate';
-@import 'articleBackgrounds';
-@import 'flipGrid';
+@import 'utilities';

@@ -1,93 +1,37 @@
 /**========================================================================
- *                           MEDIA BREAKPOINTS
+ **                           MEDIA BREAKPOINTS
  *========================================================================**/
+/*
+*Breakpoints:
+- Mobile 600px
+- Tablet Portrait 900px
+- Tablet Landscape 1200px
+- Televisions/Projectors >1800px 
+*/
 
 @mixin respond($breakpoint) {
-  /**============================================
-   *             Mobile Small - 600
-@include respond(break-600) {}
-   *=============================================**/
-
+  // Mobile - 600px @include respond(break-600) {}
   @if $breakpoint == break-600 {
     @media (max-width: 37.5em) {
       @content;
-    } //600px
+    }
   }
-
-  /**============================================
-   *             Mobile Large - 850
-@include respond(break-850) {}
-   *=============================================**/
-
-  @if $breakpoint == break-850 {
-    @media (max-width: 53.125em) {
+  // Tablet Portrait - 900 @include respond(break- 900) {}
+  @if $breakpoint == break-900 {
+    @media (max-width: 56.25em) {
       @content;
-    } //850px
+    }
   }
-
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-1000) {}
-   *=============================================**/
-
-  @if $breakpoint == break-1000 {
-    @media (max-width: 62.5em) {
-      @content;
-    } //1000px
-  }
-
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-1000) {}
-   *=============================================**/
-
-  @if $breakpoint == break-1000-greater {
-    @media (min-width: 62.5em) {
-      @content;
-    } //1000px
-  }
-
-  /**============================================
-   *                Monitor Small - 1200
-   @include respond(break-1200) {}
-   *=============================================**/
-
+  // Tablet Landscape - 1200 @include respond(break-1200) {}
   @if $breakpoint == break-1200 {
     @media (max-width: 75em) {
       @content;
-    } //1200px
+    }
   }
-
-  /**============================================
-   *                Monitor Medium - 1400
-   @include respond(break-1400) {}
-   *=============================================**/
-
-  @if $breakpoint == break-1400 {
-    @media (max-width: 87.5em) {
-      @content;
-    } //1400px
-  }
-
-  /**============================================
-   *                Monitor Medium - 1400
-   @include respond(break-1600) {}
-   *=============================================**/
-
-  @if $breakpoint == break-1600 {
-    @media (max-width: 100em) {
-      @content;
-    } //1600px
-  }
-
-  /**============================================
-   *                Telvision/Projector > 1800
-   @include respond(break-1800) {}
-   *=============================================**/
-
+  // Telvision/Projector > 1800 @include respond(break-1800) {}
   @if $breakpoint == break-1800 {
     @media (min-width: 112.5em) {
       @content;
-    } //1800px
+    }
   }
 }

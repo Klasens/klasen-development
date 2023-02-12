@@ -1,0 +1,76 @@
+/**=======================================================================================================================
+ **                                                   TYPOGRAPHY 
+ *=======================================================================================================================**/
+
+.main-font {
+  font-family: 'Roboto';
+}
+
+.head {
+  &__founder {
+    &--main {
+    }
+    &--secondary {
+      font-size: 2.2rem;
+    }
+  }
+  &__description {
+    &--secondary {
+      font-size: 2.2rem;
+    }
+  }
+  &--sub {
+    font-size: 2rem;
+  }
+  &--picture {
+    font-size: 2rem;
+  }
+  &--about {
+    text-decoration: none;
+  }
+  &--tertiary {
+    font-size: 2rem;
+  }
+}
+
+.text {
+  font-size: 1.5rem;
+  &--header {
+    font-size: 1.2rem;
+  }
+  &--description {
+    font-size: 1.2rem;
+  }
+}
+
+h1 {
+  font-size: 10rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+h2 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+h4 {
+  font-size: 3rem;
+}
+h5 {
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: underline;
+}
+h6 {
+}
+
+button {
+  font-size: 1.2rem;
+}
+
+span {
+  font-size: 1.4rem;
+}

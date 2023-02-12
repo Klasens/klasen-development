@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Klasen Development LLC</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--====== FONT AWESOME ======-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
+    />
+
+    <!--====== GOOGLE FONTS ======-->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <!-- BASE FONTS ======-->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- PAGE FONTS ======-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap"
+      rel="stylesheet"
+    />
+    <!--====== STYLE SHEETS ======-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--====== SMARTLOOK ANALYTICS ======-->
+    <script type="text/javascript">
+      window.smartlook ||
+        (function (d) {
+          var o = (smartlook = function () {
+              o.api.push(arguments);
+            }),
+            h = d.getElementsByTagName('head')[0];
+          var c = d.createElement('script');
+          o.api = new Array();
+          c.async = true;
+          c.type = 'text/javascript';
+          c.charset = 'utf-8';
+          c.src = 'https://web-sdk.smartlook.com/recorder.js';
+          h.appendChild(c);
+        })(document);
+      smartlook('init', '054e9bf8976a99056ed9ed35838f67677116d8d1', {
+        region: 'eu',
+      });
+    </script>
+  </head>
+
+  <!-------------------------------- HTML ------------------------------>
+
+  <body class="u--background-color--secondary u--center">
+    <main class="grid grid--main main-font" id="gridMain">
+      <!-- Block Content -->
+      {% block content %}
+      <!-- HEADER CARD -->
+      {% include "header.html" %}
+      <!-- FOUNDER CARD -->
+      {% include "founder.html" %}
+      <!-- PICTURE CARD -->
+      {% include "picture.html" %}
+      <!-- CONTACT CARD -->
+      {% include "contact.html" %}
+      <!-- PRIMARY CARD -->
+      {% include "primary.html" %}
+      <!-- SECONDARY CARD -->
+      {% include "secondary.html" %}
+      <!-- TERTIARY CARD -->
+      {% include "tertiary.html" %}
+      <!-- FOOTER CARD -->
+      {% include "footer.html" %}
+      <!-- Endblock -->
+      {% endblock %}
+    </main>
+    <!------- JAVASCRIPT ------->
+
+    <script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
+    <script type="text/javascript">
+      document.addEventListener('adobe_dc_view_sdk.ready', function () {
+        var adobeDCView = new AdobeDC.View({
+          clientId: '7511145e062e480da1ab41fa3b92fb9c',
+          divId: 'adobe-dc-view',
+        });
+        adobeDCView.previewFile(
+          {
+            content: {
+              location: {
+                url: '/img/robert-klasen-resume.pdf',
+              },
+            },
+            metaData: {
+              fileName: 'Robert Klasen Resume',
+              hasReadOnlyAccess: true,
+            },
+          },
+          {
+            embedMode: 'FULL_WINDOW',
+            showZoomControl: true,
+            defaultViewMode: 'FIT_PAGE',
+          }
+        );
+      });
+    </script>
+  </body>
+</html>

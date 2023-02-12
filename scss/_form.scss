@@ -1,0 +1,28 @@
+/**=======================================================================================================================
+ **                                                   FORM 
+ *=======================================================================================================================**/
+
+.form {
+  width: 70%;
+  & > .form__block:not(:first-child) {
+    margin-top: 1rem;
+  }
+  &__block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  &__label {
+  }
+  &__input {
+    background-color: $color-white;
+    border: 1px solid $color-black;
+    border-radius: 5px;
+    &--standard {
+      height: 2.5rem;
+    }
+    &--message {
+      height: 6rem;
+    }
+  }
+}
