@@ -24,6 +24,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   transition: all 0.3s;
+  @include respond(break-600) {
+    display: none;
+  }
   &__close {
     cursor: pointer;
     position: fixed;
@@ -37,6 +40,9 @@
     border-radius: 50%;
     transition: all 0.3s;
     z-index: 10;
+    @include respond(break-600) {
+      display: none;
+    }
   }
 }
 

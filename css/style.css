@@ -380,6 +380,9 @@ span {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: all 0.3s; }
+  @media (max-width: 37.5em) {
+    .modal {
+      display: none; } }
   .modal__close {
     cursor: pointer;
     position: fixed;
@@ -393,6 +396,9 @@ span {
     border-radius: 50%;
     transition: all 0.3s;
     z-index: 10; }
+    @media (max-width: 37.5em) {
+      .modal__close {
+        display: none; } }
 
 .resume {
   overflow: scroll;
