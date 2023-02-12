@@ -11,6 +11,7 @@
 }
 
 .modal {
+  overflow: scroll;
   position: absolute;
   background-color: $color-modal-overlay;
   opacity: 0;
@@ -25,15 +26,17 @@
   transition: all 0.3s;
   &__close {
     cursor: pointer;
-    position: absolute;
+    position: fixed;
+    opacity: 0;
     top: 1rem;
-    right: 1rem;
+    right: 2rem;
     width: 4rem;
     height: 4rem;
     padding: 10px;
     border: 1px solid $color-white;
     border-radius: 50%;
     transition: all 0.3s;
+    z-index: 10;
   }
 }
 

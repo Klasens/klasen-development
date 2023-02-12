@@ -367,6 +367,7 @@ span {
   transition: all 0.3s; }
 
 .modal {
+  overflow: scroll;
   position: absolute;
   background-color: #343434;
   opacity: 0;
@@ -381,15 +382,17 @@ span {
   transition: all 0.3s; }
   .modal__close {
     cursor: pointer;
-    position: absolute;
+    position: fixed;
+    opacity: 0;
     top: 1rem;
-    right: 1rem;
+    right: 2rem;
     width: 4rem;
     height: 4rem;
     padding: 10px;
     border: 1px solid white;
     border-radius: 50%;
-    transition: all 0.3s; }
+    transition: all 0.3s;
+    z-index: 10; }
 
 .resume {
   overflow: scroll;
@@ -571,3 +574,6 @@ span {
 
 .u--opacity--1 {
   opacity: 1; }
+
+.u--overflow--hidden {
+  overflow: hidden; }
