@@ -14,6 +14,10 @@
   border: 2px solid $color-white;
   color: $color-black;
 
+  @include respond(break-600) {
+    overflow: hidden;
+  }
+
   // -- TAG -- //
   &__tag {
     position: absolute;
@@ -120,4 +124,19 @@
 .card--founder {
   background-color: $color-founder;
   color: $color-white;
+}
+
+// ------ FOOTER CARD ------ //
+.card--footer {
+  flex-direction: row;
+}
+.footer__copyright {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+}
+
+.link--footer {
+  text-decoration: none;
+  color: $color-link;
 }
