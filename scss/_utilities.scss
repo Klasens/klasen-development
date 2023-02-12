@@ -26,6 +26,13 @@
 .u--margin-bottom {
   margin-bottom: 1rem;
 }
+.u--margin-bottom--footer {
+  margin-bottom: 1rem;
+  @include respond(break-600) {
+    margin-bottom: 0.25rem;
+    width: 10rem;
+  }
+}
 .u--margin-auto {
   margin: 0 auto;
 }

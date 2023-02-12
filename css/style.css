@@ -206,7 +206,7 @@ span {
     grid-auto-rows: 10rem; }
     @media (max-width: 37.5em) {
       .grid--main {
-        margin: 0 auto;
+        margin: 2.5rem auto;
         width: auto;
         grid-template-columns: 20rem;
         grid-auto-rows: 8rem; } }
@@ -233,7 +233,7 @@ span {
   grid-template-areas: 'header header header' 'header header header' 'header header header' 'header header header' 'founder picture contact' 'founder picture contact' 'founder picture contact' 'primary primary primary' 'primary primary primary' 'primary primary primary' 'secondary secondary tertiary' 'secondary secondary tertiary' 'secondary secondary tertiary' 'footer footer footer'; }
   @media (max-width: 37.5em) {
     #gridMain {
-      grid-template-areas: 'header' 'header' 'header' 'founder' 'founder' 'founder' 'picture' 'picture' 'picture' 'contact' 'contact' 'contact' 'primary' 'primary' 'primary' 'primary' 'secondary' 'secondary' 'secondary' 'tertiary' 'tertiary' 'tertiary' 'footer' 'footer' 'footer'; } }
+      grid-template-areas: 'header' 'header' 'header' 'founder' 'founder' 'founder' 'picture' 'picture' 'picture' 'contact' 'contact' 'contact' 'primary' 'primary' 'primary' 'primary' 'secondary' 'secondary' 'secondary' 'tertiary' 'tertiary' 'tertiary' 'footer' 'footer'; } }
 
 #header {
   grid-area: header; }
@@ -471,8 +471,15 @@ span {
   right: 0.5rem; }
   @media (max-width: 37.5em) {
     .footer__copyright {
-      right: auto;
-      width: 90%; } }
+      display: none; } }
+  .footer__copyright--mobile {
+    display: none;
+    position: absolute;
+    bottom: 0rem;
+    right: 0.5rem; }
+    @media (max-width: 37.5em) {
+      .footer__copyright--mobile {
+        display: block; } }
 
 .link--footer {
   text-decoration: none;
@@ -502,6 +509,13 @@ span {
 
 .u--margin-bottom {
   margin-bottom: 1rem; }
+
+.u--margin-bottom--footer {
+  margin-bottom: 1rem; }
+  @media (max-width: 37.5em) {
+    .u--margin-bottom--footer {
+      margin-bottom: 0.25rem;
+      width: 10rem; } }
 
 .u--margin-auto {
   margin: 0 auto; }

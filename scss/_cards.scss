@@ -157,8 +157,16 @@
   bottom: 0.5rem;
   right: 0.5rem;
   @include respond(break-600) {
-    right: auto;
-    width: 90%;
+    display: none;
+  }
+  &--mobile {
+    display: none;
+    position: absolute;
+    bottom: 0rem;
+    right: 0.5rem;
+    @include respond(break-600) {
+      display: block;
+    }
   }
 }
 
