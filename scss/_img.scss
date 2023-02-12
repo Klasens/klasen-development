@@ -25,6 +25,14 @@
   border: 2px solid $color-black;
   border-radius: 50%;
   object-fit: cover;
+  &--mobile {
+    display: none;
+    max-width: 50%;
+    margin: 0 auto 1rem;
+    @include respond(break-600) {
+      display: block;
+    }
+  }
 }
 
 .img--card {

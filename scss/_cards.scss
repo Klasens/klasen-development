@@ -28,6 +28,9 @@
     background-color: $color-orange;
     padding: 0.5rem 1rem;
     border-radius: 15px;
+    @include respond(break-600) {
+      top: 0.5rem;
+    }
   }
   // -- FIGMA -- //
   &__figma {
@@ -36,6 +39,9 @@
     &--header {
       bottom: 1rem;
       right: 1rem;
+      @include respond(break-600) {
+        display: none;
+      }
     }
   }
   // -- DESCRIPTION -- //
@@ -68,6 +74,14 @@
       width: 2px;
       background-color: $color-black;
       margin: 0 1.5rem;
+      @include respond(break-600) {
+        height: 2px;
+        width: 50%;
+        margin: 0.5rem 0;
+      }
+    }
+    @include respond(break-600) {
+      flex-direction: column;
     }
   }
 
@@ -88,6 +102,10 @@
     }
     &--header {
       width: 45%;
+
+      @include respond(break-600) {
+        width: 85%;
+      }
     }
     &--primary {
       width: 85%;
@@ -129,11 +147,19 @@
 // ------ FOOTER CARD ------ //
 .card--footer {
   flex-direction: row;
+
+  @include respond(break-600) {
+    flex-direction: column;
+  }
 }
 .footer__copyright {
   position: absolute;
   bottom: 0.5rem;
   right: 0.5rem;
+  @include respond(break-600) {
+    right: auto;
+    width: 90%;
+  }
 }
 
 .link--footer {

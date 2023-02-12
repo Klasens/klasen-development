@@ -63,12 +63,21 @@ select {
 
 .head__founder--secondary {
   font-size: 2.2rem; }
+  @media (max-width: 37.5em) {
+    .head__founder--secondary {
+      font-size: 1.5rem; } }
 
 .head__description--secondary {
   font-size: 2.2rem; }
+  @media (max-width: 37.5em) {
+    .head__description--secondary {
+      font-size: 1.8rem; } }
 
 .head--sub {
   font-size: 2rem; }
+  @media (max-width: 37.5em) {
+    .head--sub {
+      font-size: 1.5rem; } }
 
 .head--picture {
   font-size: 2rem; }
@@ -78,34 +87,60 @@ select {
 
 .head--tertiary {
   font-size: 2rem; }
+  @media (max-width: 37.5em) {
+    .head--tertiary {
+      font-size: 1.5rem; } }
 
 .text {
   font-size: 1.5rem; }
+  @media (max-width: 37.5em) {
+    .text {
+      font-size: 1rem; } }
   .text--header {
-    font-size: 1.2rem; }
+    font-size: 1rem; }
   .text--description {
     font-size: 1.2rem; }
+    @media (max-width: 37.5em) {
+      .text--description {
+        font-size: 1rem; } }
 
 h1 {
   font-size: 10rem;
   text-transform: uppercase;
   text-align: center; }
+  @media (max-width: 37.5em) {
+    h1 {
+      margin-top: 1rem;
+      font-size: 2.5rem;
+      line-height: 1.3; } }
 
 h2 {
   font-size: 3.5rem;
   text-transform: uppercase; }
+  @media (max-width: 37.5em) {
+    h2 {
+      font-size: 2.5rem; } }
 
 h3 {
   font-size: 3rem;
   text-transform: uppercase; }
+  @media (max-width: 37.5em) {
+    h3 {
+      font-size: 1.7rem; } }
 
 h4 {
   font-size: 3rem; }
+  @media (max-width: 37.5em) {
+    h4 {
+      font-size: 2rem; } }
 
 h5 {
   font-size: 2.5rem;
   text-align: center;
   text-decoration: underline; }
+  @media (max-width: 37.5em) {
+    h5 {
+      font-size: 1.8rem; } }
 
 h6 {
   font-size: 1.5rem;
@@ -117,6 +152,9 @@ button {
 
 span {
   font-size: 1.4rem; }
+  @media (max-width: 37.5em) {
+    span {
+      font-size: 1rem; } }
 
 /**=======================================================================================================================
  **                                                   IMG 
@@ -142,6 +180,13 @@ span {
   border: 2px solid black;
   border-radius: 50%;
   object-fit: cover; }
+  .img--logo--mobile {
+    display: none;
+    max-width: 50%;
+    margin: 0 auto 1rem; }
+    @media (max-width: 37.5em) {
+      .img--logo--mobile {
+        display: block; } }
 
 .img--card {
   height: 4rem;
@@ -163,23 +208,32 @@ span {
       .grid--main {
         margin: 0 auto;
         width: auto;
-        grid-template-columns: 18rem;
+        grid-template-columns: 20rem;
         grid-auto-rows: 8rem; } }
   .grid--primary {
     grid-template-columns: repeat(3, 1fr);
     place-items: center; }
+    @media (max-width: 37.5em) {
+      .grid--primary {
+        grid-template-columns: 1fr; } }
   .grid--secondary {
     grid-template-columns: repeat(2, 1fr);
     place-items: center; }
+    @media (max-width: 37.5em) {
+      .grid--secondary {
+        grid-template-columns: 1fr; } }
   .grid--footer {
-    grid-template-columns: repeat(2, 1fr);
-    place-items: center; }
+    grid-template-columns: repeat(2, 1fr); }
+    @media (max-width: 37.5em) {
+      .grid--footer {
+        grid-template-columns: 1fr;
+        place-items: start; } }
 
 #gridMain {
   grid-template-areas: 'header header header' 'header header header' 'header header header' 'header header header' 'founder picture contact' 'founder picture contact' 'founder picture contact' 'primary primary primary' 'primary primary primary' 'primary primary primary' 'secondary secondary tertiary' 'secondary secondary tertiary' 'secondary secondary tertiary' 'footer footer footer'; }
   @media (max-width: 37.5em) {
     #gridMain {
-      grid-template-areas: 'header' 'header' 'header' 'header' 'founder' 'founder' 'founder' 'picture' 'picture' 'picture' 'contact' 'contact' 'contact' 'primary' 'primary' 'primary' 'secondary' 'secondary' 'secondary' 'tertiary' 'tertiary' 'tertiary' 'footer' 'footer' 'footer'; } }
+      grid-template-areas: 'header' 'header' 'header' 'founder' 'founder' 'founder' 'picture' 'picture' 'picture' 'contact' 'contact' 'contact' 'primary' 'primary' 'primary' 'primary' 'secondary' 'secondary' 'secondary' 'tertiary' 'tertiary' 'tertiary' 'footer' 'footer' 'footer'; } }
 
 #header {
   grid-area: header; }
@@ -207,27 +261,45 @@ span {
 
 #gridPrimary {
   grid-template-areas: 'logo img description'; }
+  @media (max-width: 37.5em) {
+    #gridPrimary {
+      grid-template-areas: ' description'; } }
 
 #logoPrimary {
   grid-area: logo; }
+  @media (max-width: 37.5em) {
+    #logoPrimary {
+      display: none; } }
 
 #imgPrimary {
   grid-area: img; }
+  @media (max-width: 37.5em) {
+    #imgPrimary {
+      display: none; } }
 
 #descriptionPrimary {
   grid-area: description; }
 
 #gridSecondary {
   grid-template-areas: 'img description'; }
+  @media (max-width: 37.5em) {
+    #gridSecondary {
+      grid-template-areas: ' description'; } }
 
 #imgSecondary {
   grid-area: img; }
+  @media (max-width: 37.5em) {
+    #imgSecondary {
+      display: none; } }
 
 #descriptionSecondary {
   grid-area: description; }
 
 #gridFooter {
   grid-template-areas: 'links1 links2'; }
+  @media (max-width: 37.5em) {
+    #gridFooter {
+      grid-template-areas: 'links1' 'links2'; } }
 
 #allLinksOne {
   grid-area: links1; }
@@ -255,6 +327,13 @@ span {
 
 .list-item {
   font-size: 1.2rem; }
+  @media (max-width: 37.5em) {
+    .list-item {
+      font-size: 1rem; } }
+
+@media (max-width: 37.5em) {
+  #resume {
+    display: none; } }
 
 /**=======================================================================================================================
  **                                                   FORM 
@@ -301,12 +380,18 @@ span {
     background-color: #ff9100;
     padding: 0.5rem 1rem;
     border-radius: 15px; }
+    @media (max-width: 37.5em) {
+      .card__tag {
+        top: 0.5rem; } }
   .card__figma {
     color: #0077ff;
     position: absolute; }
     .card__figma--header {
       bottom: 1rem;
       right: 1rem; }
+      @media (max-width: 37.5em) {
+        .card__figma--header {
+          display: none; } }
   .card__description--secondary {
     display: flex;
     flex-direction: column; }
@@ -327,6 +412,14 @@ span {
       width: 2px;
       background-color: black;
       margin: 0 1.5rem; }
+      @media (max-width: 37.5em) {
+        .card__about--separator {
+          height: 2px;
+          width: 50%;
+          margin: 0.5rem 0; } }
+    @media (max-width: 37.5em) {
+      .card__about {
+        flex-direction: column; } }
   .card__socials {
     display: flex; }
     .card__socials > a:not(:first-child) {
@@ -337,6 +430,9 @@ span {
     width: 95%; }
   .card__text--header {
     width: 45%; }
+    @media (max-width: 37.5em) {
+      .card__text--header {
+        width: 85%; } }
   .card__text--primary {
     width: 85%;
     margin: 0 auto; }
@@ -365,11 +461,18 @@ span {
 
 .card--footer {
   flex-direction: row; }
+  @media (max-width: 37.5em) {
+    .card--footer {
+      flex-direction: column; } }
 
 .footer__copyright {
   position: absolute;
   bottom: 0.5rem;
   right: 0.5rem; }
+  @media (max-width: 37.5em) {
+    .footer__copyright {
+      right: auto;
+      width: 90%; } }
 
 .link--footer {
   text-decoration: none;
@@ -402,3 +505,6 @@ span {
 
 .u--margin-auto {
   margin: 0 auto; }
+
+.u--display--none {
+  display: none; }

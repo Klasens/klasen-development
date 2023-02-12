@@ -14,21 +14,30 @@
     @include respond(break-600) {
       margin: 0 auto;
       width: auto;
-      grid-template-columns: 18rem;
+      grid-template-columns: 20rem;
       grid-auto-rows: 8rem;
     }
   }
   &--primary {
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
+    @include respond(break-600) {
+      grid-template-columns: 1fr;
+    }
   }
   &--secondary {
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
+    @include respond(break-600) {
+      grid-template-columns: 1fr;
+    }
   }
   &--footer {
     grid-template-columns: repeat(2, 1fr);
-    place-items: center;
+    @include respond(break-600) {
+      grid-template-columns: 1fr;
+      place-items: start;
+    }
   }
 }
 
@@ -53,7 +62,6 @@
       'header'
       'header'
       'header'
-      'header'
       'founder'
       'founder'
       'founder'
@@ -63,6 +71,7 @@
       'contact'
       'contact'
       'contact'
+      'primary'
       'primary'
       'primary'
       'primary'
@@ -105,13 +114,22 @@
 
 #gridPrimary {
   grid-template-areas: 'logo img description';
+  @include respond(break-600) {
+    grid-template-areas: ' description';
+  }
 }
 
 #logoPrimary {
   grid-area: logo;
+  @include respond(break-600) {
+    display: none;
+  }
 }
 #imgPrimary {
   grid-area: img;
+  @include respond(break-600) {
+    display: none;
+  }
 }
 #descriptionPrimary {
   grid-area: description;
@@ -119,10 +137,16 @@
 
 #gridSecondary {
   grid-template-areas: 'img description';
+  @include respond(break-600) {
+    grid-template-areas: ' description';
+  }
 }
 
 #imgSecondary {
   grid-area: img;
+  @include respond(break-600) {
+    display: none;
+  }
 }
 #descriptionSecondary {
   grid-area: description;
@@ -130,6 +154,11 @@
 
 #gridFooter {
   grid-template-areas: 'links1 links2';
+  @include respond(break-600) {
+    grid-template-areas:
+      'links1'
+      'links2';
+  }
 }
 
 #allLinksOne {
