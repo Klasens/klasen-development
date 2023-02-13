@@ -15,12 +15,11 @@
   position: absolute;
   background-color: $color-modal-overlay;
   opacity: 0;
-  padding: 5rem;
-  margin: 5rem 0;
-  width: 80rem;
-  height: 50rem;
+  margin: 1rem 0;
+  width: 70rem;
+  height: 40rem;
   z-index: 1;
-  top: 50%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: all 0.3s;

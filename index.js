@@ -22,7 +22,27 @@ cardPicture.addEventListener('click', function (e) {
   cardPicture.appendChild(heart);
   console.log(clickCoX, clickCoY);
 });
+overlay.addEventListener('click', function () {
+  body.classList.remove('u--overflow--hidden');
+  overlay.classList.remove('u--opacity--1');
+  overlay.classList.add('u--pointer-events--none');
+  modal.classList.remove('u--opacity--1');
+  modal.classList.add('u--pointer-events--none');
+  modalClose.classList.remove('u--opacity--1');
+  modalClose.classList.add('u--pointer-events--none');
+});
 
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    body.classList.remove('u--overflow--hidden');
+    overlay.classList.remove('u--opacity--1');
+    overlay.classList.add('u--pointer-events--none');
+    modal.classList.remove('u--opacity--1');
+    modal.classList.add('u--pointer-events--none');
+    modalClose.classList.remove('u--opacity--1');
+    modalClose.classList.add('u--pointer-events--none');
+  }
+});
 modalClose.addEventListener('click', function (e) {
   e.preventDefault();
   body.classList.remove('u--overflow--hidden');
