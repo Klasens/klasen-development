@@ -562,6 +562,31 @@ span {
       margin-left: 0; } }
 
 /**=======================================================================================================================
+ **                                                   CONSTRUCTION 
+ *=======================================================================================================================**/
+.construction {
+  height: 25rem;
+  width: 45rem;
+  border-radius: 15px;
+  border: 2px solid white;
+  background-color: #ffd1aa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: black; }
+  .construction__header {
+    font-size: 4rem; }
+  .construction__img {
+    height: 4rem;
+    width: 4rem; }
+  .construction__text {
+    font-size: 1.5rem; }
+  .construction__link {
+    font-size: 1.5rem;
+    color: #0077ff; }
+
+/**=======================================================================================================================
  **                                                   UTILITIES 
  *=======================================================================================================================**/
 .u--center {

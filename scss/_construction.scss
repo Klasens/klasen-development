@@ -1,0 +1,31 @@
+/**=======================================================================================================================
+ **                                                   CONSTRUCTION 
+ *=======================================================================================================================**/
+
+.construction {
+  height: 25rem;
+  width: 45rem;
+  border-radius: 15px;
+  border: 2px solid $color-white;
+  background-color: $color-primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: $color-black;
+
+  &__header {
+    font-size: 4rem;
+  }
+  &__img {
+    height: 4rem;
+    width: 4rem;
+  }
+  &__text {
+    font-size: 1.5rem;
+  }
+  &__link {
+    font-size: 1.5rem;
+    color: $color-link;
+  }
+}
