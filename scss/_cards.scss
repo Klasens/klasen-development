@@ -61,6 +61,7 @@
       top: 1rem;
       left: 50%;
       transform: translateX(-50%);
+      pointer-events: none;
     }
   }
   // -- ABOUT -- //
@@ -137,6 +138,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   color: $color-white;
+  cursor: pointer;
 }
 // ------ FOUNDER CARD ------ //
 .card--founder {
@@ -173,4 +175,29 @@
 .link--footer {
   text-decoration: none;
   color: $color-link;
+}
+
+.card-heart-pop {
+  display: inline;
+  color: red;
+  font-size: 1rem;
+
+  position: absolute;
+  animation: heartPop 2s;
+  scale: 0;
+}
+
+@keyframes heartPop {
+  from {
+    scale: 0;
+    opacity: 1;
+  }
+  to {
+    scale: 2.5;
+    opacity: 0;
+  }
+}
+
+#allLinksTwo {
+  margin-left: 1rem;
 }

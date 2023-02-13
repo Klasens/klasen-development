@@ -97,7 +97,7 @@ select {
     .text {
       font-size: 1rem; } }
   .text--header {
-    font-size: 1rem; }
+    font-size: 1.2rem; }
   .text--description {
     font-size: 1.2rem; }
     @media (max-width: 37.5em) {
@@ -451,7 +451,8 @@ span {
     background-color: rgba(42, 78, 110, 0.55);
     top: 1rem;
     left: 50%;
-    transform: translateX(-50%); }
+    transform: translateX(-50%);
+    pointer-events: none; }
   .card__about {
     display: flex;
     justify-content: center;
@@ -502,7 +503,8 @@ span {
   background-image: url("/img/rob.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  color: white; }
+  color: white;
+  cursor: pointer; }
 
 .card--founder {
   background-color: #3e72a0;
@@ -533,6 +535,25 @@ span {
 .link--footer {
   text-decoration: none;
   color: #0077ff; }
+
+.card-heart-pop {
+  display: inline;
+  color: red;
+  font-size: 1rem;
+  position: absolute;
+  animation: heartPop 2s;
+  scale: 0; }
+
+@keyframes heartPop {
+  from {
+    scale: 0;
+    opacity: 1; }
+  to {
+    scale: 2.5;
+    opacity: 0; } }
+
+#allLinksTwo {
+  margin-left: 1rem; }
 
 /**=======================================================================================================================
  **                                                   UTILITIES 

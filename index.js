@@ -9,6 +9,19 @@ const modal = document.querySelector('.modal');
 const modalClose = document.querySelector('.modal__close');
 const body = document.querySelector('.u--center');
 const primary = document.querySelector('#primary');
+const cardPicture = document.querySelector('#picture');
+
+cardPicture.addEventListener('click', function (e) {
+  let coordX = e.offsetX;
+  let coordY = e.offsetY;
+  let heart = document.createElement('div');
+  heart.innerHTML = `<i class="card-heart fas fa-heart"></i>`;
+  heart.className = 'card-heart-pop';
+  heart.style.top = coordY + 'px';
+  heart.style.left = coordX + 'px';
+  cardPicture.appendChild(heart);
+  console.log(clickCoX, clickCoY);
+});
 
 modalClose.addEventListener('click', function (e) {
   e.preventDefault();
