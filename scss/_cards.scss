@@ -200,4 +200,7 @@
 
 #allLinksTwo {
   margin-left: 1rem;
+  @include respond(break-600) {
+    margin-left: 0;
+  }
 }

@@ -554,6 +554,9 @@ span {
 
 #allLinksTwo {
   margin-left: 1rem; }
+  @media (max-width: 37.5em) {
+    #allLinksTwo {
+      margin-left: 0; } }
 
 /**=======================================================================================================================
  **                                                   UTILITIES 
