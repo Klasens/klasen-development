@@ -1,7 +1,7 @@
 /**=======================================================================================================================
  **                                                   COMPONENTS 
  *=======================================================================================================================**/
-
+//! btn
 .btn {
   padding: 0.5rem 1rem;
   border-radius: 10px;
@@ -9,26 +9,37 @@
   border: 1px solid $color-black;
   &--white {
     background-color: $color-white;
+    //! typography
     color: $color-black;
+    //! typography
   }
   &--transparent {
     background-color: transparent;
+    //! typography
     color: $color-black;
+    //! typography
   }
 }
+//! btn
 
 .list {
+  //! layout
   margin-left: 5rem;
+  //! layout
 }
 .list-item {
+  //! typography
   font-size: 1.2rem;
   @include respond(break-600) {
     font-size: 1rem;
   }
+  //! typography
 }
 
+//! utilities
 #resume {
   @include respond(break-600) {
     display: none;
   }
 }
+//! utilities

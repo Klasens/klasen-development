@@ -64,9 +64,13 @@
 h1 {
   font-size: 10rem;
   text-transform: uppercase;
+  //! layout
   text-align: center;
+  //! layout
   @include respond(break-600) {
+    //! layout
     margin-top: 1rem;
+    //! layout
     font-size: 2.5rem;
     line-height: 1.3;
   }
@@ -93,7 +97,9 @@ h4 {
 }
 h5 {
   font-size: 2.5rem;
+  //! layout
   text-align: center;
+  //! layout
   text-decoration: underline;
   @include respond(break-600) {
     font-size: 1.8rem;
@@ -101,7 +107,9 @@ h5 {
 }
 h6 {
   font-size: 1.5rem;
+  //! layout
   text-align: center;
+  //! layout
   text-decoration: underline;
 }
 

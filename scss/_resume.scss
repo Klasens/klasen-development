@@ -1,7 +1,9 @@
 .overlay {
+  //! layout
   position: absolute;
   top: 0;
   left: 0;
+  //! layout
   width: 100%;
   height: 100%;
   background-color: $color-modal-overlay;
@@ -12,35 +14,43 @@
 
 .modal {
   overflow: scroll;
+  //! layout
   position: absolute;
-  background-color: $color-modal-overlay;
-  opacity: 0;
   margin: 1rem 0;
-  width: 70rem;
-  height: 40rem;
-  z-index: 1;
   top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1;
+  //! layout
+  background-color: $color-modal-overlay;
+  opacity: 0;
+  width: 70rem;
+  height: 40rem;
   transition: all 0.3s;
   @include respond(break-600) {
+    //! layout
     display: none;
+    //! layout
   }
   &__close {
     cursor: pointer;
+    //! layout
     position: fixed;
-    opacity: 0;
     top: 1rem;
     right: 2rem;
+    z-index: 10;
+    //! layout
+    opacity: 0;
     width: 4rem;
     height: 4rem;
     padding: 10px;
     border: 1px solid $color-white;
     border-radius: 50%;
     transition: all 0.3s;
-    z-index: 10;
     @include respond(break-600) {
+      //! layout
       display: none;
+      //! layout
     }
   }
 }

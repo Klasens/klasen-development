@@ -182,8 +182,8 @@ span {
   object-fit: cover; }
   .img--logo--mobile {
     display: none;
-    max-width: 50%;
-    margin: 0 auto 1rem; }
+    margin: 0 auto 1rem;
+    max-width: 50%; }
     @media (max-width: 37.5em) {
       .img--logo--mobile {
         display: block; } }
@@ -193,6 +193,21 @@ span {
   width: 4rem;
   margin: 0 auto 1rem; }
 
+/**========================================================================
+ **                          KEYFRAME ANIMATIONS 
+ *========================================================================**/
+/**========================================================================
+ **                          BTN 
+ *========================================================================**/
+/**========================================================================
+ **                          MODAL 
+ *========================================================================**/
+/**========================================================================
+ **                          LAYOUT 
+ *========================================================================**/
+/**========================================================================
+ **                          DIMENSIONS 
+ *========================================================================**/
 /**=======================================================================================================================
  **                                                   GRID 
  *=======================================================================================================================**/
@@ -308,34 +323,6 @@ span {
   grid-area: links2; }
 
 /**=======================================================================================================================
- **                                                   COMPONENTS 
- *=======================================================================================================================**/
-.btn {
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  cursor: pointer;
-  border: 1px solid black; }
-  .btn--white {
-    background-color: white;
-    color: black; }
-  .btn--transparent {
-    background-color: transparent;
-    color: black; }
-
-.list {
-  margin-left: 5rem; }
-
-.list-item {
-  font-size: 1.2rem; }
-  @media (max-width: 37.5em) {
-    .list-item {
-      font-size: 1rem; } }
-
-@media (max-width: 37.5em) {
-  #resume {
-    display: none; } }
-
-/**=======================================================================================================================
  **                                                   FORM 
  *=======================================================================================================================**/
 .form {
@@ -359,54 +346,6 @@ span {
     .form__input--message {
       height: 6rem; }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #343434;
-  z-index: 1;
-  opacity: 0;
-  transition: all 0.3s; }
-
-.modal {
-  overflow: scroll;
-  position: absolute;
-  background-color: #343434;
-  opacity: 0;
-  margin: 1rem 0;
-  width: 70rem;
-  height: 40rem;
-  z-index: 1;
-  top: 48%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: all 0.3s; }
-  @media (max-width: 37.5em) {
-    .modal {
-      display: none; } }
-  .modal__close {
-    cursor: pointer;
-    position: fixed;
-    opacity: 0;
-    top: 1rem;
-    right: 2rem;
-    width: 4rem;
-    height: 4rem;
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 50%;
-    transition: all 0.3s;
-    z-index: 10; }
-    @media (max-width: 37.5em) {
-      .modal__close {
-        display: none; } }
-
-.resume {
-  overflow: scroll;
-  height: 80rem; }
-
 /**=======================================================================================================================
  **                                                   CARD 
  *=======================================================================================================================**/
@@ -420,9 +359,6 @@ span {
   background-color: #ffd1aa;
   border: 2px solid white;
   color: black; }
-  @media (max-width: 37.5em) {
-    .card {
-      overflow: hidden; } }
   .card__tag {
     position: absolute;
     top: 3rem;
@@ -449,12 +385,12 @@ span {
     flex-direction: column; }
   .card__head--picture {
     position: absolute;
-    padding: 0 1rem;
-    border-radius: 10px;
-    background-color: rgba(42, 78, 110, 0.55);
     top: 1rem;
     left: 50%;
     transform: translateX(-50%);
+    padding: 0 1rem;
+    border-radius: 10px;
+    background-color: rgba(42, 78, 110, 0.55);
     pointer-events: none; }
   .card__about {
     display: flex;
@@ -491,11 +427,11 @@ span {
     margin: 0 auto; }
   .card__design-line {
     position: absolute;
-    height: 100%;
-    width: 4px;
     background-color: #ff9100;
     top: 50%;
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    height: 100%;
+    width: 4px; }
     .card__design-line--left {
       left: 1.5rem; }
     .card__design-line--right {
@@ -506,8 +442,8 @@ span {
   background-image: url("/img/rob.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  color: white;
-  cursor: pointer; }
+  cursor: pointer;
+  color: white; }
 
 .card--founder {
   background-color: #3e72a0;
@@ -541,11 +477,11 @@ span {
 
 .card-heart-pop {
   display: inline;
-  color: red;
-  font-size: 1rem;
   position: absolute;
+  scale: 0;
   animation: heartPop 2s;
-  scale: 0; }
+  color: red;
+  font-size: 1rem; }
 
 @keyframes heartPop {
   from {
@@ -560,6 +496,82 @@ span {
   @media (max-width: 37.5em) {
     #allLinksTwo {
       margin-left: 0; } }
+
+/**=======================================================================================================================
+ **                                                   COMPONENTS 
+ *=======================================================================================================================**/
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid black; }
+  .btn--white {
+    background-color: white;
+    color: black; }
+  .btn--transparent {
+    background-color: transparent;
+    color: black; }
+
+.list {
+  margin-left: 5rem; }
+
+.list-item {
+  font-size: 1.2rem; }
+  @media (max-width: 37.5em) {
+    .list-item {
+      font-size: 1rem; } }
+
+@media (max-width: 37.5em) {
+  #resume {
+    display: none; } }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #343434;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s; }
+
+.modal {
+  overflow: scroll;
+  position: absolute;
+  margin: 1rem 0;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-color: #343434;
+  opacity: 0;
+  width: 70rem;
+  height: 40rem;
+  transition: all 0.3s; }
+  @media (max-width: 37.5em) {
+    .modal {
+      display: none; } }
+  .modal__close {
+    cursor: pointer;
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    z-index: 10;
+    opacity: 0;
+    width: 4rem;
+    height: 4rem;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: all 0.3s; }
+    @media (max-width: 37.5em) {
+      .modal__close {
+        display: none; } }
+
+.resume {
+  overflow: scroll;
+  height: 80rem; }
 
 /**=======================================================================================================================
  **                                                   CONSTRUCTION 

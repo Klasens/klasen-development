@@ -2,6 +2,7 @@
  **                                                   UTILITIES 
  *=======================================================================================================================**/
 
+//! delete
 .u--center {
   display: grid;
   place-items: center;
@@ -42,21 +43,28 @@
 .u--relative {
   position: relative;
 }
+//! delete
 
+//! move to JS
 .u--pointer-events--none {
+  //! pointer-events--none
   pointer-events: none;
 }
-
 .u--opacity--1 {
+  //! opacity--1
   opacity: 1;
 }
 .u--overflow--hidden {
+  //! overflow--hidden
   overflow: hidden;
 }
-
+//! move to JS
+//! keep
 .u--display--none {
+  //! u--display--mobile
   display: none;
   @include respond(break-600) {
     display: block;
   }
 }
+//! keep

@@ -10,13 +10,17 @@
     height: 28rem;
     border-radius: 5px;
     border: 2px solid $color-black;
+    //! layout
     margin: 0 auto;
+    //! layout
   }
   &--secondary {
     height: 27rem;
     border-radius: 5px;
     border: 2px solid $color-white;
+    //! layout
     margin-left: 1rem;
+    //! layout
   }
 }
 .img--logo {
@@ -26,11 +30,15 @@
   border-radius: 50%;
   object-fit: cover;
   &--mobile {
+    //! layout
     display: none;
-    max-width: 50%;
     margin: 0 auto 1rem;
+    //! layout
+    max-width: 50%;
     @include respond(break-600) {
+      //! layout
       display: block;
+      //! layout
     }
   }
 }
@@ -38,5 +46,7 @@
 .img--card {
   height: 4rem;
   width: 4rem;
+  //! layout
   margin: 0 auto 1rem;
+  //! layout
 }

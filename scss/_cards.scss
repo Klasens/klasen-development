@@ -4,37 +4,46 @@
 
 // ------ BASE CARD ------ //
 .card {
+  //! layout
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  //! layout
   border-radius: 15px;
   background-color: $color-primary;
   border: 2px solid $color-white;
+  //! typography
   color: $color-black;
-
-  @include respond(break-600) {
-    overflow: hidden;
-  }
+  //! typography
 
   // -- TAG -- //
   &__tag {
+    //! layout
     position: absolute;
     top: 3rem;
     left: 50%;
     transform: translateX(-50%);
+    //! layout
+    //! card__tag
     cursor: pointer;
     background-color: $color-orange;
     padding: 0.5rem 1rem;
     border-radius: 15px;
+    //! card__tag
+    //! layout
     @include respond(break-600) {
       top: 0.5rem;
     }
+    //! layout
   }
   // -- FIGMA -- //
   &__figma {
+    //! typography
     color: $color-link;
+    //! typography
+    //! layout
     position: absolute;
     &--header {
       bottom: 1rem;
@@ -43,55 +52,73 @@
         display: none;
       }
     }
+    //! layout
   }
+
   // -- DESCRIPTION -- //
   &__description {
+    //! layout
     &--secondary {
       display: flex;
       flex-direction: column;
     }
+    //! layout
   }
   // -- HEAD -- //
   &__head {
     &--picture {
+      //! layout
       position: absolute;
-      padding: 0 1rem;
-      border-radius: 10px;
-      background-color: $color-picture-header;
       top: 1rem;
       left: 50%;
       transform: translateX(-50%);
+      //! layout
+      //! card__head--picture
+      padding: 0 1rem;
+      border-radius: 10px;
+      background-color: $color-picture-header;
       pointer-events: none;
+      //! card__head--picture
     }
   }
   // -- ABOUT -- //
   &__about {
+    //! layout
     display: flex;
     justify-content: center;
     align-items: center;
+    //! layout
 
     &--separator {
       height: 100%;
       width: 2px;
       background-color: $color-black;
+      //! layout
       margin: 0 1.5rem;
+      //! layout
       @include respond(break-600) {
         height: 2px;
         width: 50%;
+        //! layout
         margin: 0.5rem 0;
+        //! layout
       }
     }
+    //! layout
     @include respond(break-600) {
       flex-direction: column;
     }
+    //! layout
   }
 
   // -- SOCIALS -- //
   &__socials {
+    //! layout
     display: flex;
     & > a:not(:first-child) {
       margin-left: 2rem;
     }
+    //! layout
   }
   // -- TEXT -- //
   &__text {
@@ -101,6 +128,7 @@
     &--contact {
       width: 95%;
     }
+    //! card__about--right
     &--header {
       width: 45%;
 
@@ -108,60 +136,82 @@
         width: 85%;
       }
     }
+    //! card__about--right
     &--primary {
       width: 85%;
+      //! layout
       margin: 0 auto;
+      //! layout
     }
   }
 
   // -- DESIGN LINE -- //
   &__design-line {
+    //! layout
     position: absolute;
-    height: 100%;
-    width: 4px;
     background-color: $color-orange;
     top: 50%;
     transform: translateY(-50%);
+    //! layout
+    //! card__design-line
+    height: 100%;
+    width: 4px;
+    //! card__design-line
+    //! layout
     &--left {
       left: 1.5rem;
     }
     &--right {
       right: 1.5rem;
     }
+    //! layout
   }
 }
 
 // ------ PICTURE CARD ------ //
 .card--picture {
+  //! layout
   position: relative;
+  //! layout
+  //! card--picture
   background-image: url('/img/rob.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  color: $color-white;
   cursor: pointer;
+  //! card--picture
+  //! typography
+  color: $color-white;
+  //! typography
 }
 // ------ FOUNDER CARD ------ //
 .card--founder {
   background-color: $color-founder;
+  //! typography
   color: $color-white;
+  //! typography
 }
 
 // ------ FOOTER CARD ------ //
 .card--footer {
+  //! layout
   flex-direction: row;
 
   @include respond(break-600) {
     flex-direction: column;
   }
+  //! layout
 }
 .footer__copyright {
+  //! layout
   position: absolute;
   bottom: 0.5rem;
   right: 0.5rem;
   @include respond(break-600) {
     display: none;
   }
+  //! layout
   &--mobile {
+    //! layout
     display: none;
     position: absolute;
     bottom: 0rem;
@@ -169,24 +219,34 @@
     @include respond(break-600) {
       display: block;
     }
+    //! layout
   }
 }
 
 .link--footer {
+  //! typography
   text-decoration: none;
   color: $color-link;
+  //! typography
 }
 
 .card-heart-pop {
+  // heart-pop
+  //! layout
   display: inline;
+  position: absolute;
+  //! layout
+  //! heart-pop
+  scale: 0;
+  animation: heartPop 2s;
+  //! heart-pop
+  //! typography
   color: red;
   font-size: 1rem;
-
-  position: absolute;
-  animation: heartPop 2s;
-  scale: 0;
+  //! typography
 }
 
+//! animations
 @keyframes heartPop {
   from {
     scale: 0;
@@ -197,10 +257,13 @@
     opacity: 0;
   }
 }
+//! animations
 
 #allLinksTwo {
+  //! layout
   margin-left: 1rem;
   @include respond(break-600) {
     margin-left: 0;
   }
+  //! layout
 }
