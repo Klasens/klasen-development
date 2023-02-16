@@ -4,39 +4,16 @@
 
 // ------ BASE CARD ------ //
 .card {
-  //! layout
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  //! layout
   border-radius: 15px;
   background-color: $color-primary;
   border: 2px solid $color-white;
-  //! typography
-  color: $color-black;
-  //! typography
 
   // -- TAG -- //
   &__tag {
-    //! layout
-    position: absolute;
-    top: 3rem;
-    left: 50%;
-    transform: translateX(-50%);
-    //! layout
-    //! card__tag
-    cursor: pointer;
+    border-radius: 10px;
     background-color: $color-orange;
     padding: 0.5rem 1rem;
-    border-radius: 15px;
-    //! card__tag
-    //! layout
-    @include respond(break-600) {
-      top: 0.5rem;
-    }
-    //! layout
+    cursor: pointer;
   }
   // -- FIGMA -- //
   &__figma {

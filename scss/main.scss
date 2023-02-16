@@ -3,20 +3,21 @@
  *=======================================================================================================================**/
 
 //BASE
-@import 'variables';
-@import 'media-breakpoints';
-@import 'base';
-@import 'typography';
-@import 'img';
-@import 'animations';
-@import 'btn';
-@import 'modal';
-@import 'layout';
-@import 'dimensions';
+@import 'abstracts/variables';
+@import 'abstracts/media-breakpoints';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/img';
+@import 'base/animations';
+@import 'base/javascript';
+@import 'components/btn';
+@import 'components/modal';
+@import 'layout/layout';
+@import 'structure/display';
 
-@import 'grid';
-@import 'form';
-@import 'cards';
+@import 'structure/grid';
+@import 'components/form';
+@import 'cards/cards';
 
 //! delete
 @import 'components';
@@ -24,4 +25,4 @@
 @import 'construction';
 //! delete
 
-@import 'utilities';
+@import 'abstracts/utilities';

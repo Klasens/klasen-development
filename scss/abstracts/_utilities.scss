@@ -3,14 +3,6 @@
  *=======================================================================================================================**/
 
 //! delete
-.u--center {
-  display: grid;
-  place-items: center;
-}
-
-.u--background-color--secondary {
-  background-color: $color-secondary;
-}
 
 .u--flex-col {
   display: flex;
@@ -39,9 +31,6 @@
 }
 .u--display--none {
   display: none;
-}
-.u--relative {
-  position: relative;
 }
 //! delete
 

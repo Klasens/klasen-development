@@ -3,23 +3,6 @@
  *=======================================================================================================================**/
 
 .construction {
-  //! dimensions
-  height: 25rem;
-  width: 45rem;
-  border-radius: 15px;
-  border: 2px solid $color-white;
-  background-color: $color-primary;
-  //! dimensions
-  //! layout
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  //! layout
-  //! typography
-  color: $color-black;
-  //! typography
-
   &__header {
     //! typography
     font-size: 4rem;
