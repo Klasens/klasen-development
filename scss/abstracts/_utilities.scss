@@ -2,57 +2,16 @@
  **                                                   UTILITIES 
  *=======================================================================================================================**/
 
-//! delete
-
-.u--flex-col {
-  display: flex;
-  flex-direction: column;
-}
-.u--flex-col--center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.u--margin-top {
-  margin-top: 1rem;
-}
-.u--margin-bottom {
-  margin-bottom: 1rem;
-}
-.u--margin-bottom--footer {
-  margin-bottom: 1rem;
-  @include respond(break-600) {
-    margin-bottom: 0.25rem;
-    width: 10rem;
-  }
-}
-.u--margin-auto {
-  margin: 0 auto;
-}
-.u--display--none {
-  display: none;
-}
-//! delete
-
-//! move to JS
-.u--pointer-events--none {
-  //! pointer-events--none
-  pointer-events: none;
-}
-.u--opacity--1 {
-  //! opacity--1
-  opacity: 1;
-}
-.u--overflow--hidden {
-  //! overflow--hidden
-  overflow: hidden;
-}
-//! move to JS
-//! keep
 .u--display--mobile {
   display: none;
   @include respond(break-600) {
     display: block;
+  }
+}
+.u--display--desktop {
+  display: block;
+  @include respond(break-600) {
+    display: none;
   }
 }
 .u--width-max--mobile {
@@ -60,4 +19,3 @@
     width: 100%;
   }
 }
-//! keep

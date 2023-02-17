@@ -10,17 +10,11 @@
     height: 28rem;
     border-radius: 5px;
     border: 2px solid $color-black;
-    //! layout
-    margin: 0 auto;
-    //! layout
   }
   &--secondary {
     // height: 27rem;
     border-radius: 5px;
     border: 2px solid $color-white;
-    //! layout
-    margin-left: 0.5rem;
-    //! layout
   }
 }
 .logo {
@@ -39,7 +33,4 @@
 .icon {
   height: 4rem;
   width: 4rem;
-  //! layout
-  margin: 0 auto 1rem;
-  //! layout
 }

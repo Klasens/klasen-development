@@ -129,6 +129,9 @@
     @include respond(break-600) {
       display: none;
     }
+    & .btn {
+      margin-top: 1rem;
+    }
   }
   &--center-col {
     @include respond(break-600) {
@@ -183,6 +186,11 @@
   & .card__btn {
     margin-top: 1.5rem;
   }
+  &--left-col {
+    & .demo--secondary {
+      margin-left: 0.5rem;
+    }
+  }
 }
 
 // --- TERTIARY CARD  --- //
@@ -211,6 +219,9 @@
   position: relative;
   display: flex;
   justify-content: space-around;
+  @include respond(break-600) {
+    flex-direction: column;
+  }
   &--sub-col {
     display: flex;
     flex-direction: column;

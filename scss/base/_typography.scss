@@ -9,6 +9,7 @@
 .link {
   color: $color-link;
 }
+
 .text--black {
   color: $color-black;
 }
@@ -26,6 +27,9 @@
 
 .text--header {
   font-size: 1.2rem;
+  @include respond(break-600) {
+    font-size: 1rem;
+  }
 }
 
 .text--bio {
@@ -33,6 +37,11 @@
   @include respond(break-600) {
     font-size: 1rem;
   }
+}
+.text--btn {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: $color-black;
 }
 
 .text--list {
@@ -49,6 +58,14 @@
   @include respond(break-600) {
     font-size: 2.5rem;
     line-height: 1.3;
+  }
+}
+
+.head--secondary {
+  font-size: 3rem;
+  text-transform: uppercase;
+  @include respond(break-600) {
+    font-size: 1.7rem;
   }
 }
 
@@ -81,71 +98,26 @@
     font-size: 2.5rem;
   }
 }
+
+.head--tertiary {
+  font-size: 2rem;
+  @include respond(break-600) {
+    font-size: 1.5rem;
+  }
+}
 .head--mini {
   font-size: 2.5rem;
-  //! layout
-  text-align: center;
-  //! layout
   text-decoration: underline;
   @include respond(break-600) {
     font-size: 1.8rem;
   }
 }
-// ------------ OLD SELECTORS ------------ //
-.head {
-  &__description {
-    &--secondary {
-      font-size: 2.2rem;
-      @include respond(break-600) {
-        font-size: 1.8rem;
-      }
-    }
-  }
-  &--picture {
-    font-size: 2rem;
-  }
-  &--tertiary {
-    font-size: 2rem;
-    @include respond(break-600) {
-      font-size: 1.5rem;
-    }
-  }
+
+.head--picture {
+  font-size: 2rem;
 }
 
-.text {
+.head--footer {
   font-size: 1.5rem;
-  @include respond(break-600) {
-    font-size: 1rem;
-  }
-  &--description {
-    font-size: 1.2rem;
-    @include respond(break-600) {
-      font-size: 1rem;
-    }
-  }
-}
-
-h2 {
-}
-h3 {
-  font-size: 3rem;
-  text-transform: uppercase;
-  @include respond(break-600) {
-    font-size: 1.7rem;
-  }
-}
-h4 {
-}
-h5 {
-}
-h6 {
-  font-size: 1.5rem;
-  //! layout
-  text-align: center;
-  //! layout
   text-decoration: underline;
-}
-
-button {
-  font-size: 1.2rem;
 }

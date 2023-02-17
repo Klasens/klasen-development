@@ -26,12 +26,6 @@
   // -- DESCRIPTION -- //
   &__description {
     width: 85%;
-    //! layout
-    &--secondary {
-      display: flex;
-      flex-direction: column;
-    }
-    //! layout
   }
   // -- HEAD -- //
   &__head--picture {
@@ -64,15 +58,6 @@
     }
   }
 
-  // -- TEXT -- //
-  &__text {
-    &--primary {
-      //! layout
-      margin: 0 auto;
-      //! layout
-    }
-  }
-
   // -- DESIGN LINE -- //
   &__design-line {
     height: 100%;
@@ -91,71 +76,3 @@
 .card--founder {
   background-color: $color-founder;
 }
-
-// ------ FOOTER CARD ------ //
-.card--footer {
-  //! layout
-  flex-direction: row;
-
-  @include respond(break-600) {
-    flex-direction: column;
-  }
-  //! layout
-}
-.footer__copyright {
-  //! layout
-  position: absolute;
-  bottom: 0.5rem;
-  right: 0.5rem;
-  @include respond(break-600) {
-    display: none;
-  }
-  //! layout
-  &--mobile {
-    //! layout
-    display: none;
-    position: absolute;
-    bottom: 0rem;
-    right: 0.5rem;
-    @include respond(break-600) {
-      display: block;
-    }
-    //! layout
-  }
-}
-
-.link--footer {
-  //! typography
-  text-decoration: none;
-  color: $color-link;
-  //! typography
-}
-
-.card-heart-pop {
-  // heart-pop
-  //! layout
-  display: inline;
-  position: absolute;
-  //! layout
-  //! heart-pop
-  scale: 0;
-  animation: heartPop 2s;
-  //! heart-pop
-  //! typography
-  color: red;
-  font-size: 1rem;
-  //! typography
-}
-
-//! animations
-@keyframes heartPop {
-  from {
-    scale: 0;
-    opacity: 1;
-  }
-  to {
-    scale: 2.5;
-    opacity: 0;
-  }
-}
-//! animations

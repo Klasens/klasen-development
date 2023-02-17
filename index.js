@@ -16,56 +16,56 @@ cardPicture.addEventListener('click', function (e) {
   let coordY = e.offsetY;
   let heart = document.createElement('div');
   heart.innerHTML = `<i class="card-heart fas fa-heart"></i>`;
-  heart.className = 'card-heart-pop';
+  heart.className = 'heart-pop';
   heart.style.top = coordY + 'px';
   heart.style.left = coordX + 'px';
   cardPicture.appendChild(heart);
   console.log(clickCoX, clickCoY);
 });
 overlay.addEventListener('click', function () {
-  body.classList.remove('u--overflow--hidden');
-  overlay.classList.remove('u--opacity--1');
-  overlay.classList.add('u--pointer-events--none');
-  modal.classList.remove('u--opacity--1');
-  modal.classList.add('u--pointer-events--none');
-  modalClose.classList.remove('u--opacity--1');
-  modalClose.classList.add('u--pointer-events--none');
+  body.classList.remove('overflow--hidden');
+  overlay.classList.remove('opacity--1');
+  overlay.classList.add('pointer-events--none');
+  modal.classList.remove('opacity--1');
+  modal.classList.add('pointer-events--none');
+  modalClose.classList.remove('opacity--1');
+  modalClose.classList.add('pointer-events--none');
 });
 
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') {
-    body.classList.remove('u--overflow--hidden');
-    overlay.classList.remove('u--opacity--1');
-    overlay.classList.add('u--pointer-events--none');
-    modal.classList.remove('u--opacity--1');
-    modal.classList.add('u--pointer-events--none');
-    modalClose.classList.remove('u--opacity--1');
-    modalClose.classList.add('u--pointer-events--none');
+    body.classList.remove('overflow--hidden');
+    overlay.classList.remove('opacity--1');
+    overlay.classList.add('pointer-events--none');
+    modal.classList.remove('opacity--1');
+    modal.classList.add('pointer-events--none');
+    modalClose.classList.remove('opacity--1');
+    modalClose.classList.add('pointer-events--none');
   }
 });
 modalClose.addEventListener('click', function (e) {
   e.preventDefault();
-  body.classList.remove('u--overflow--hidden');
-  overlay.classList.remove('u--opacity--1');
-  overlay.classList.add('u--pointer-events--none');
-  modal.classList.remove('u--opacity--1');
-  modal.classList.add('u--pointer-events--none');
-  modalClose.classList.remove('u--opacity--1');
-  modalClose.classList.add('u--pointer-events--none');
+  body.classList.remove('overflow--hidden');
+  overlay.classList.remove('opacity--1');
+  overlay.classList.add('pointer-events--none');
+  modal.classList.remove('opacity--1');
+  modal.classList.add('pointer-events--none');
+  modalClose.classList.remove('opacity--1');
+  modalClose.classList.add('pointer-events--none');
   primary.scrollIntoView({ block: 'start', behavior: 'smooth' });
 });
 
 scrollResume.addEventListener('click', function (e) {
   e.preventDefault();
   resumeContent.scrollIntoView({ block: 'start', behavior: 'smooth' });
-  overlay.classList.add('u--opacity--1');
-  overlay.classList.remove('u--pointer-events--none');
-  modal.classList.add('u--opacity--1');
-  modal.classList.remove('u--pointer-events--none');
-  modalClose.classList.add('u--opacity--1');
-  modalClose.classList.remove('u--pointer-events--none');
+  overlay.classList.add('opacity--1');
+  overlay.classList.remove('pointer-events--none');
+  modal.classList.add('opacity--1');
+  modal.classList.remove('pointer-events--none');
+  modalClose.classList.add('opacity--1');
+  modalClose.classList.remove('pointer-events--none');
   setTimeout(() => {
-    body.classList.add('u--overflow--hidden');
+    body.classList.add('overflow--hidden');
   }, 500);
 });
 
