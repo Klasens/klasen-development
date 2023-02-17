@@ -6,7 +6,7 @@
   background-color: $color-secondary;
 }
 
-.display-primary {
+.display-main {
   width: 80rem;
   @include respond(break-600) {
     width: auto;

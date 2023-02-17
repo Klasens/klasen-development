@@ -60,7 +60,7 @@
 
   <body class="layout-base body">
     <main
-      class="layout-primary display-primary grid grid--main main-font"
+      class="layout-main display-main grid grid--main main-font text--black"
       id="gridMain"
     >
       <!-- Block Content -->
@@ -78,60 +78,51 @@
 </div>
 
       <!-- HEADER CARD -->
-      <div class="card card--header layout-header" id="header">
+      <div class="layout-header card card--header" id="header">
   <div class="card__tag text--tag">2023</div>
-  <!--! div -->
-  <h1 class="card__head head--large">Klasen Development</h1>
-  <!-- <h1 class="head--main">Klasen Development</h1> -->
-  <!--! card__head head--large -->
+  <h1 class="card__head head head--large">Klasen Development</h1>
   <div class="card__about">
-    <h5 class="card__about--left head--about">About</h5>
-    <!-- <h5 class="head--about">About</h5> -->
-    <!--! div card__about--left head--about -->
+    <div class="card__about--left head head--about">About</div>
     <div class="card__about--separator"></div>
-    <p class="card__about--right text--header">
-      <!-- <p class="card__text--header text--header"> -->
-      <!--! div card__about--right -->
-      Code solves problems. Whether it's the author sidestepping the rigidity of
-      the publishing industry, or the entrepreneur mining value from new ideas,
-      code opens up the possibilities.
-    </p>
+    <div class="card__about--right">
+      <p class="text--header">
+        Code solves problems. Whether it's the author sidestepping the rigidity
+        of the publishing industry, or the entrepreneur mining value from new
+        ideas, code opens up the possibilities.
+      </p>
+    </div>
   </div>
-  <a
-    target="_blank"
-    href="https://www.figma.com/file/qudyUinSbAJFqFHJGodM8B/Klasen-Development-Architecture?node-id=176%3A2&t=3CnT6Mtpwqi32nQH-1"
-    class="card__figma card__figma--header"
-  >
-    Look at the Figma Design for this site...
-  </a>
-  <!--! a link -->
-  <!--! div card__figma -->
+  <div class="card__figma">
+    <a
+      target="_blank"
+      href="https://www.figma.com/file/qudyUinSbAJFqFHJGodM8B/Klasen-Development-Architecture?node-id=176%3A2&t=3CnT6Mtpwqi32nQH-1"
+      class="link"
+    >
+      Look at the Figma Design for this site...
+    </a>
+  </div>
 </div>
 
       <!-- FOUNDER CARD -->
-      <div class="card card--founder" id="founder">
-  <!--  layout__founder -->
-  <h4 class="head__founder--main">Robert Klasen</h4>
-  <!--h5 card__head head--main -->
-  <h4 class="head__founder--secondary">Full Stack Developer</h4>
-  <!--div card__head head--alternate -->
-  <div class="head--sub">Node, JavaScript, CSS</div>
-  <!--  card__head head--sub -->
-  <p class="card__text--founder text">
-    Robert is the founder of Klasen Development — Rob is based out of Green Bay,
-    WI.
-  </p>
-  <!-- card__text -->
-  <button class="btn btn--white" id="resume">View Resume</button>
+      <div class="layout-founder card card--founder text--white" id="founder">
+  <h5 class="card__head head head--main">Robert Klasen</h5>
+  <div class="card__head head head--alternate">Full Stack Developer</div>
+  <div class="card__head head head--sub">Node, JavaScript, CSS</div>
+  <div class="card__bio--founder">
+    <p class="text--bio">
+      Robert is the founder of Klasen Development — Rob is based out of Green
+      Bay, WI.
+    </p>
+  </div>
+  <div class="card__btn">
+    <button class="btn btn--white" id="resume">View Resume</button>
+  </div>
   <div class="card__socials">
-    <!-- card__socials -->
     <a href="https://www.linkedin.com/in/robertklasen/">
-      <img src="img/linkedIn.png" alt="" class="img--socials" />
-      <!-- socials -->
+      <img src="img/linkedIn.png" alt="" class="socials" />
     </a>
     <a href="https://github.com/Klasens">
-      <img src="img/github.png" alt="" class="img--socials" />
-      <!-- socials -->
+      <img src="img/github.png" alt="" class="socials" />
     </a>
   </div>
   <div class="card__design-line card__design-line--left"></div>
@@ -139,25 +130,18 @@
 </div>
 
       <!-- PICTURE CARD -->
-      <div class="card card--picture" id="picture">
-  <!-- layout__picture -->
-  <h4 class="head--picture card__head--picture">Rob</h4>
-  <!--h5 card__head--picture head--picture -->
+      <div class="layout-picture card card--picture text--white" id="picture">
+  <h5 class="card__head card__head--picture head--picture">Rob</h5>
 </div>
 
       <!-- CONTACT CARD -->
-      <div class="card card--contact" id="contact">
-  <!-- layout__contact -->
-  <h4 class="card__head card__head--main head--main">Contact Me</h4>
-  <!--h5 card__head head--main -->
-  <div class="card__head card__head--sub head--sub">
-    Questions, Ideas, Projects?
+      <div class="layout-contact card card--contact" id="contact">
+  <h5 class="card__head head--main">Contact Me</h5>
+  <div class="card__head head--alternate">Questions, Ideas, Projects?</div>
+  <div id="modalScroll" class="card__bio--contact">
+    <p class="text--bio">I'm a creative thinker, and I'm here to listen.</p>
   </div>
-  <!--div card__head head--alternate -->
-  <p id="resumeAdhoc" class="card__text--contact text">
-    I'm a creative thinker, and I'm here to help.
-  </p>
-  <!-- #modalScroll div  card__head head--sub -->
+  <!-- ------ CONTACT FORM ------ -->
   <form
     action="https://formsubmit.co/ab03273a7ef34e2dfcb290903ffb6723"
     method="POST"
@@ -194,242 +178,181 @@
 </div>
 
       <!-- PRIMARY CARD -->
-      <div class="card card__primary" id="primary">
-  <!-- card--primary layout__primary-->
-  <h2 class="head--main">Newsify.work</h2>
-  <!--h2 card__head head--primary -->
+      <div class="layout-primary card card--primary" id="primary">
+  <h2 class="card__head head--primary">Newsify.work</h2>
   <div class="grid grid--primary" id="gridPrimary">
-    <!-- grid grid--primary  -->
-    <div class="u--flex-col--center" id="logoPrimary">
-      <!-- layout__primary--left-col -->
-      <img src="/img/newsifyLogo.png" alt="" class="img--logo" />
-      <!-- logo -->
+    <!-- ------ LEFT COLUMN ------ -->
+    <div class="layout-primary--left-col" id="logoPrimary">
+      <img src="/img/newsifyLogo.png" alt="" class="logo" />
       <a target="_blank" href="https://www.newsify.work">
         <button class="btn btn--transparent u--margin-top">
           Go To Site &rarr;
         </button>
       </a>
     </div>
-    <!-- layout__primary--center-col -->
-    <img
-      src="/img/newsifyDemo.png"
-      alt=""
-      class="img--demo img--demo--primary"
-      id="imgPrimary"
-    />
-    <!-- demo demo--primary -->
-    <div
-      class="card__description card__description--primary u--flex-col"
-      id="descriptionPrimary"
-    >
-      <!-- layout__primary--right-col -->
-      <img src="/img/newsifyLogo.png" alt="" class="img--logo--mobile" />
-      <div class="u--flex-col">
-        <!-- layout__primary--sub-col -->
-        <h5 class="head--mini u--margin-bottom">Description</h5>
-        <!-- div head--mini -->
-        <p class="card__text--primary text text--description">
-          Newsify is a full-stack news aggregation REST API that collects and
-          displays news articles from over 60,000 sources. Utilizing the GNews
-          API, users can search, bookmark, and query articles with a variety of
-          search parameters.
-        </p>
-        <!-- div card__text card__text--primary text--description -->
+    <!-- ------ CENTER COLUMN ------ -->
+    <div class="layout-primary--center-col">
+      <img
+        src="/img/newsifyDemo.png"
+        alt=""
+        class="demo demo--primary"
+        id="imgPrimary"
+      />
+    </div>
+    <!-- ------ RIGHT COLUMN ------ -->
+    <div class="layout-primary--right-col" id="descriptionPrimary">
+      <img src="/img/newsifyLogo.png" alt="" class="logo logo--mobile" />
+      <div class="layout-primary--sub-col">
+        <div class="head--mini">Description</div>
+        <div class="card__description">
+          <p class="text--description">
+            Newsify is a full-stack news aggregation REST API that collects and
+            displays news articles from over 60,000 sources. Utilizing the GNews
+            API, users can search, bookmark, and query articles with a variety
+            of search parameters.
+          </p>
+        </div>
       </div>
-      <div class="u--flex-col u--margin-top">
-        <!-- layout__primary--sub-col -->
-        <h5 class="head--mini u--margin-bottom">Tech Stack</h5>
-        <!-- div head--mini -->
-        <ul class="list">
-          <!--  card__list -->
-          <li class="list-item">Node.js (Express)</li>
-          <!--  card__list-item -->
-          <li class="list-item">Javascript</li>
-          <li class="list-item">CSS (Sass)</li>
-          <li class="list-item">MongoDB</li>
-          <li class="list-item">GNews Api (Documentation)</li>
-          <li class="list-item">PUG (Server Side Rendering)</li>
+      <div class="layout-primary--sub-col">
+        <div class="head--mini">Tech Stack</div>
+        <ul class="card__list text--list">
+          <li class="card__list-item">Node.js (Express)</li>
+          <li class="card__list-item">Javascript</li>
+          <li class="card__list-item">CSS (Sass)</li>
+          <li class="card__list-item">MongoDB</li>
+          <li class="card__list-item">GNews Api (Documentation)</li>
+          <li class="card__list-item">PUG (Server Side Rendering)</li>
         </ul>
       </div>
-      <a
-        target="_blank"
-        class="u--margin-auto u--display--none"
-        href="https://www.newsify.work"
-      >
-        <!--  u--display--mobile -->
-        <button class="btn btn--transparent u--margin-top">
+      <div class="card__btn card__btn--mobile" href="https://www.newsify.work">
+        <a
+          href="https://www.newsify.work"
+          target="_blank"
+          class="btn btn--transparent"
+        >
           Go To Site &rarr;
-        </button>
-      </a>
+        </a>
+      </div>
     </div>
   </div>
 </div>
 
       <!-- SECONDARY CARD -->
-      <div class="card" id="secondary">
-  <!--layout__secondary card--secondary -->
-  <h3 class="head--secondary">Maxamillennial.org</h3>
-  <!-- card__head head--secondary -->
+      <div class="layout-secondary card card--secondary" id="secondary">
+  <h3 class="card__head head--secondary">Maxamillennial.org</h3>
   <div class="grid grid--secondary" id="gridSecondary">
-    <img
-      src="/img/maxamillennialDemo.png"
-      alt=""
-      class="img--demo img--demo--secondary"
-      id="imgSecondary"
-    />
-    <!-- demo demo--secondary -->
-    <div
-      class="card__description card__description--secondary u--flex-col"
-      id="descriptionSecondary"
-    >
-      <!-- layout__secondary--description -->
-      <img src="/img/pencil.png" alt="" class="img--card" />
-      <!-- icon -->
-      <div class="u--flex-col">
-        <!-- layout__secondary--sub-col -->
-        <h5 class="head__description--secondary u--margin-bottom">
-          Description
-        </h5>
-        <!-- div head--mini -->
+    <!-- ------ LEFT COLUMN ------ -->
+    <div class="layout-secondary--left-col" id="imgSecondary">
+      <img
+        src="/img/maxamillennialDemo.png"
+        alt=""
+        class="demo demo--secondary"
+      />
+    </div>
+    <!-- ------ RIGHT COLUMN ------ -->
+    <div class="layout-secondary--right-col" id="descriptionSecondary">
+      <img src="/img/pencil.png" alt="" class="icon" />
+      <div class="head--mini">Description</div>
+      <div class="card__description">
         <p class="card__text--primary text text--description">
           Maxamillennial.org is an author’s portfolio of written fiction and
           non-fiction. The written work is paired with pictures from a local
           Milwaukee photographer.
         </p>
-        <!-- div card__text--secondary text--description -->
       </div>
-      <div class="u--flex-col u--margin-top">
-        <!-- layout__secondary--sub-col -->
-        <h5 class="head__description--secondary u--margin-bottom">
-          Tech Stack
-        </h5>
-        <!-- div head--mini -->
-        <ul class="list">
-          <!--  card__list -->
-          <li class="list-item">Javascript</li>
-          <!--  card__list-item -->
-          <li class="list-item">CSS (Sass)</li>
-          <li class="list-item">Gulp (HTML Templating)</li>
-        </ul>
-      </div>
-      <a
-        target="_blank"
-        class="u--margin-auto"
-        href="https://maxamillennial.org"
-      >
-        <button class="btn btn--transparent u--margin-top">
+      <div class="head--mini">Tech Stack</div>
+      <ul class="card__list">
+        <li class="card__list-item">Javascript</li>
+        <li class="card__list-item">CSS (Sass)</li>
+        <li class="card__list-item">Gulp (HTML Templating)</li>
+      </ul>
+      <div class="card__btn">
+        <a
+          href="https://maxamillennial.org"
+          target="_blank"
+          class="btn btn--transparent"
+        >
           Go To Site &rarr;
-        </button>
-      </a>
+        </a>
+      </div>
     </div>
   </div>
 </div>
 
       <!-- TERTIARY CARD -->
-      <div class="card" id="tertiary">
-  <!-- card--tertiary -->
+      <div class="layout-tertiary card card--tertiary" id="tertiary">
   <h3 class="head--tertiary">Sambodhimusic.com</h3>
-  <div class="u--flex-col">
-    <!-- layout__tertiary -->
-    <img src="/img/music-note.png" alt="" class="img--card" />
-    <!-- icon -->
-    <div class="u--flex-col">
-      <!-- layout__tertiary--sub-col -->
-      <h5 class="head__description--secondary u--margin-bottom">Description</h5>
-      <!-- div head--mini -->
-      <p class="card__text--primary text text--description">
+  <!-- ------ MAIN COLUMN ------ -->
+  <div class="layout-tertiary--col">
+    <img src="/img/music-note.png" alt="" class="icon" />
+    <div class="head--mini">Description</div>
+    <div class="card__description">
+      <p class="text--description">
         Sam Bodhi is the stage name of a local Green Bay jazz musician. This
         website serves as a music portfolio and helps represent Bodhi’s music to
         venues.
       </p>
-      <!-- div card__text--tertiary text--description -->
     </div>
-    <div class="u--flex-col u--margin-top">
-      <!-- layout__tertiary--sub-col -->
-      <h5 class="head__description--secondary u--margin-bottom">Tech Stack</h5>
-      <!-- div head--mini -->
-      <ul class="list">
-        <!--  card__list -->
-        <li class="list-item">Javascript</li>
-        <!--  card__list-item -->
-        <li class="list-item">CSS (Sass)</li>
-        <li class="list-item">Gulp (HTML Templating)</li>
-      </ul>
-    </div>
-    <a target="_blank" class="u--margin-auto" href="https://sambodhimusic.com">
-      <button class="btn btn--transparent u--margin-top">
+    <div class="head--mini">Tech Stack</div>
+    <ul class="card__list">
+      <li class="card__list-item">Javascript</li>
+      <li class="card__list-item">CSS (Sass)</li>
+      <li class="card__list-item">Gulp (HTML Templating)</li>
+    </ul>
+    <div class="card__btn">
+      <a
+        target="_blank"
+        href="https://sambodhimusic.com"
+        class="btn btn--transparent u--margin-top"
+      >
         Go To Site &rarr;
-      </button>
-    </a>
+      </a>
+    </div>
   </div>
 </div>
 
       <!-- FOOTER CARD -->
-      <div class="card card--footer" id="footer">
-  <div class="u--flex-col u--margin-bottom--footer">
-    <!-- layout__footer -->
-    <h6
-      class="card__head card__head--footer head--footer u--margin-bottom--footer"
-    >
+      <div class="layout-footer card card--footer" id="footer">
+  <div class="layout-footer--left-col grid grid--footer" id="gridFooter">
+    <h6 class="head head--footer u--width-max--mobile" id="headFooter">
       All Links
     </h6>
-    <!-- head--footer -->
-    <div class="grid grid--footer" id="gridFooter">
-      <!-- layout__footer--left-col -->
-      <div class="card__block card__block--column u--flex-col" id="allLinksOne">
-        <!-- layout__footer--sub-col -->
-        <a href="https://www.newsify.work/" class="link--footer">
-          Newsify.work
-        </a>
-        <!-- link--footer -->
-        <a href="https://maxamillennial.org/" class="link--footer">
-          Maxamillennial.org
-        </a>
-        <a href="https://sambodhimusic.com/" class="link--footer">
-          Sambodhimusic.com
-        </a>
-      </div>
-      <div class="u--flex-col" id="allLinksTwo">
-        <!-- layout__footer--sub-col -->
-        <a
-          href="https://www.linkedin.com/in/robertklasen/"
-          class="link--footer"
-        >
-          LinkedIn
-        </a>
-        <a href="https://github.com/Klasens" class="link--footer">GitHub</a>
-        <a
-          href="https://www.figma.com/file/qudyUinSbAJFqFHJGodM8B/Klasen-Development-Architecture?t=06NHloQdYstyD6lD-1"
-          class="link--footer"
-        >
-          Figma Designs
-        </a>
-      </div>
+    <div class="layout-footer--sub-col" id="allLinksOne">
+      <a href="https://www.newsify.work/" class="link--footer">Newsify.work</a>
+      <a href="https://maxamillennial.org/" class="link--footer">
+        Maxamillennial.org
+      </a>
+      <a href="https://sambodhimusic.com/" class="link--footer">
+        Sambodhimusic.com
+      </a>
+    </div>
+    <div class="layout-footer--sub-col" id="allLinksTwo">
+      <a href="https://www.linkedin.com/in/robertklasen/" class="link--footer">
+        LinkedIn
+      </a>
+      <a href="https://github.com/Klasens" class="link--footer">GitHub</a>
+      <a
+        href="https://www.figma.com/file/qudyUinSbAJFqFHJGodM8B/Klasen-Development-Architecture?t=06NHloQdYstyD6lD-1"
+        class="link--footer"
+      >
+        Figma Designs
+      </a>
     </div>
   </div>
-  <div
-    class="card__block card__block--column u--flex-col u--margin-bottom--footer"
-  >
-    <!-- layout__footer--right-col -->
-    <h6
-      class="card__head card__head--footer head--footer u--margin-bottom--footer"
-    >
-      Other Links
-    </h6>
-    <!-- head--footer -->
-    <div class="u--flex-col" id="allLinksTwo">
-      <!-- layout__footer--sub-col -->
+  <div class="layout-footer--right-col">
+    <h6 class="head head--footer">Other Links</h6>
+    <div class="layout-footer--sub-col" id="allLinksTwo">
       <a href="/underConstruction.html" class="link--footer">History</a>
       <a href="/underConstruction.html" class="link--footer">More From Rob</a>
       <a href="/underConstruction.html" class="link--footer">Resources</a>
     </div>
+    <p class="card__copyright card__copyright--desktop">
+      Copyright © 2023 by Klasen Development LLC. All Rights Reserved.
+    </p>
+    <p class="card__copyright card__copyright--mobile">
+      © Klasen Development LLC
+    </p>
   </div>
-  <p class="footer__copyright">
-    Copyright © 2023 by Klasen Development LLC. All Rights Reserved.
-  </p>
-  <!-- card__copyright card__copyright--desktop -->
-  <p class="footer__copyright--mobile">© Klasen Development LLC</p>
-  <!-- card__copyright card__copyright--mobile -->
 </div>
 
       <!-- Endblock -->

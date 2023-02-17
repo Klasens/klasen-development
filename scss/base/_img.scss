@@ -2,10 +2,10 @@
  **                                                   IMG 
  *=======================================================================================================================**/
 
-.img--socials {
+.socials {
   height: 3rem;
 }
-.img--demo {
+.demo {
   &--primary {
     height: 28rem;
     border-radius: 5px;
@@ -15,35 +15,28 @@
     //! layout
   }
   &--secondary {
-    height: 27rem;
+    // height: 27rem;
     border-radius: 5px;
     border: 2px solid $color-white;
     //! layout
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     //! layout
   }
 }
-.img--logo {
+.logo {
   height: 22rem;
   width: 22rem;
   border: 2px solid $color-black;
   border-radius: 50%;
   object-fit: cover;
   &--mobile {
-    //! layout
-    display: none;
-    margin: 0 auto 1rem;
-    //! layout
-    max-width: 50%;
-    @include respond(break-600) {
-      //! layout
-      display: block;
-      //! layout
-    }
+    height: 6rem;
+    width: 6rem;
+    margin: 0 auto;
   }
 }
 
-.img--card {
+.icon {
   height: 4rem;
   width: 4rem;
   //! layout

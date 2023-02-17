@@ -4,9 +4,19 @@
 
 .main-font {
   font-family: 'Roboto', Arial, sans-serif;
+}
+
+.link {
+  color: $color-link;
+}
+.text--black {
   color: $color-black;
 }
-// ------------ NEW SELECTORS ------------ //
+.text--white {
+  color: $color-white;
+}
+
+// ============ TEXT ============ //
 .text--tag {
   font-size: 1.4rem;
   @include respond(break-600) {
@@ -14,18 +24,75 @@
   }
 }
 
+.text--header {
+  font-size: 1.2rem;
+}
+
+.text--bio {
+  font-size: 1.5rem;
+  @include respond(break-600) {
+    font-size: 1rem;
+  }
+}
+
+.text--list {
+  font-size: 1.2rem;
+  @include respond(break-600) {
+    font-size: 1rem;
+  }
+}
+
+// ============ HEADS ============ //
+.head--large {
+  font-size: 10rem;
+  text-transform: uppercase;
+  @include respond(break-600) {
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
+}
+
+.head--about {
+  font-size: 2.5rem;
+}
+
+.head--main {
+  font-size: 3rem;
+  @include respond(break-600) {
+    font-size: 2rem;
+  }
+}
+.head--alternate {
+  font-size: 2rem;
+  @include respond(break-600) {
+    font-size: 1.5rem;
+  }
+}
+.head--sub {
+  font-size: 1.8rem;
+  @include respond(break-600) {
+    font-size: 1.5rem;
+  }
+}
+.head--primary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  @include respond(break-600) {
+    font-size: 2.5rem;
+  }
+}
+.head--mini {
+  font-size: 2.5rem;
+  //! layout
+  text-align: center;
+  //! layout
+  text-decoration: underline;
+  @include respond(break-600) {
+    font-size: 1.8rem;
+  }
+}
 // ------------ OLD SELECTORS ------------ //
 .head {
-  &__founder {
-    &--main {
-    }
-    &--secondary {
-      font-size: 2.2rem;
-      @include respond(break-600) {
-        font-size: 1.5rem;
-      }
-    }
-  }
   &__description {
     &--secondary {
       font-size: 2.2rem;
@@ -34,17 +101,8 @@
       }
     }
   }
-  &--sub {
-    font-size: 2rem;
-    @include respond(break-600) {
-      font-size: 1.5rem;
-    }
-  }
   &--picture {
     font-size: 2rem;
-  }
-  &--about {
-    text-decoration: none;
   }
   &--tertiary {
     font-size: 2rem;
@@ -59,9 +117,6 @@
   @include respond(break-600) {
     font-size: 1rem;
   }
-  &--header {
-    font-size: 1.2rem;
-  }
   &--description {
     font-size: 1.2rem;
     @include respond(break-600) {
@@ -70,26 +125,7 @@
   }
 }
 
-h1 {
-  font-size: 10rem;
-  text-transform: uppercase;
-  //! layout
-  text-align: center;
-  //! layout
-  @include respond(break-600) {
-    //! layout
-    margin-top: 1rem;
-    //! layout
-    font-size: 2.5rem;
-    line-height: 1.3;
-  }
-}
 h2 {
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  @include respond(break-600) {
-    font-size: 2.5rem;
-  }
 }
 h3 {
   font-size: 3rem;
@@ -99,20 +135,8 @@ h3 {
   }
 }
 h4 {
-  font-size: 3rem;
-  @include respond(break-600) {
-    font-size: 2rem;
-  }
 }
 h5 {
-  font-size: 2.5rem;
-  //! layout
-  text-align: center;
-  //! layout
-  text-decoration: underline;
-  @include respond(break-600) {
-    font-size: 1.8rem;
-  }
 }
 h6 {
   font-size: 1.5rem;
@@ -124,7 +148,4 @@ h6 {
 
 button {
   font-size: 1.2rem;
-}
-
-span {
 }

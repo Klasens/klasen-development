@@ -3,11 +3,11 @@
 const scrollTag = document.querySelector('.card__tag');
 const tagContent = document.querySelector('#founder');
 const scrollResume = document.querySelector('#resume');
-const resumeContent = document.querySelector('#resumeAdhoc');
+const resumeContent = document.querySelector('#modalScroll');
 const overlay = document.querySelector('.overlay');
 const modal = document.querySelector('.modal');
 const modalClose = document.querySelector('.modal__close');
-const body = document.querySelector('.u--center');
+const body = document.querySelector('.body');
 const primary = document.querySelector('#primary');
 const cardPicture = document.querySelector('#picture');
 

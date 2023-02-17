@@ -17,25 +17,30 @@
 }
 
 // ------ MAIN CONTENT LAYOUT  --- //
-.layout-primary {
+.layout-main {
   margin: 5rem 0;
   @include respond(break-600) {
     margin: 2.5rem auto;
   }
 
-  // --- ALL CARDS  --- //
-  & > .card {
+  // --- ALL CHILD CARDS EXCEPT FOOTER --- //
+  & > :not(:last-child).card {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
   }
+  // --- ALL HEADS  --- //
+  & .head {
+    text-align: center;
+  }
 }
 // ============ LAYOUT BY INDIVIDUAL CARD  ============ //
 
 // --- HEADER CARD  --- //
 .layout-header {
+  // -- TAG --
   & > .card__tag {
     position: absolute;
     top: 3rem;
@@ -44,6 +49,199 @@
 
     @include respond(break-600) {
       top: 0.5rem;
+    }
+  }
+  // -- HEAD --
+  & > .head--large {
+    @include respond(break-600) {
+      margin-top: 1rem;
+    }
+  }
+  // -- ABOUT --
+  & > .card__about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include respond(break-600) {
+      flex-direction: column;
+    }
+  }
+  // -- ABOUT --
+  & .card__about--separator {
+    margin: 0 1.5rem;
+    @include respond(break-600) {
+      margin: 0.5rem 0;
+    }
+  }
+  // -- FIGMA --
+  & > .card__figma {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    @include respond(break-600) {
+      display: none;
+    }
+  }
+}
+
+// --- FOUNDER CARD  --- //
+
+.layout-founder {
+  & > .card__socials {
+    display: flex;
+    & > a:not(:first-child) {
+      margin-left: 2rem;
+    }
+  }
+  & > .card__design-line {
+    position: absolute;
+    background-color: $color-orange;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  & > .card__design-line--left {
+    left: 1.5rem;
+  }
+  & > .card__design-line--right {
+    right: 1.5rem;
+  }
+}
+
+// --- PICTURE CARD  --- //
+
+.layout-picture {
+  & > .card__head {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+// --- PRIMARY CARD  --- //
+
+.layout-primary {
+  &--left-col {
+    //! mixin?
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include respond(break-600) {
+      display: none;
+    }
+  }
+  &--center-col {
+    @include respond(break-600) {
+      display: none;
+    }
+  }
+  &--right-col {
+    //! mixin?
+    display: flex;
+    flex-direction: column;
+  }
+  &--sub-col {
+    //! mixin?
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    & > .head--mini {
+      margin-bottom: 1rem;
+    }
+  }
+  & .card__btn--mobile {
+    display: none;
+    margin: 1.5rem auto 0;
+    @include respond(break-600) {
+      display: block;
+    }
+  }
+  & .logo--mobile {
+    display: none;
+    @include respond(break-600) {
+      display: block;
+    }
+  }
+}
+
+// --- SECONDARY CARD  --- //
+
+.layout-secondary {
+  &--right-col {
+    //! mixin?
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > .card__description {
+      margin-bottom: 1rem;
+    }
+    & > .head--mini {
+      margin-bottom: 1rem;
+    }
+  }
+  & .card__btn {
+    margin-top: 1.5rem;
+  }
+}
+
+// --- TERTIARY CARD  --- //
+
+.layout-tertiary {
+  &--col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & .card__description {
+      margin-bottom: 1rem;
+    }
+    & .head--mini {
+      margin-bottom: 1rem;
+    }
+  }
+
+  & .card__btn {
+    margin-top: 1.5rem;
+  }
+}
+
+// --- FOOTER CARD  --- //
+
+.layout-footer {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  &--sub-col {
+    display: flex;
+    flex-direction: column;
+    @include respond(break-600) {
+      margin-left: 0.5rem;
+    }
+  }
+  & .card__copyright {
+    position: absolute;
+    bottom: 2px;
+    right: 5px;
+  }
+  &--right-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    & > .layout-footer--sub-col {
+      margin-bottom: 1rem;
+    }
+  }
+
+  & .card__copyright--desktop {
+    @include respond(break-600) {
+      display: none;
+    }
+  }
+  & .card__copyright--mobile {
+    display: none;
+    @include respond(break-600) {
+      display: block;
     }
   }
 }

@@ -15,25 +15,17 @@
     padding: 0.5rem 1rem;
     cursor: pointer;
   }
-  // -- FIGMA -- //
-  &__figma {
-    //! typography
-    color: $color-link;
-    //! typography
-    //! layout
-    position: absolute;
-    &--header {
-      bottom: 1rem;
-      right: 1rem;
-      @include respond(break-600) {
-        display: none;
-      }
-    }
-    //! layout
+
+  &__bio--founder {
+    width: 75%;
+  }
+  &__bio--contact {
+    width: 95%;
   }
 
   // -- DESCRIPTION -- //
   &__description {
+    width: 85%;
     //! layout
     &--secondary {
       display: flex;
@@ -42,80 +34,39 @@
     //! layout
   }
   // -- HEAD -- //
-  &__head {
-    &--picture {
-      //! layout
-      position: absolute;
-      top: 1rem;
-      left: 50%;
-      transform: translateX(-50%);
-      //! layout
-      //! card__head--picture
-      padding: 0 1rem;
-      border-radius: 10px;
-      background-color: $color-picture-header;
-      pointer-events: none;
-      //! card__head--picture
-    }
+  &__head--picture {
+    padding: 0 1rem;
+    border-radius: 10px;
+    background-color: $color-picture-header;
+    pointer-events: none;
+  }
+  &__head--contact {
+    width: 95%;
   }
   // -- ABOUT -- //
   &__about {
-    //! layout
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    //! layout
-
     &--separator {
       height: 100%;
       width: 2px;
       background-color: $color-black;
-      //! layout
-      margin: 0 1.5rem;
-      //! layout
       @include respond(break-600) {
         height: 2px;
         width: 50%;
-        //! layout
-        margin: 0.5rem 0;
-        //! layout
       }
     }
-    //! layout
-    @include respond(break-600) {
-      flex-direction: column;
-    }
-    //! layout
-  }
 
-  // -- SOCIALS -- //
-  &__socials {
-    //! layout
-    display: flex;
-    & > a:not(:first-child) {
-      margin-left: 2rem;
-    }
-    //! layout
-  }
-  // -- TEXT -- //
-  &__text {
-    &--founder {
-      width: 75%;
-    }
-    &--contact {
-      width: 95%;
-    }
-    //! card__about--right
-    &--header {
+    &--right {
       width: 45%;
 
       @include respond(break-600) {
         width: 85%;
       }
     }
-    //! card__about--right
+  }
+
+  // -- TEXT -- //
+  &__text {
     &--primary {
-      width: 85%;
       //! layout
       margin: 0 auto;
       //! layout
@@ -124,48 +75,21 @@
 
   // -- DESIGN LINE -- //
   &__design-line {
-    //! layout
-    position: absolute;
-    background-color: $color-orange;
-    top: 50%;
-    transform: translateY(-50%);
-    //! layout
-    //! card__design-line
     height: 100%;
     width: 4px;
-    //! card__design-line
-    //! layout
-    &--left {
-      left: 1.5rem;
-    }
-    &--right {
-      right: 1.5rem;
-    }
-    //! layout
   }
 }
 
 // ------ PICTURE CARD ------ //
 .card--picture {
-  //! layout
-  position: relative;
-  //! layout
-  //! card--picture
   background-image: url('/img/rob.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
-  //! card--picture
-  //! typography
-  color: $color-white;
-  //! typography
 }
 // ------ FOUNDER CARD ------ //
 .card--founder {
   background-color: $color-founder;
-  //! typography
-  color: $color-white;
-  //! typography
 }
 
 // ------ FOOTER CARD ------ //
@@ -235,12 +159,3 @@
   }
 }
 //! animations
-
-#allLinksTwo {
-  //! layout
-  margin-left: 1rem;
-  @include respond(break-600) {
-    margin-left: 0;
-  }
-  //! layout
-}

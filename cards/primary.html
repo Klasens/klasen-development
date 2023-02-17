@@ -1,70 +1,58 @@
-<div class="card card__primary" id="primary">
-  <!-- card--primary layout__primary-->
-  <h2 class="head--main">Newsify.work</h2>
-  <!--h2 card__head head--primary -->
+<div class="layout-primary card card--primary" id="primary">
+  <h2 class="card__head head--primary">Newsify.work</h2>
   <div class="grid grid--primary" id="gridPrimary">
-    <!-- grid grid--primary  -->
-    <div class="u--flex-col--center" id="logoPrimary">
-      <!-- layout__primary--left-col -->
-      <img src="/img/newsifyLogo.png" alt="" class="img--logo" />
-      <!-- logo -->
+    <!-- ------ LEFT COLUMN ------ -->
+    <div class="layout-primary--left-col" id="logoPrimary">
+      <img src="/img/newsifyLogo.png" alt="" class="logo" />
       <a target="_blank" href="https://www.newsify.work">
         <button class="btn btn--transparent u--margin-top">
           Go To Site &rarr;
         </button>
       </a>
     </div>
-    <!-- layout__primary--center-col -->
-    <img
-      src="/img/newsifyDemo.png"
-      alt=""
-      class="img--demo img--demo--primary"
-      id="imgPrimary"
-    />
-    <!-- demo demo--primary -->
-    <div
-      class="card__description card__description--primary u--flex-col"
-      id="descriptionPrimary"
-    >
-      <!-- layout__primary--right-col -->
-      <img src="/img/newsifyLogo.png" alt="" class="img--logo--mobile" />
-      <div class="u--flex-col">
-        <!-- layout__primary--sub-col -->
-        <h5 class="head--mini u--margin-bottom">Description</h5>
-        <!-- div head--mini -->
-        <p class="card__text--primary text text--description">
-          Newsify is a full-stack news aggregation REST API that collects and
-          displays news articles from over 60,000 sources. Utilizing the GNews
-          API, users can search, bookmark, and query articles with a variety of
-          search parameters.
-        </p>
-        <!-- div card__text card__text--primary text--description -->
+    <!-- ------ CENTER COLUMN ------ -->
+    <div class="layout-primary--center-col">
+      <img
+        src="/img/newsifyDemo.png"
+        alt=""
+        class="demo demo--primary"
+        id="imgPrimary"
+      />
+    </div>
+    <!-- ------ RIGHT COLUMN ------ -->
+    <div class="layout-primary--right-col" id="descriptionPrimary">
+      <img src="/img/newsifyLogo.png" alt="" class="logo logo--mobile" />
+      <div class="layout-primary--sub-col">
+        <div class="head--mini">Description</div>
+        <div class="card__description">
+          <p class="text--description">
+            Newsify is a full-stack news aggregation REST API that collects and
+            displays news articles from over 60,000 sources. Utilizing the GNews
+            API, users can search, bookmark, and query articles with a variety
+            of search parameters.
+          </p>
+        </div>
       </div>
-      <div class="u--flex-col u--margin-top">
-        <!-- layout__primary--sub-col -->
-        <h5 class="head--mini u--margin-bottom">Tech Stack</h5>
-        <!-- div head--mini -->
-        <ul class="list">
-          <!--  card__list -->
-          <li class="list-item">Node.js (Express)</li>
-          <!--  card__list-item -->
-          <li class="list-item">Javascript</li>
-          <li class="list-item">CSS (Sass)</li>
-          <li class="list-item">MongoDB</li>
-          <li class="list-item">GNews Api (Documentation)</li>
-          <li class="list-item">PUG (Server Side Rendering)</li>
+      <div class="layout-primary--sub-col">
+        <div class="head--mini">Tech Stack</div>
+        <ul class="card__list text--list">
+          <li class="card__list-item">Node.js (Express)</li>
+          <li class="card__list-item">Javascript</li>
+          <li class="card__list-item">CSS (Sass)</li>
+          <li class="card__list-item">MongoDB</li>
+          <li class="card__list-item">GNews Api (Documentation)</li>
+          <li class="card__list-item">PUG (Server Side Rendering)</li>
         </ul>
       </div>
-      <a
-        target="_blank"
-        class="u--margin-auto u--display--none"
-        href="https://www.newsify.work"
-      >
-        <!--  u--display--mobile -->
-        <button class="btn btn--transparent u--margin-top">
+      <div class="card__btn card__btn--mobile" href="https://www.newsify.work">
+        <a
+          href="https://www.newsify.work"
+          target="_blank"
+          class="btn btn--transparent"
+        >
           Go To Site &rarr;
-        </button>
-      </a>
+        </a>
+      </div>
     </div>
   </div>
 </div>

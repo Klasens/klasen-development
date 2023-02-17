@@ -1,58 +1,40 @@
-<div class="card" id="secondary">
-  <!--layout__secondary card--secondary -->
-  <h3 class="head--secondary">Maxamillennial.org</h3>
-  <!-- card__head head--secondary -->
+<div class="layout-secondary card card--secondary" id="secondary">
+  <h3 class="card__head head--secondary">Maxamillennial.org</h3>
   <div class="grid grid--secondary" id="gridSecondary">
-    <img
-      src="/img/maxamillennialDemo.png"
-      alt=""
-      class="img--demo img--demo--secondary"
-      id="imgSecondary"
-    />
-    <!-- demo demo--secondary -->
-    <div
-      class="card__description card__description--secondary u--flex-col"
-      id="descriptionSecondary"
-    >
-      <!-- layout__secondary--description -->
-      <img src="/img/pencil.png" alt="" class="img--card" />
-      <!-- icon -->
-      <div class="u--flex-col">
-        <!-- layout__secondary--sub-col -->
-        <h5 class="head__description--secondary u--margin-bottom">
-          Description
-        </h5>
-        <!-- div head--mini -->
+    <!-- ------ LEFT COLUMN ------ -->
+    <div class="layout-secondary--left-col" id="imgSecondary">
+      <img
+        src="/img/maxamillennialDemo.png"
+        alt=""
+        class="demo demo--secondary"
+      />
+    </div>
+    <!-- ------ RIGHT COLUMN ------ -->
+    <div class="layout-secondary--right-col" id="descriptionSecondary">
+      <img src="/img/pencil.png" alt="" class="icon" />
+      <div class="head--mini">Description</div>
+      <div class="card__description">
         <p class="card__text--primary text text--description">
           Maxamillennial.org is an author’s portfolio of written fiction and
           non-fiction. The written work is paired with pictures from a local
           Milwaukee photographer.
         </p>
-        <!-- div card__text--secondary text--description -->
       </div>
-      <div class="u--flex-col u--margin-top">
-        <!-- layout__secondary--sub-col -->
-        <h5 class="head__description--secondary u--margin-bottom">
-          Tech Stack
-        </h5>
-        <!-- div head--mini -->
-        <ul class="list">
-          <!--  card__list -->
-          <li class="list-item">Javascript</li>
-          <!--  card__list-item -->
-          <li class="list-item">CSS (Sass)</li>
-          <li class="list-item">Gulp (HTML Templating)</li>
-        </ul>
-      </div>
-      <a
-        target="_blank"
-        class="u--margin-auto"
-        href="https://maxamillennial.org"
-      >
-        <button class="btn btn--transparent u--margin-top">
+      <div class="head--mini">Tech Stack</div>
+      <ul class="card__list">
+        <li class="card__list-item">Javascript</li>
+        <li class="card__list-item">CSS (Sass)</li>
+        <li class="card__list-item">Gulp (HTML Templating)</li>
+      </ul>
+      <div class="card__btn">
+        <a
+          href="https://maxamillennial.org"
+          target="_blank"
+          class="btn btn--transparent"
+        >
           Go To Site &rarr;
-        </button>
-      </a>
+        </a>
+      </div>
     </div>
   </div>
 </div>

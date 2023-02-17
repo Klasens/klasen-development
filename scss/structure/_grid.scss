@@ -30,6 +30,7 @@
   }
   &--footer {
     grid-template-columns: repeat(2, 1fr);
+    place-items: center;
     @include respond(break-600) {
       grid-template-columns: 1fr;
       place-items: start;
@@ -148,12 +149,19 @@
 }
 
 #gridFooter {
-  grid-template-areas: 'links1 links2';
+  grid-template-areas:
+    'footer footer'
+    'links1 links2';
   @include respond(break-600) {
     grid-template-areas:
+      'footer'
       'links1'
       'links2';
   }
+}
+
+#headFooter {
+  grid-area: footer;
 }
 
 #allLinksOne {
