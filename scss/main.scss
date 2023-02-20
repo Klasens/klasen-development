@@ -2,23 +2,35 @@
  **                                                    MAIN
  *=======================================================================================================================**/
 
-//BASE
+// --- ABSTRACTS --- //
 @import 'abstracts/variables';
+@import 'abstracts/mixins';
 @import 'abstracts/media-breakpoints';
+
+// --- BASE --- //
 @import 'base/base';
 @import 'base/typography';
 @import 'base/img';
 @import 'base/animations';
+
+// --- COMPONENTS --- //
 @import 'components/btn';
 @import 'components/modal';
-@import 'layout/layout';
-@import 'structure/display';
-
-@import 'structure/grid';
 @import 'components/form';
+
+// --- LAYOUT --- //
+@import 'layout/layout';
+
+// --- STRUCTURE --- //
+@import 'structure/display';
+@import 'structure/grid';
+
+// --- CARDS --- //
 @import 'cards/cards';
 
+//TODO --- Needs to be Categorized  --- //
 @import 'construction';
 
-@import 'abstracts/utilities';
-@import 'base/javascript';
+// --- MODIFIERS --- //
+@import 'modifiers/utilities';
+@import 'modifiers/javascript';

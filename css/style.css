@@ -143,7 +143,8 @@ select {
       font-size: 2.5rem; } }
 
 .head--tertiary {
-  font-size: 2rem; }
+  font-size: 2rem;
+  text-transform: uppercase; }
   @media (max-width: 37.5em) {
     .head--tertiary {
       font-size: 1.5rem; } }
@@ -263,6 +264,30 @@ select {
 .resume {
   overflow: scroll;
   height: 80rem; }
+
+/**=======================================================================================================================
+ **                                                   FORM 
+ *=======================================================================================================================**/
+.form {
+  width: 70%; }
+  .form > .form__block:not(:first-child) {
+    margin-top: 1rem; }
+  .form__block {
+    position: relative;
+    display: flex;
+    flex-direction: column; }
+  .form__submit {
+    margin: 0 auto;
+    width: 50%; }
+  .form__input {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px; }
+    .form__input--standard {
+      height: 2.5rem; }
+    .form__input--message {
+      height: 6rem; }
 
 /**========================================================================
  **                          LAYOUT 
@@ -580,30 +605,6 @@ select {
 
 #allLinksTwo {
   grid-area: links2; }
-
-/**=======================================================================================================================
- **                                                   FORM 
- *=======================================================================================================================**/
-.form {
-  width: 70%; }
-  .form > .form__block:not(:first-child) {
-    margin-top: 1rem; }
-  .form__block {
-    position: relative;
-    display: flex;
-    flex-direction: column; }
-  .form__submit {
-    margin: 0 auto;
-    width: 50%; }
-  .form__input {
-    color: black;
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 5px; }
-    .form__input--standard {
-      height: 2.5rem; }
-    .form__input--message {
-      height: 6rem; }
 
 /**=======================================================================================================================
  **                                                   CARD 

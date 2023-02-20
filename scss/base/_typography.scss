@@ -101,6 +101,7 @@
 
 .head--tertiary {
   font-size: 2rem;
+  text-transform: uppercase;
   @include respond(break-600) {
     font-size: 1.5rem;
   }
