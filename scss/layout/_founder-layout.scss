@@ -1,0 +1,26 @@
+/**========================================================================
+ **                          FOUNDER LAYOUT 
+ *========================================================================**/
+
+// --- FOUNDER CARD  --- //
+
+.layout-founder {
+  & > .card__socials {
+    display: flex;
+    & > a:not(:first-child) {
+      margin-left: 2rem;
+    }
+  }
+  & > .card__design-line {
+    position: absolute;
+    background-color: $color-orange;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  & > .card__design-line--left {
+    left: 1.5rem;
+  }
+  & > .card__design-line--right {
+    right: 1.5rem;
+  }
+}

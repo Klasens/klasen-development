@@ -1,0 +1,49 @@
+/**========================================================================
+ **                          HEADER LAYOUT 
+ *========================================================================**/
+
+// --- HEADER CARD  --- //
+.layout-header {
+  // -- TAG --
+  & > .card__tag {
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include respond(break-600) {
+      top: 0.5rem;
+    }
+  }
+  // -- HEAD --
+  & > .head--large {
+    @include respond(break-600) {
+      margin-top: 1rem;
+    }
+  }
+  // -- ABOUT --
+  & > .card__about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include respond(break-600) {
+      flex-direction: column;
+    }
+  }
+  // -- ABOUT --
+  & .card__about--separator {
+    margin: 0 1.5rem;
+    @include respond(break-600) {
+      margin: 0.5rem 0;
+    }
+  }
+  // -- FIGMA --
+  & > .card__figma {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    @include respond(break-600) {
+      display: none;
+    }
+  }
+}

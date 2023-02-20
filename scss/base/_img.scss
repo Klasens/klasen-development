@@ -5,6 +5,7 @@
 .socials {
   height: 3rem;
 }
+
 .demo {
   &--primary {
     height: 28rem;
@@ -12,11 +13,11 @@
     border: 2px solid $color-black;
   }
   &--secondary {
-    // height: 27rem;
     border-radius: 5px;
     border: 2px solid $color-white;
   }
 }
+
 .logo {
   height: 22rem;
   width: 22rem;
@@ -26,7 +27,6 @@
   &--mobile {
     height: 6rem;
     width: 6rem;
-    margin: 0 auto;
   }
 }
 

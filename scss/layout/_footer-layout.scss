@@ -1,0 +1,47 @@
+/**========================================================================
+ **                          FOOTER LAYOUT 
+ *========================================================================**/
+
+// --- FOOTER CARD  --- //
+
+.layout-footer {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  @include respond(break-600) {
+    flex-direction: column;
+  }
+  &--sub-col {
+    display: flex;
+    flex-direction: column;
+    @include respond(break-600) {
+      margin-left: 0.5rem;
+    }
+  }
+  & .card__copyright {
+    position: absolute;
+    bottom: 2px;
+    right: 5px;
+  }
+  &--right-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    & > .layout-footer--sub-col {
+      margin-bottom: 1rem;
+    }
+  }
+
+  & .card__copyright--desktop {
+    @include respond(break-600) {
+      display: none;
+    }
+  }
+  & .card__copyright--mobile {
+    display: none;
+    @include respond(break-600) {
+      display: block;
+    }
+  }
+}

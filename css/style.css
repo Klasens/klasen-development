@@ -186,8 +186,7 @@ select {
   object-fit: cover; }
   .logo--mobile {
     height: 6rem;
-    width: 6rem;
-    margin: 0 auto; }
+    width: 6rem; }
 
 .icon {
   height: 4rem;
@@ -290,7 +289,7 @@ select {
       height: 6rem; }
 
 /**========================================================================
- **                          LAYOUT 
+ **                          BASE LAYOUT 
  *========================================================================**/
 .layout-base {
   position: relative;
@@ -317,6 +316,9 @@ select {
   .layout-main .head {
     text-align: center; }
 
+/**========================================================================
+ **                          HEADER LAYOUT 
+ *========================================================================**/
 .layout-header > .card__tag {
   position: absolute;
   top: 3rem;
@@ -352,6 +354,9 @@ select {
     .layout-header > .card__figma {
       display: none; } }
 
+/**========================================================================
+ **                          FOUNDER LAYOUT 
+ *========================================================================**/
 .layout-founder > .card__socials {
   display: flex; }
   .layout-founder > .card__socials > a:not(:first-child) {
@@ -369,12 +374,18 @@ select {
 .layout-founder > .card__design-line--right {
   right: 1.5rem; }
 
+/**========================================================================
+ **                          PICTURE LAYOUT 
+ *========================================================================**/
 .layout-picture > .card__head {
   position: absolute;
   top: 1rem;
   left: 50%;
   transform: translateX(-50%); }
 
+/**========================================================================
+ **                          PRIMARY LAYOUT 
+ *========================================================================**/
 .layout-primary--left-col {
   display: flex;
   flex-direction: column;
@@ -412,8 +423,12 @@ select {
   display: none; }
   @media (max-width: 37.5em) {
     .layout-primary .logo--mobile {
+      margin: 0 auto;
       display: block; } }
 
+/**========================================================================
+ **                          SECONDARY LAYOUT 
+ *========================================================================**/
 .layout-secondary--right-col {
   display: flex;
   flex-direction: column;
@@ -429,6 +444,9 @@ select {
 .layout-secondary--left-col .demo--secondary {
   margin-left: 0.5rem; }
 
+/**========================================================================
+ **                          TERTIARY LAYOUT 
+ *========================================================================**/
 .layout-tertiary--col {
   display: flex;
   flex-direction: column;
@@ -441,6 +459,9 @@ select {
 .layout-tertiary .card__btn {
   margin-top: 1.5rem; }
 
+/**========================================================================
+ **                          FOOTER LAYOUT 
+ *========================================================================**/
 .layout-footer {
   position: relative;
   display: flex;

@@ -1,0 +1,27 @@
+/**========================================================================
+ **                          SECONDARY LAYOUT 
+ *========================================================================**/
+
+// --- SECONDARY CARD  --- //
+
+.layout-secondary {
+  &--right-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > .card__description {
+      margin-bottom: 1rem;
+    }
+    & > .head--mini {
+      margin-bottom: 1rem;
+    }
+  }
+  & .card__btn {
+    margin-top: 1.5rem;
+  }
+  &--left-col {
+    & .demo--secondary {
+      margin-left: 0.5rem;
+    }
+  }
+}

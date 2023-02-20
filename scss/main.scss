@@ -19,7 +19,14 @@
 @import 'components/form';
 
 // --- LAYOUT --- //
-@import 'layout/layout';
+@import 'layout/base-layout';
+@import 'layout/header-layout';
+@import 'layout/founder-layout';
+@import 'layout/picture-layout';
+@import 'layout/primary-layout';
+@import 'layout/secondary-layout';
+@import 'layout/tertiary-layout';
+@import 'layout/footer-layout';
 
 // --- STRUCTURE --- //
 @import 'structure/display';

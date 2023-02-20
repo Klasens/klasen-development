@@ -16,6 +16,7 @@
     cursor: pointer;
   }
 
+  // -- BIO -- //
   &__bio--founder {
     width: 75%;
   }
@@ -27,6 +28,7 @@
   &__description {
     width: 85%;
   }
+
   // -- HEAD -- //
   &__head--picture {
     padding: 0 1rem;
@@ -37,6 +39,7 @@
   &__head--contact {
     width: 95%;
   }
+
   // -- ABOUT -- //
   &__about {
     &--separator {

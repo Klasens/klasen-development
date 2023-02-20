@@ -4,30 +4,20 @@
 
 .form {
   width: 70%;
-  //! layout
   & > .form__block:not(:first-child) {
     margin-top: 1rem;
   }
-  //! layout
   &__block {
-    //! layout
     position: relative;
     display: flex;
     flex-direction: column;
-    //! layout
-  }
-  &__label {
   }
   &__submit {
-    //! layout
     margin: 0 auto;
-    //! layout
     width: 50%;
   }
   &__input {
-    //! typography
     color: $color-black;
-    //! typography
     background-color: $color-white;
     border: 1px solid $color-black;
     border-radius: 5px;
