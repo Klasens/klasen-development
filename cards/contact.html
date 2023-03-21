@@ -1,16 +1,19 @@
+<!-- Creates a contact form for users to send messages. -->
 <div class="layout-contact card card--contact" id="contact">
   <h5 class="card__head head--main">Contact Me</h5>
   <div class="card__head head--alternate">Questions, Ideas, Projects?</div>
   <div id="modalScroll" class="card__bio--contact">
-    <p class="text--bio">I'm a creative thinker, and I'm here to listen.</p>
+    <!-- Friendly message to users. -->
+    <p class="text--bio">I'm here to listen.</p>
   </div>
-  <!-- ------ CONTACT FORM ------ -->
+  <!-- Form for users to enter name, email, and message. -->
   <form
     action="https://formsubmit.co/ab03273a7ef34e2dfcb290903ffb6723"
     method="POST"
     class="form"
   >
     <div class="form__block">
+      <!-- Field for name input. -->
       <label for="fullName" class="form__label">Name</label>
       <input
         type="text"
@@ -19,6 +22,7 @@
       />
     </div>
     <div class="form__block">
+      <!-- Field for email input. -->
       <label for="email" class="form__label">Email</label>
       <input
         type="text"
@@ -27,6 +31,7 @@
       />
     </div>
     <div class="form__block">
+      <!-- Field for message input. -->
       <label for="message" class="form__label">Message</label>
       <textarea
         type="text"
@@ -34,6 +39,7 @@
         name="message"
       ></textarea>
     </div>
+    <!-- Button for submitting the form. -->
     <div class="form__block form__submit">
       <button class="btn btn--transparent text--btn">Submit</button>
     </div>

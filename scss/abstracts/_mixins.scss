@@ -1,0 +1,16 @@
+// Mixins
+@mixin text-size-resp($default-size) {
+  font-size: $default-size;
+
+  @include respond($breakpoint-600) {
+    font-size: 1rem;
+  }
+}
+
+@mixin head-size-resp($default-size) {
+  font-size: $default-size;
+
+  @include respond($breakpoint-600) {
+    font-size: 1.5rem;
+  }
+}

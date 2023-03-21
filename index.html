@@ -66,21 +66,26 @@
       <!-- Block Content -->
       
       <!-- MODAL -->
-      <div class="overlay pointer-events--none"></div>
+      <!-- Creates an overlay and close button for a modal. -->
+<div class="overlay pointer-events--none"></div>
 <div class="modal__close pointer-events--none">
-  <!-- layout__modal -->
+  <!-- Image of the close button. -->
   <img src="/img/x.png" alt="" class="img--modal" />
-  <!-- close -->
 </div>
+<!-- Creates a modal for displaying a resume using Adobe DC. -->
 <div class="modal pointer-events--none">
-  <!-- pointer-events--none -->
+  <!-- The Adobe DC view for displaying the resume. -->
   <div class="resume" id="adobe-dc-view"></div>
 </div>
 
       <!-- HEADER CARD -->
-      <div class="layout-header card card--header" id="header">
+      <!-- Creates a header section with the company name and description. -->
+<div class="layout-header card card--header" id="header">
+  <!-- Displays the year. -->
   <div class="card__tag text--tag">2023</div>
+  <!-- Company name. -->
   <h1 class="card__head head head--large">Klasen Development</h1>
+  <!-- About section with description. -->
   <div class="card__about">
     <div class="card__about--left head head--about">About</div>
     <div class="card__about--separator"></div>
@@ -92,6 +97,7 @@
       </p>
     </div>
   </div>
+  <!-- Link to Figma design for the site. -->
   <div class="card__figma">
     <a
       target="_blank"
@@ -104,19 +110,24 @@
 </div>
 
       <!-- FOUNDER CARD -->
-      <div class="layout-founder card card--founder text--white" id="founder">
+      <!-- Creates a card for Robert Klasen with information and social links. -->
+<div class="layout-founder card card--founder text--white" id="founder">
+  <!-- Founder's name, job title, and skills. -->
   <h5 class="card__head head head--main">Robert Klasen</h5>
   <div class="card__head head head--alternate">Full Stack Developer</div>
   <div class="card__head head head--sub">Node, JavaScript, CSS</div>
+  <!-- Founder's bio. -->
   <div class="card__bio--founder">
     <p class="text--bio">
       Robert is the founder of Klasen Development — Rob is based out of Green
       Bay, WI.
     </p>
   </div>
+  <!-- Button to view founder's resume. -->
   <div class="card__btn u--display--desktop">
     <button class="btn btn--white text--btn" id="resume">View Resume</button>
   </div>
+  <!-- Social links for founder. -->
   <div class="card__socials">
     <a href="https://www.linkedin.com/in/robertklasen/">
       <img src="img/linkedIn.png" alt="" class="socials" />
@@ -125,29 +136,34 @@
       <img src="img/github.png" alt="" class="socials" />
     </a>
   </div>
+  <!-- Styling elements for the card. -->
   <div class="card__design-line card__design-line--left"></div>
   <div class="card__design-line card__design-line--right"></div>
 </div>
 
       <!-- PICTURE CARD -->
-      <div class="layout-picture card card--picture text--white" id="picture">
+      <!-- Creates a Picture Card with Heart Animation -->
+<div class="layout-picture card card--picture text--white" id="picture">
   <h5 class="card__head card__head--picture head--picture">Rob</h5>
 </div>
 
       <!-- CONTACT CARD -->
-      <div class="layout-contact card card--contact" id="contact">
+      <!-- Creates a contact form for users to send messages. -->
+<div class="layout-contact card card--contact" id="contact">
   <h5 class="card__head head--main">Contact Me</h5>
   <div class="card__head head--alternate">Questions, Ideas, Projects?</div>
   <div id="modalScroll" class="card__bio--contact">
-    <p class="text--bio">I'm a creative thinker, and I'm here to listen.</p>
+    <!-- Friendly message to users. -->
+    <p class="text--bio">I'm here to listen.</p>
   </div>
-  <!-- ------ CONTACT FORM ------ -->
+  <!-- Form for users to enter name, email, and message. -->
   <form
     action="https://formsubmit.co/ab03273a7ef34e2dfcb290903ffb6723"
     method="POST"
     class="form"
   >
     <div class="form__block">
+      <!-- Field for name input. -->
       <label for="fullName" class="form__label">Name</label>
       <input
         type="text"
@@ -156,6 +172,7 @@
       />
     </div>
     <div class="form__block">
+      <!-- Field for email input. -->
       <label for="email" class="form__label">Email</label>
       <input
         type="text"
@@ -164,6 +181,7 @@
       />
     </div>
     <div class="form__block">
+      <!-- Field for message input. -->
       <label for="message" class="form__label">Message</label>
       <textarea
         type="text"
@@ -171,6 +189,7 @@
         name="message"
       ></textarea>
     </div>
+    <!-- Button for submitting the form. -->
     <div class="form__block form__submit">
       <button class="btn btn--transparent text--btn">Submit</button>
     </div>
@@ -178,10 +197,14 @@
 </div>
 
       <!-- PRIMARY CARD -->
-      <div class="layout-primary card card--primary" id="primary">
+      <!-- The primary layout container for the Newsify.work card -->
+<div class="layout-primary card card--primary" id="primary">
+  <!-- The primary heading for the Newsify.work card -->
   <h2 class="card__head head--primary">Newsify.work</h2>
+  <!-- The primary grid container for the Newsify.work card -->
   <div class="grid grid--primary" id="gridPrimary">
     <!-- ------ LEFT COLUMN ------ -->
+    <!-- The left column of the grid, which displays the Newsify.work logo and link to the website -->
     <div class="layout-primary--left-col" id="logoPrimary">
       <img src="/img/newsifyLogo.png" alt="" class="logo" />
       <a target="_blank" href="https://www.newsify.work">
@@ -191,6 +214,7 @@
       </a>
     </div>
     <!-- ------ CENTER COLUMN ------ -->
+    <!-- The center column of the grid, which displays the Newsify.work demo image -->
     <div class="layout-primary--center-col">
       <img
         src="/img/newsifyDemo.png"
@@ -200,10 +224,12 @@
       />
     </div>
     <!-- ------ RIGHT COLUMN ------ -->
+    <!-- The right column of the grid, which displays the description and tech stack of the Newsify.work card -->
     <div class="layout-primary--right-col" id="descriptionPrimary">
       <img src="/img/newsifyLogo.png" alt="" class="logo logo--mobile" />
       <div class="layout-primary--sub-col">
         <div class="head--mini">Description</div>
+        <!-- The card description for the Newsify.work card -->
         <div class="card__description">
           <p class="text--description">
             Newsify is a full-stack news aggregation REST API that collects and
@@ -215,6 +241,7 @@
       </div>
       <div class="layout-primary--sub-col">
         <div class="head--mini">Tech Stack</div>
+        <!-- The list of technologies used in the Newsify.work card -->
         <ul class="card__list text--list">
           <li class="card__list-item">Node.js (Express)</li>
           <li class="card__list-item">Javascript</li>
@@ -224,6 +251,7 @@
           <li class="card__list-item">PUG (Server Side Rendering)</li>
         </ul>
       </div>
+      <!-- The button linking to the Newsify.work website -->
       <div
         class="card__btn card__btn--mobile text--btn"
         href="https://www.newsify.work"
@@ -241,10 +269,16 @@
 </div>
 
       <!-- SECONDARY CARD -->
-      <div class="layout-secondary card card--secondary" id="secondary">
+      <!-- A card displaying info about Maxamillennial.org website -->
+
+<div class="layout-secondary card card--secondary" id="secondary">
   <h3 class="card__head head--secondary">Maxamillennial.org</h3>
+
+  <!-- Two-column grid layout -->
+
   <div class="grid grid--secondary" id="gridSecondary">
-    <!-- ------ LEFT COLUMN ------ -->
+    <!-- Left column with website demo image -->
+
     <div class="layout-secondary--left-col" id="imgSecondary">
       <img
         src="/img/maxamillennialDemo.png"
@@ -252,7 +286,9 @@
         class="demo demo--secondary"
       />
     </div>
-    <!-- ------ RIGHT COLUMN ------ -->
+
+    <!-- Right column with website icon, description header, description text, tech stack list, and button -->
+
     <div class="layout-secondary--right-col" id="descriptionSecondary">
       <img src="/img/pencil.png" alt="" class="icon" />
       <div class="head--mini">Description</div>
@@ -283,17 +319,20 @@
 </div>
 
       <!-- TERTIARY CARD -->
-      <div class="layout-tertiary card card--tertiary" id="tertiary">
+      <!-- A card displaying info about Sambodhimusic.com website -->
+
+<div class="layout-tertiary card card--tertiary" id="tertiary">
   <h3 class="head--tertiary">Sambodhimusic.com</h3>
-  <!-- ------ MAIN COLUMN ------ -->
+
+  <!-- Main column with website icon, description header, description text, tech stack list, and button -->
+
   <div class="layout-tertiary--col">
     <img src="/img/music-note.png" alt="" class="icon" />
     <div class="head--mini">Description</div>
     <div class="card__description">
       <p class="text--description">
-        Sam Bodhi is the stage name of a local Green Bay jazz musician. This
-        website serves as a music portfolio and helps represent Bodhi’s music to
-        venues.
+        Sam Bodhi is a Green Bay jazz musician, and this website is his music
+        portfolio for venues.
       </p>
     </div>
     <div class="head--mini">Tech Stack</div>
@@ -315,17 +354,21 @@
 </div>
 
       <!-- FOOTER CARD -->
-      <div class="layout-footer card card--footer" id="footer">
+      <!-- Creates a footer section with links and copyright information. -->
+<div class="layout-footer card card--footer" id="footer">
+  <!-- Left column with links to external websites. -->
   <div class="layout-footer--left-col grid grid--footer" id="gridFooter">
     <h6 class="head head--footer u--width-max--mobile" id="headFooter">
       All Links
     </h6>
     <div class="layout-footer--sub-col" id="allLinksOne">
+      <!-- External links. -->
       <a href="https://www.newsify.work/" class="link">Newsify.work</a>
       <a href="https://maxamillennial.org/" class="link">Maxamillennial.org</a>
       <a href="https://sambodhimusic.com/" class="link">Sambodhimusic.com</a>
     </div>
     <div class="layout-footer--sub-col" id="allLinksTwo">
+      <!-- Links to Robert Klasen's profiles and designs. -->
       <a href="https://www.linkedin.com/in/robertklasen/" class="link">
         LinkedIn
       </a>
@@ -338,19 +381,20 @@
       </a>
     </div>
   </div>
+  <!-- Right column with additional links and copyright information. -->
   <div class="layout-footer--right-col">
     <h6 class="head head--footer">Other Links</h6>
     <div class="layout-footer--sub-col" id="allLinksTwo">
+      <!-- Links to under construction pages. -->
       <a href="/underConstruction.html" class="link">History</a>
       <a href="/underConstruction.html" class="link">More From Rob</a>
       <a href="/underConstruction.html" class="link">Resources</a>
     </div>
-    <p class="card__copyright card__copyright--desktop">
-      Copyright © 2023 by Klasen Development LLC. All Rights Reserved.
+    <!-- Copyright information. -->
+    <p class="card__copy card__copy--desktop">
+      © 2023 Klasen Development LLC. All Rights Reserved.
     </p>
-    <p class="card__copyright card__copyright--mobile">
-      © Klasen Development LLC
-    </p>
+    <p class="card__copy card__copy--mobile">© Klasen Development LLC</p>
   </div>
 </div>
 

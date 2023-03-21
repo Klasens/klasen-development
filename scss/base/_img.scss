@@ -2,35 +2,43 @@
  **                                                   IMG 
  *=======================================================================================================================**/
 
+/* Styles for social icons */
 .socials {
   height: 3rem;
 }
 
+/* Styles for demo elements */
 .demo {
+  border-radius: 5px;
+  /* Styles for primary demo element */
   &--primary {
     height: 28rem;
-    border-radius: 5px;
     border: 2px solid $color-black;
   }
+  /* Styles for secondary demo element */
   &--secondary {
-    border-radius: 5px;
     border: 2px solid $color-white;
   }
 }
 
+/* Styles for logo */
 .logo {
-  height: 22rem;
-  width: 22rem;
+  /* Use the $logo-size variable for height and width */
+  height: $logo-size;
+  width: $logo-size;
   border: 2px solid $color-black;
   border-radius: 50%;
   object-fit: cover;
+  /* Styles for logo on mobile */
   &--mobile {
-    height: 6rem;
-    width: 6rem;
+    height: $logo-size-mobile;
+    width: $logo-size-mobile;
   }
 }
 
+/* Styles for icons */
 .icon {
-  height: 4rem;
-  width: 4rem;
+  /* Use the $icon-size variable for height and width */
+  height: $icon-size;
+  width: $icon-size;
 }

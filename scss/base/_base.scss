@@ -4,26 +4,31 @@
 
 //  KEVIN POWELL BASIC RESET
 
+/* Set box-sizing to border-box for all elements and pseudo-elements */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+/* Remove default margins, padding, and font styles for all elements */
 * {
   margin: 0;
   padding: 0;
   font: inherit;
 }
 
+/* Set a minimum height of 100% for the body element */
 body {
   min-height: 100vh;
 }
 
+/* Set the default color scheme for the page to support dark mode */
 html {
   color-scheme: dark light;
 }
 
+/* Set default styles for media elements to ensure they are responsive */
 img,
 picture,
 svg,
@@ -32,6 +37,7 @@ video {
   max-width: 100%;
 }
 
+/* Inherit the font styles for form elements to maintain consistency */
 input,
 textarea,
 button,

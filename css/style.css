@@ -13,6 +13,12 @@
 /**======================
    *     Page Specific 
    *========================**/
+/**======================
+   *     Breakpoints 
+   *========================**/
+/**======================
+   *     IMG 
+   *========================**/
 /**========================================================================
  **                           MEDIA BREAKPOINTS
  *========================================================================**/
@@ -26,22 +32,27 @@
 /**=======================================================================================================================
  **                                                   BASE 
  *=======================================================================================================================**/
+/* Set box-sizing to border-box for all elements and pseudo-elements */
 *,
 *::before,
 *::after {
   box-sizing: border-box; }
 
+/* Remove default margins, padding, and font styles for all elements */
 * {
   margin: 0;
   padding: 0;
   font: inherit; }
 
+/* Set a minimum height of 100% for the body element */
 body {
   min-height: 100vh; }
 
+/* Set the default color scheme for the page to support dark mode */
 html {
   color-scheme: dark light; }
 
+/* Set default styles for media elements to ensure they are responsive */
 img,
 picture,
 svg,
@@ -49,6 +60,7 @@ video {
   display: block;
   max-width: 100%; }
 
+/* Inherit the font styles for form elements to maintain consistency */
 input,
 textarea,
 button,
@@ -72,89 +84,48 @@ select {
 
 .text--tag {
   font-size: 1.4rem; }
-  @media (max-width: 37.5em) {
-    .text--tag {
-      font-size: 1rem; } }
 
-.text--header {
+.text--header,
+.text--list {
   font-size: 1.2rem; }
-  @media (max-width: 37.5em) {
-    .text--header {
-      font-size: 1rem; } }
 
 .text--bio {
   font-size: 1.5rem; }
-  @media (max-width: 37.5em) {
-    .text--bio {
-      font-size: 1rem; } }
 
 .text--btn {
   font-size: 1.2rem;
   text-decoration: none;
   color: black; }
 
-.text--list {
-  font-size: 1.2rem; }
-  @media (max-width: 37.5em) {
-    .text--list {
-      font-size: 1rem; } }
-
 .head--large {
   font-size: 10rem;
   text-transform: uppercase; }
-  @media (max-width: 37.5em) {
-    .head--large {
-      font-size: 2.5rem;
-      line-height: 1.3; } }
-
-.head--secondary {
-  font-size: 3rem;
-  text-transform: uppercase; }
-  @media (max-width: 37.5em) {
-    .head--secondary {
-      font-size: 1.7rem; } }
-
-.head--about {
-  font-size: 2.5rem; }
-
-.head--main {
-  font-size: 3rem; }
-  @media (max-width: 37.5em) {
-    .head--main {
-      font-size: 2rem; } }
-
-.head--alternate {
-  font-size: 2rem; }
-  @media (max-width: 37.5em) {
-    .head--alternate {
-      font-size: 1.5rem; } }
-
-.head--sub {
-  font-size: 1.8rem; }
-  @media (max-width: 37.5em) {
-    .head--sub {
-      font-size: 1.5rem; } }
 
 .head--primary {
   font-size: 3.5rem;
   text-transform: uppercase; }
-  @media (max-width: 37.5em) {
-    .head--primary {
-      font-size: 2.5rem; } }
+
+.head--secondary {
+  font-size: 3rem;
+  text-transform: uppercase; }
 
 .head--tertiary {
-  font-size: 2rem;
   text-transform: uppercase; }
-  @media (max-width: 37.5em) {
-    .head--tertiary {
-      font-size: 1.5rem; } }
+
+.head--main {
+  font-size: 3rem; }
+
+.head--alternate,
+.head--sub,
+.head--tertiary {
+  font-size: 2rem; }
+
+.head--about {
+  font-size: 2.5rem; }
 
 .head--mini {
   font-size: 2.5rem;
   text-decoration: underline; }
-  @media (max-width: 37.5em) {
-    .head--mini {
-      font-size: 1.8rem; } }
 
 .head--picture {
   font-size: 2rem; }
@@ -166,29 +137,37 @@ select {
 /**=======================================================================================================================
  **                                                   IMG 
  *=======================================================================================================================**/
+/* Styles for social icons */
 .socials {
   height: 3rem; }
 
-.demo--primary {
-  height: 28rem;
+/* Styles for demo elements */
+.demo {
   border-radius: 5px;
-  border: 2px solid black; }
+  /* Styles for primary demo element */
+  /* Styles for secondary demo element */ }
+  .demo--primary {
+    height: 28rem;
+    border: 2px solid black; }
+  .demo--secondary {
+    border: 2px solid white; }
 
-.demo--secondary {
-  border-radius: 5px;
-  border: 2px solid white; }
-
+/* Styles for logo */
 .logo {
+  /* Use the $logo-size variable for height and width */
   height: 22rem;
   width: 22rem;
   border: 2px solid black;
   border-radius: 50%;
-  object-fit: cover; }
+  object-fit: cover;
+  /* Styles for logo on mobile */ }
   .logo--mobile {
     height: 6rem;
     width: 6rem; }
 
+/* Styles for icons */
 .icon {
+  /* Use the $icon-size variable for height and width */
   height: 4rem;
   width: 4rem; }
 
